@@ -1,0 +1,7 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\bin\Debug\Lesson3.exe.config
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\bin\Debug\Lesson3.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\bin\Debug\Lesson3.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\obj\Debug\Lesson3.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\obj\Debug\Lesson3.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\obj\Debug\Lesson3.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\Lesson 3\Lesson3\Lesson3\obj\Debug\Lesson3.pdb
