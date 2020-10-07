@@ -1,0 +1,7 @@
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\bin\Debug\1.Переменные.exe.config
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\bin\Debug\1.Переменные.exe
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\bin\Debug\1.Переменные.pdb
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\obj\Debug\1.Переменные.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\obj\Debug\1.Переменные.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\obj\Debug\1.Переменные.exe
+C:\Users\DOM\Desktop\HTML\C#\1.Переменные\1.Переменные\obj\Debug\1.Переменные.pdb
