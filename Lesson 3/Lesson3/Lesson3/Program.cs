@@ -50,6 +50,7 @@ namespace Lesson3
                 Console.WriteLine("--->Хилячек");
                 a = true;
             }
+
             //convertHeight = convertHeight + 1;      
 
 
