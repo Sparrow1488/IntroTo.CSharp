@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,8 +38,10 @@ namespace FileManager
                     listBox1.Items.Add(errDir);
                 }
 
+                //создаем объект от класса с файлами
                 FileInfo[] files = dir.GetFiles();
 
+                //перебираем массив объектов и добавляем в элементы в listBox1
                 foreach (FileInfo crrfile in files)
                 {
                     listBox1.Items.Add(crrfile);
@@ -52,12 +55,12 @@ namespace FileManager
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string url = Path.Combine(textBox1.Text,textBox2.Text);
-            Directory.CreateDirectory(url);
-
-            label1.BackColor = Color.White;
             try
             {
+                string url = Path.Combine(textBox1.Text, textBox2.Text);
+                Directory.CreateDirectory(url);
+
+                label1.BackColor = Color.White;
                 listBox1.Items.Clear();
 
                 DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
@@ -68,15 +71,19 @@ namespace FileManager
                 {
                     listBox1.Items.Add(errDir);
                 }
+
+                FileInfo[] files = dir.GetFiles();
+
+                foreach(FileInfo file in files)
+                {
+                    listBox1.Items.Add(file);
+                }
+                
             }
             catch (Exception)
             {
                 label1.BackColor = Color.Red;
             }
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
         }
 
         private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -103,12 +110,89 @@ namespace FileManager
                 {
                     listBox1.Items.Add(crrfile);
                 }
+                
             }
             catch (Exception)
             {
                 label1.BackColor = Color.Red;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string url = Path.Combine(textBox1.Text);
+            textBox1.Text = Directory.GetParent(url).ToString();
+
+            listBox1.Items.Clear();
+
+            DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
+
+            DirectoryInfo[] dirs = dir.GetDirectories();
+
+            foreach (DirectoryInfo errDir in dirs)
+            {
+                listBox1.Items.Add(errDir);
+            }
+
+            FileInfo[] files = dir.GetFiles();
+
+            foreach (FileInfo crrfile in files)
+            {
+                listBox1.Items.Add(crrfile);
+            }
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+
+            try
+            {
+                string url = Path.Combine(textBox1.Text);
+
+                string sUrl = Path.Combine(textBox1.Text, listBox1.SelectedItem.ToString());
+
+                Directory.Delete(sUrl);
+                File.Delete(sUrl);
+            }
+            catch (Exception)
+            {
+                label1.BackColor = Color.Red;
+            }
+            
+            try
+            {
+                DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
+
+                DirectoryInfo[] dirs = dir.GetDirectories();
+
+                foreach (DirectoryInfo errDir in dirs)
+                {
+                    listBox1.Items.Add(errDir);
+                }
+
+                FileInfo[] files = dir.GetFiles();
+
+                foreach (FileInfo crrfile in files)
+                {
+                    listBox1.Items.Add(crrfile);
+                }
+            }
+            catch (Exception)
+            {
+                label1.BackColor = Color.Red;
+            }
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string str = listBox1.SelectedItem.ToString();
+            
+        }
+        
     }
     
 }

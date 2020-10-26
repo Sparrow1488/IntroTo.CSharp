@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunMeth", "FunMeth\FunMeth.csproj", "{D4F0904B-92CB-4959-885B-FD1E5F0E8A7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overload", "Overload\Overload.csproj", "{2F4CA268-05D3-47A5-9CDE-19753C7FCED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4F0904B-92CB-4959-885B-FD1E5F0E8A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F0904B-92CB-4959-885B-FD1E5F0E8A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F0904B-92CB-4959-885B-FD1E5F0E8A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F0904B-92CB-4959-885B-FD1E5F0E8A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4CA268-05D3-47A5-9CDE-19753C7FCED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4CA268-05D3-47A5-9CDE-19753C7FCED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4CA268-05D3-47A5-9CDE-19753C7FCED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4CA268-05D3-47A5-9CDE-19753C7FCED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3977129-92BA-4513-B74A-47A99F2EDDCF}
+	EndGlobalSection
+EndGlobal

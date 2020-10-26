@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[TESTtableDB]
+(
+	[Login] VARCHAR(24) NOT NULL PRIMARY KEY, 
+    [Password] VARCHAR(24) NOT NULL, 
+    [Name] VARCHAR(24) NOT NULL, 
+    [Email] VARCHAR(50) NOT NULL
+)
