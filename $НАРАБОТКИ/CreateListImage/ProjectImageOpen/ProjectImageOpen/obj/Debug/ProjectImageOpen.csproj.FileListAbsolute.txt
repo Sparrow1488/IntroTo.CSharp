@@ -1,0 +1,10 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\bin\Debug\ProjectImageOpen.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\bin\Debug\ProjectImageOpen.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\bin\Debug\ProjectImageOpen.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.Form1.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\CreateListImage\ProjectImageOpen\ProjectImageOpen\obj\Debug\ProjectImageOpen.pdb

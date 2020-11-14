@@ -1,0 +1,7 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\bin\Debug\Hw_OOP2.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\bin\Debug\Hw_OOP2.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\bin\Debug\Hw_OOP2.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\obj\Debug\Hw_OOP2.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\obj\Debug\Hw_OOP2.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\obj\Debug\Hw_OOP2.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ ШАРП\7_ООП\OOP\Hw_OOP2\obj\Debug\Hw_OOP2.csprojAssemblyReference.cache
