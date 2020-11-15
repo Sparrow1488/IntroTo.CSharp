@@ -1,0 +1,13 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\bin\Debug\netcoreapp3.1\ourShopWardhouseProd.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\bin\Debug\netcoreapp3.1\ourShopWardhouseProd.deps.json
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\bin\Debug\netcoreapp3.1\ourShopWardhouseProd.runtimeconfig.json
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\bin\Debug\netcoreapp3.1\ourShopWardhouseProd.runtimeconfig.dev.json
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\bin\Debug\netcoreapp3.1\ourShopWardhouseProd.dll
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\bin\Debug\netcoreapp3.1\ourShopWardhouseProd.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.AssemblyInfoInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.AssemblyInfo.cs
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.dll
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\NewProductionShopAndWarehouse\ourShopWardhouseProd\ourShopWardhouseProd\obj\Debug\netcoreapp3.1\ourShopWardhouseProd.genruntimeconfig.cache

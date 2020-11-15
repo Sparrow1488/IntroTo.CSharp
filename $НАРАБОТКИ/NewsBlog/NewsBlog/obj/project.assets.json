@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\NewsBlog\\NewsBlog\\NewsBlog.csproj",
+      "projectUniqueName": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\NewsBlog\\NewsBlog\\NewsBlog.csproj",
       "projectName": "NewsBlog",
-      "projectPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\NewsBlog\\NewsBlog\\NewsBlog.csproj",
+      "projectPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\NewsBlog\\NewsBlog\\NewsBlog.csproj",
       "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\NewsBlog\\NewsBlog\\obj\\",
+      "outputPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\NewsBlog\\NewsBlog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",

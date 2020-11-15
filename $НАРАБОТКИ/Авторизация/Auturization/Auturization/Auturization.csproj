@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Auturization</RootNamespace>
     <AssemblyName>Auturization</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,28 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="allFormsDir\AddNewsDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="allFormsDir\AddNewsDialog.Designer.cs">
+      <DependentUpon>AddNewsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allFormsDir\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allFormsDir\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="allFormsDir\MainBlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allFormsDir\MainBlog.Designer.cs">
+      <DependentUpon>MainBlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newsDir\News.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlLogin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlLogin.Designer.cs">
-      <DependentUpon>UserControlLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlRegister.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlRegister.Designer.cs">
-      <DependentUpon>UserControlRegister.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="allFormsDir\AddNewsDialog.resx">
+      <DependentUpon>AddNewsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allFormsDir\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allFormsDir\MainBlog.resx">
+      <DependentUpon>MainBlog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,12 +89,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControlLogin.resx">
-      <DependentUpon>UserControlLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlRegister.resx">
-      <DependentUpon>UserControlRegister.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
