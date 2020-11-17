@@ -12,14 +12,17 @@ namespace NewsBlog.autorizationDir
         public static string[,] UsersDB { get; private set; } =
         {
             {"Sparrow14", "1234" },
-            {"User", "222" }
+            {"User", "222" },
+            {"Dimon12", "3434" },
+            {"Gokhlia", "1488" },
         };
 
         public static bool loginCreator { get; private set; } = false;
 
         private static string[,] Creators =
         {
-            {"Sparrow14", "1234" }
+            {"Sparrow14", "1234" },
+            {"Gokhlia", "1488" }
         };
 
         public static bool CheckUsers(TextBox login, TextBox pass)
@@ -32,7 +35,6 @@ namespace NewsBlog.autorizationDir
                     {
                         return true;
                     }
-                    return false;
                 }
             }
             return false;

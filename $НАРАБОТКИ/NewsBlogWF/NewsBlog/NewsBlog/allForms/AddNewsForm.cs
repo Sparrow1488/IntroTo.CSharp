@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using NewsBlog.newsDir;
 
 namespace NewsBlog
 {
@@ -19,11 +13,22 @@ namespace NewsBlog
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool checkNews = News.AddNews(textBox1, textBox2, label1);
-            if (checkNews)
+            if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
             {
+                var news = new AddNews(textBox1.Text, textBox2.Text);
                 this.Close();
             }
+            else
+            {
+                exeptionLabel1.Visible = true;
+                exeptionLabel1.Enabled = true;
+            }
+        }
+
+        private void AddNewsForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            exeptionLabel1.Visible = false;
+            exeptionLabel1.Enabled = false;
         }
     }
 }

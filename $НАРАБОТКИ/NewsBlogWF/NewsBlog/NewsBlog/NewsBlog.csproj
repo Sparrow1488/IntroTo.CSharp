@@ -65,6 +65,7 @@
       <DependentUpon>MainBlogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="autorizationDir\Autorization.cs" />
+    <Compile Include="newsDir\AddNews.cs" />
     <Compile Include="newsDir\News.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
