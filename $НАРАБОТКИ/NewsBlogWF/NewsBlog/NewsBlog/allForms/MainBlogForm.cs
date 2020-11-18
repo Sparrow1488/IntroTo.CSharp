@@ -18,51 +18,71 @@ namespace NewsBlog
         public MainBlogForm()
         {
             InitializeComponent();
-            News.PrintNews(textBox2, textBox1);
             StandartNews();
         }
-
+        private int X = 0; //координаты формы
+        private int Y = 0; //координаты формы
         private void button3_Click(object sender, EventArgs e)
         {
-            News.ScrollNewsRight(textBox2, textBox1);
-            label3.Text = $"{News.indexCounter}";
-            label1.Text = $"{News.NewsDBList.Count}";
+            News.ScrollNewsRight(titleTextBox1, descriptionTextBox1);
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
-            News.ScrollNewsLeft(textBox2, textBox1);
-            label3.Text = $"{News.indexCounter}";
-            label1.Text = $"{News.NewsDBList.Count}";
+            News.ScrollNewsLeft(titleTextBox1, descriptionTextBox1);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             News.indexCounter = News.NewsDBList.Count - 1;
-            News.PrintNews(textBox2, textBox1);
-            label3.Text = $"{News.indexCounter}";
-            label1.Text = $"{News.NewsDBList.Count}";
+            News.PrintNews(titleTextBox1, descriptionTextBox1);
         }
 
         private void MainBlogForm_Load(object sender, EventArgs e)
         {
             if (Autorization.loginCreator)
             {
-                addNewsButton1.Enabled = true;
-                addNewsButton1.Visible = true;
+                SetCreatorOptions(addNewsButton1, editNewsButton);
             }
+            News.PrintNews(titleTextBox1, descriptionTextBox1);
+        }
+        private static void SetCreatorOptions(Button addN, Button editN)
+        {
+            addN.Enabled = true;
+            addN.Visible = true;
+
+            editN.Enabled = true;
+            editN.Visible = true;
         }
 
         private void addNewsButton1_Click(object sender, EventArgs e)
         {
-            AddNewsForm addNewsForm = new AddNewsForm();
+            AddNewsForm addNewsForm = new AddNewsForm(addNewsButton1);
             addNewsForm.ShowDialog();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddNewsForm addNewsForm = new AddNewsForm(editNewsButton);
+            addNewsForm.ShowDialog();
+        }
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            News.PrintNews(titleTextBox1, descriptionTextBox1);
+        }
 
+        //ПЕРЕМЕЩАЕМ СВОЕ ОКНО
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            X = e.X; Y = e.Y;
+        }
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                this.Location = new System.Drawing.Point(this.Location.X + (e.X - X), this.Location.Y + (e.Y - Y));
+            }
+        }
     }
 }

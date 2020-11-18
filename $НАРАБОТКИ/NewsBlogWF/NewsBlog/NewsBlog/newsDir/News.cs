@@ -24,7 +24,16 @@ namespace NewsBlog
 
             NewsDBList.Add(this);
         }
-        
+        public static void NewsEditor(TextBox titleEdit, TextBox textEdit)
+        {
+            if(!string.IsNullOrWhiteSpace(titleEdit.Text)) NewsDBList[indexCounter].Title = titleEdit.Text;
+            if(!string.IsNullOrWhiteSpace(textEdit.Text)) NewsDBList[indexCounter].Text = textEdit.Text;
+        }
+        public static void SetEditsNews(TextBox title, TextBox text)
+        {
+            title.Text = NewsDBList[indexCounter].Title;
+            text.Text = NewsDBList[indexCounter].Text;
+        }
         public static void PrintNews(TextBox title, TextBox text)
         {
             if (indexCounter < NewsDBList.Count && NewsDBList.Count!=0)

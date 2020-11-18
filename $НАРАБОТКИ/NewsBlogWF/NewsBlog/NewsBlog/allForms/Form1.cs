@@ -13,6 +13,8 @@ namespace NewsBlog
 {
     public partial class Form1 : Form
     {
+        private int X = 0; 
+        private int Y = 0; 
         public Form1()
         {
             InitializeComponent();
@@ -37,13 +39,31 @@ namespace NewsBlog
                 {
                     //label3.Text = "Простой пользователь";
                     mainBlog.Show();
-                    this.Height = 0;
+                    this.Height = 20;
                 }
             }
             else
             {
                 label2.Visible = true; //пердит ошибкой
             }
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            X = e.X; Y = e.Y;
+        }
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Location = new Point(this.Location.X + (e.X - X), this.Location.Y + (e.Y - Y));
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
