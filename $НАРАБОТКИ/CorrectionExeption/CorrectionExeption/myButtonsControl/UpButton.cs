@@ -13,12 +13,12 @@ namespace CorrectionExeption
         public override void PressButton(PictureBox obj, char btn)
         {
             Button = 'w';
-            if (btn == Button)
+            if (btn.Equals(Button))
             {
-                int X = obj.Location.X;
-                int Y = obj.Location.Y;
-                Y -= 10;
-                obj.Location = new Point(X, Y);
+                int x = obj.Location.X;
+                int y = obj.Location.Y;
+                y -= Speed;
+                obj.Location = new Point(x, y);
                 
             }
             

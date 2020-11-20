@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="myButtonsControl\LeftButton.cs" />
     <Compile Include="myButtonsControl\MyButtons.cs" />
+    <Compile Include="myButtonsControl\RightButton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="myButtonsControl\UpButton.cs" />

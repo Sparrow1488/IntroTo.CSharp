@@ -1,0 +1,13 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\bin\Debug\netcoreapp3.1\UsersAndCommands1.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\bin\Debug\netcoreapp3.1\UsersAndCommands1.deps.json
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\bin\Debug\netcoreapp3.1\UsersAndCommands1.runtimeconfig.json
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\bin\Debug\netcoreapp3.1\UsersAndCommands1.runtimeconfig.dev.json
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\bin\Debug\netcoreapp3.1\UsersAndCommands1.dll
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\bin\Debug\netcoreapp3.1\UsersAndCommands1.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.AssemblyInfoInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.AssemblyInfo.cs
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.dll
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\UsersAndCommandsDir\UsersAndCommands\UsersAndCommands1\obj\Debug\netcoreapp3.1\UsersAndCommands1.genruntimeconfig.cache

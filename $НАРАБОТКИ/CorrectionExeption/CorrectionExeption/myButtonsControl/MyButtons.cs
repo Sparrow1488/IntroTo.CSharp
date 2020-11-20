@@ -11,6 +11,7 @@ namespace CorrectionExeption
     {
         
         public char Button { get; protected set; }
+        public int Speed { get; protected set; } = 8;
         public abstract void PressButton(PictureBox obj, char btn);
     }
 }

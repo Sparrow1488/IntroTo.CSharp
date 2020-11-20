@@ -18,56 +18,27 @@ namespace CorrectionExeption
             InitializeComponent();
         }
 
-        public static List<MyButtons> MyButtonsList { get; protected set; } = new List<MyButtons>() 
+        public static List<MyButtons> MyButtonsList { get; set; } = new List<MyButtons>()
         {
-            
+            new UpButton(),
+            new DownButton(),
+            new LeftButton(),
+            new RightButton()
         };
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char btn = e.KeyChar;
-            UpButton btnUp = new UpButton(); MyButtonsList.Add(btnUp);
-            DownButton btnDown = new DownButton(); MyButtonsList.Add(btnDown);
-            LeftButton btnLeft = new LeftButton(); MyButtonsList.Add(btnLeft);
-            label1.Text = $"{pictureBox1.Location.X}, {pictureBox1.Location.Y}"; 
-            foreach (var obj in MyButtonsList)
+            ActivatedButton(pictureBox1,btn);
+        }
+
+        public static void ActivatedButton(PictureBox pb, char btn)
+        {
+            for (int i = 0; i < MyButtonsList.Count; i++)
             {
-                obj.PressButton(pictureBox1, btn);
+                MyButtonsList[i].PressButton(pb, btn);
             }
-            
-
-            //int x = pictureBox1.Location.X;
-            //int y = pictureBox1.Location.Y;
-            //if (e.KeyChar == 'w')
-            //{
-            //    y -= 10;
-            //    pictureBox1.Location = new Point(x, y);
-            //}
-            //if (e.KeyChar == 'a')
-            //{
-            //    x-=10;
-            //    pictureBox1.Location = new Point(x, y);
-            //}
-            //if (e.KeyChar == 's')
-            //{
-            //    y += 10;
-            //    pictureBox1.Location = new Point(x, y);
-            //}
-            //if (e.KeyChar == 'd')
-            //{
-            //    x += 10;
-            //    pictureBox1.Location = new Point(x, y);
-            //}
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
