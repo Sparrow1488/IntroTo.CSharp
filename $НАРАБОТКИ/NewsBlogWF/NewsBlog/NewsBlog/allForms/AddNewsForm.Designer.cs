@@ -36,8 +36,8 @@ namespace NewsBlog
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.editButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,6 @@ namespace NewsBlog
             // addButton
             // 
             this.addButton.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.addButton.Enabled = false;
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Location = new System.Drawing.Point(29, 315);
             this.addButton.Name = "addButton";
@@ -69,7 +68,6 @@ namespace NewsBlog
             this.addButton.TabIndex = 2;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
-            this.addButton.Visible = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // exeptionLabel1
@@ -114,24 +112,10 @@ namespace NewsBlog
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(544, 24);
+            this.panel1.Size = new System.Drawing.Size(520, 24);
             this.panel1.TabIndex = 6;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(503, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 24);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -145,11 +129,25 @@ namespace NewsBlog
             this.label1.TabIndex = 1;
             this.label1.Text = "Форма добавления или редактирования новостей";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(479, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 24);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AddNewsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 358);
+            this.ClientSize = new System.Drawing.Size(520, 358);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.textBox3);

@@ -1,0 +1,9 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\obj\Debug\test.Form1.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\obj\Debug\test.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\bin\Debug\test.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\bin\Debug\test.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\bin\Debug\test.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\obj\Debug\test.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\test\obj\Debug\test.pdb

@@ -52,6 +52,12 @@
     <Compile Include="allForms\AddNewsForm.Designer.cs">
       <DependentUpon>AddNewsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="allForms\EditNewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allForms\EditNewsForm.Designer.cs">
+      <DependentUpon>EditNewsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="allForms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +72,16 @@
     </Compile>
     <Compile Include="autorizationDir\Autorization.cs" />
     <Compile Include="newsDir\AddNews.cs" />
+    <Compile Include="newsDir\ControlNews.cs" />
     <Compile Include="newsDir\News.cs" />
+    <Compile Include="profilesDir\CreatorsProperties.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="allForms\AddNewsForm.resx">
       <DependentUpon>AddNewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allForms\EditNewsForm.resx">
+      <DependentUpon>EditNewsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="allForms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

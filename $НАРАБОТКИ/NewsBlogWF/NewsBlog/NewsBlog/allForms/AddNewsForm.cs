@@ -8,17 +8,13 @@ namespace NewsBlog
     {
         private int X = 0; //получаем координаты формы
         private int Y = 0; //получаем координаты формы
-        public AddNewsForm(Button btn)
+        public AddNewsForm()
         {
             
             InitializeComponent();
-            //в зависимости от полученной кнопки, разрешаем доступ к определенным инструментам
-            if (btn.Name == "editNewsButton")
-            {
                 VisiableButtonsCreator(editButton);
                 News.SetEditsNews(textBox1, textBox2);
-            }
-            if (btn.Name == "addNewsButton1") VisiableButtonsCreator(addButton);
+            // TODO: ЕБАНИ КА СНОВА КОНСТРУКТОР С КНОПКОЙ И НЕ ЕБИСЬ С ДВУМЯ ФОРМАМИ
         }
 
         public static void VisiableButtonsCreator(Button visiableButton)
@@ -30,7 +26,7 @@ namespace NewsBlog
         {
             if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                var news = new AddNews(textBox1.Text, textBox2.Text);
+                var news = new AddNews(textBox1.Text, textBox2.Text, textBox3.Text);
                 this.Close();
             }
             else{ exeptionLabel1.Visible = true; }
@@ -56,7 +52,6 @@ namespace NewsBlog
         {
             X = e.X; Y = e.Y;
         }
-
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -64,5 +59,6 @@ namespace NewsBlog
                 this.Location = new System.Drawing.Point(this.Location.X + (e.X - X), this.Location.Y + (e.Y - Y));
             }
         }
+
     }
 }

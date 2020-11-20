@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using NewsBlog.autorizationDir;
 
 namespace NewsBlog
 {
@@ -13,60 +14,29 @@ namespace NewsBlog
         public string Athtor { get; protected set; }
 
         public static int indexCounter = 0; 
-        public static int pageCounter = indexCounter + 1; 
 
-        public News(string title, string text)
+        public News(string title, string text, string athtor)
         {
             if (string.IsNullOrWhiteSpace(title)) throw new ApplicationException(nameof(title));
             if (string.IsNullOrWhiteSpace(text)) throw new ApplicationException(nameof(text));
             Title = title;
             Text = text;
+            Athtor = athtor;
 
             NewsDBList.Add(this);
         }
+
+        //  --ПРИМЕНЯЕМ ИЗМЕНЕНИЯ СТАТЬИ В РЕДАКТОРЕ--
         public static void NewsEditor(TextBox titleEdit, TextBox textEdit)
         {
             if(!string.IsNullOrWhiteSpace(titleEdit.Text)) NewsDBList[indexCounter].Title = titleEdit.Text;
             if(!string.IsNullOrWhiteSpace(textEdit.Text)) NewsDBList[indexCounter].Text = textEdit.Text;
         }
+        //  --ЗАПОЛНЯЕМ ФОРМУ РЕДАКТОРА ЗАГОЛОВКОМ И ОПИСАНИЕМ РЕДАКТИРУЕМОЙ СТАТЬИ--
         public static void SetEditsNews(TextBox title, TextBox text)
         {
             title.Text = NewsDBList[indexCounter].Title;
             text.Text = NewsDBList[indexCounter].Text;
-        }
-        public static void PrintNews(TextBox title, TextBox text)
-        {
-            if (indexCounter < NewsDBList.Count && NewsDBList.Count!=0)
-            {
-                title.Text = $"{NewsDBList[indexCounter].Title}";
-                text.Text = $"{NewsDBList[indexCounter].Text}";
-            }
-        }
-        public static void ScrollNewsLeft(TextBox tit, TextBox text)
-        {
-            if (indexCounter <= NewsDBList.Count && indexCounter != 0)
-            {
-                indexCounter--;
-                PrintNews(tit, text);
-            }
-            else
-            {
-                indexCounter = NewsDBList.Count - 1;
-                PrintNews(tit, text);
-            }
-        }
-        public static void ScrollNewsRight(TextBox tit, TextBox text)
-        {
-            if (indexCounter < (NewsDBList.Count - 1) && NewsDBList[indexCounter + 1].Title != null)
-            {
-                indexCounter++;
-                PrintNews(tit, text);
-            }
-            else
-            {
-                indexCounter = 0;
-                PrintNews(tit, text);
-            }
         }
         
         public static string CheckTitle(string title)

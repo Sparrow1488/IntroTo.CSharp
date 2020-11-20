@@ -30,6 +30,7 @@ namespace NewsBlog
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AthtorTextBox = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.editNewsButton = new System.Windows.Forms.Button();
             this.titleTextBox1 = new System.Windows.Forms.TextBox();
@@ -41,9 +42,9 @@ namespace NewsBlog
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.AthtorTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,17 @@ namespace NewsBlog
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(637, 355);
             this.panel1.TabIndex = 0;
+            // 
+            // AthtorTextBox
+            // 
+            this.AthtorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AthtorTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AthtorTextBox.Location = new System.Drawing.Point(455, 326);
+            this.AthtorTextBox.Name = "AthtorTextBox";
+            this.AthtorTextBox.ReadOnly = true;
+            this.AthtorTextBox.Size = new System.Drawing.Size(156, 17);
+            this.AthtorTextBox.TabIndex = 7;
+            this.AthtorTextBox.Text = "Автор: Anon";
             // 
             // button5
             // 
@@ -193,6 +205,7 @@ namespace NewsBlog
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Thistle;
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -202,17 +215,6 @@ namespace NewsBlog
             this.panel2.TabIndex = 6;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(289, 404);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Проверка";
-            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -225,16 +227,29 @@ namespace NewsBlog
             this.label2.TabIndex = 6;
             this.label2.Text = "Главное меню";
             // 
-            // AthtorTextBox
+            // label1
             // 
-            this.AthtorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AthtorTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AthtorTextBox.Location = new System.Drawing.Point(455, 326);
-            this.AthtorTextBox.Name = "AthtorTextBox";
-            this.AthtorTextBox.ReadOnly = true;
-            this.AthtorTextBox.Size = new System.Drawing.Size(156, 17);
-            this.AthtorTextBox.TabIndex = 7;
-            this.AthtorTextBox.Text = "Автор: Anon";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(289, 404);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Проверка";
+            this.label1.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(288, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Login";
             // 
             // MainBlogForm
             // 
@@ -280,5 +295,6 @@ namespace NewsBlog
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox AthtorTextBox;
+        private System.Windows.Forms.Label label4;
     }
 }

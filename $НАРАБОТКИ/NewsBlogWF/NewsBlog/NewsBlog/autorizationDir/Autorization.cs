@@ -9,6 +9,7 @@ namespace NewsBlog.autorizationDir
 {
     public class Autorization
     {
+        public static string NowActive { get; private set; }
         public static string[,] UsersDB { get; private set; } =
         {
             {"Sparrow14", "1234" },
@@ -33,6 +34,7 @@ namespace NewsBlog.autorizationDir
                 {
                     if (pass.Text == UsersDB[i, 1])
                     {
+                        NowActive = UsersDB[i, 0];
                         return true;
                     }
                 }

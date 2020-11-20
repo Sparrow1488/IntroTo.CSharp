@@ -6,7 +6,7 @@ namespace NewsBlog.newsDir
 {
     public class AddNews : News
     {
-        public AddNews(string title, string text) : base(title, text)
+        public AddNews(string title, string text, string athtor) : base(title, text, athtor)
         {
         }
     }
