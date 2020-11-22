@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\bin\Debug\netcoreapp3.1\MyDelegate.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\bin\Debug\netcoreapp3.1\MyDelegate.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\bin\Debug\netcoreapp3.1\MyDelegate.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\bin\Debug\netcoreapp3.1\MyDelegate.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\bin\Debug\netcoreapp3.1\MyDelegate.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\bin\Debug\netcoreapp3.1\MyDelegate.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$Стартовый_курс\Delegate\MyDelegate\MyDelegate\obj\Debug\netcoreapp3.1\MyDelegate.genruntimeconfig.cache
