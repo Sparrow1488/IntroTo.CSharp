@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj": {}
+    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj": {
+    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj",
+        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj",
         "projectName": "UsersAndCommands1",
-        "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj",
+        "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\UsersAndCommands1.csproj",
         "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\obj\\",
+        "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\UsersAndCommandsDir\\UsersAndCommands\\UsersAndCommands1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",

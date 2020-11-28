@@ -24,7 +24,21 @@ namespace UsersAndCommands1.CommandsDir
             sCommand = "my info";
             if (entCommand == sCommand)
             {
-                Console.WriteLine($"Login: {Program.ActiveUser.Login}; Password: *******; Access creator: {Program.ActiveUser.IsCreator}");
+                Console.WriteLine($"Login: {Program.ActiveUser.Login};");
+                Console.WriteLine($"Password: {Program.ActiveUser.Password};");
+                Console.WriteLine($"Access creator: {Program.ActiveUser.IsCreator};");
+                Console.WriteLine($"Description: {Program.ActiveUser.Description};");
+            }
+        }
+    }
+    class EditMyPrifile : Command
+    {
+        public override void MyCommand(string entCommand)
+        {
+            sCommand = "edit profile";
+            if (entCommand == sCommand)
+            {
+                
             }
         }
     }

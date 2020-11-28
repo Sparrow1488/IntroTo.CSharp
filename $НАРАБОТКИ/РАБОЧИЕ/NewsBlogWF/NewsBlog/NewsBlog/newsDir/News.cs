@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using NewsBlog.autorizationDir;
+using System.Drawing;
 
 namespace NewsBlog
 {
@@ -12,6 +13,14 @@ namespace NewsBlog
         public string Title { get; protected set; }
         public string Text { get; protected set; }
         public string Athtor { get; protected set; }
+        public Color bgCol
+        {
+            get
+            {
+                return Color.Red;
+            }
+            protected set { }
+        }
 
         public static int indexCounter = 0; 
 

@@ -41,7 +41,6 @@ namespace NewsBlog.autorizationDir
             }
             return false;
         }
-
         public static bool CheckCreators(TextBox log, TextBox pas)
         {
             for (int i = 0; i < Creators.GetLength(0); i++)

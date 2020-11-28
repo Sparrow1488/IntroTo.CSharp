@@ -33,7 +33,7 @@ namespace NewsBlog
                 {
                     //label3.Text = "Админ";
                     mainBlog.Show();
-                    this.Height = 0;
+                    this.Hide();
                 }
                 else
                 {

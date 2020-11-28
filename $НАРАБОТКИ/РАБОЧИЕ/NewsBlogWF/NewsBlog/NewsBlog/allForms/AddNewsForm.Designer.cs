@@ -37,7 +37,9 @@ namespace NewsBlog
             this.editButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.closeFormButton = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +95,6 @@ namespace NewsBlog
             // editButton
             // 
             this.editButton.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.editButton.Enabled = false;
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editButton.Location = new System.Drawing.Point(110, 315);
             this.editButton.Name = "editButton";
@@ -108,7 +109,7 @@ namespace NewsBlog
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.closeFormButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -129,25 +130,46 @@ namespace NewsBlog
             this.label1.TabIndex = 1;
             this.label1.Text = "Форма добавления или редактирования новостей";
             // 
-            // button1
+            // closeFormButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(479, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 24);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.closeFormButton.BackColor = System.Drawing.SystemColors.Control;
+            this.closeFormButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.closeFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeFormButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeFormButton.Location = new System.Drawing.Point(479, 0);
+            this.closeFormButton.Name = "closeFormButton";
+            this.closeFormButton.Size = new System.Drawing.Size(41, 24);
+            this.closeFormButton.TabIndex = 0;
+            this.closeFormButton.Text = "X";
+            this.closeFormButton.UseVisualStyleBackColor = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(459, 30);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(49, 17);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "RED";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(459, 30);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(49, 17);
+            this.checkBox2.TabIndex = 7;
+            this.checkBox2.Text = "RED";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // AddNewsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 358);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.textBox3);
@@ -175,7 +197,9 @@ namespace NewsBlog
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button closeFormButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }

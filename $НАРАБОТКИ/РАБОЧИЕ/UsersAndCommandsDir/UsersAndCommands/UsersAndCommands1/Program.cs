@@ -11,14 +11,16 @@ namespace UsersAndCommands1
     class Program
     {
         public static User ActiveUser { get; private set; } //активный пользователь
-        public static void AddAllU()
-        {
-            new DefaultUsers("User", "1234");
-        } //тупа добавили базовых пользователей
         static void Main(string[] args)
         {
-            AddAllU();
-            CompleteAutorization();
+            bool exitChoose = true;
+            while(exitChoose)
+            {
+                Console.WriteLine("Вход(L) / Регистрация(R)");
+                string chooseStart = Console.ReadLine();
+                ChooseLogInOrAutorization(chooseStart, ref exitChoose);
+            }
+            AddAllUsers();
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -29,7 +31,14 @@ namespace UsersAndCommands1
                 else FindCommand(enterCommand);
             }
         }
-        public static void CompleteAutorization()
+        private static void AddAllUsers()
+        {
+            new DefaultUsers("User", "1234");
+            new DefaultUsers("Big_Boss1488", "4549823");
+            new DefaultUsers("MamaMia13", "3457");
+            new DefaultUsers("ScaryBoy", "11111");
+        } //тупа добавили базовых пользователей
+        private static void CompleteAutorization()
         {
             Console.Write("Login: ");
             string log = Console.ReadLine();
@@ -38,8 +47,40 @@ namespace UsersAndCommands1
             ActiveUser = User.Autorization(log, pas);
             UserAccess(ActiveUser); //добавляем команды default или creators
         }
-        //СЮДЫ ДОБАВЛЯЕМ СТАНДАРТНЫЕ КОМАНДЫ
-        public static void GetStandartCommands()
+        private static void CompleteRegistration()
+        {
+            Console.Write("Login: ");
+            string log = Console.ReadLine();
+            Console.Write("Password: ");
+            string pas = Console.ReadLine();
+            ActiveUser = User.Registration(log, pas);
+            UserAccess(ActiveUser); //добавляем команды default или creators
+        }
+        private static void ChooseLogInOrAutorization(string choose, ref bool exit)
+        {
+            switch (choose)
+            {
+                case "L":
+                    {
+                        CompleteAutorization();
+                        Console.WriteLine($"Добрый день, {ActiveUser.Login}!");
+                        exit = false;
+                        break;
+                    }
+                case "R":
+                    {
+                        CompleteRegistration();
+                        Console.WriteLine($"Добро пожаловать, {ActiveUser.Login}!");
+                        exit = false;
+                        break;
+                    }
+                default:
+                    Console.Clear();
+                    Console.WriteLine("Что-то пошло не так...");
+                    break;
+            }
+        }
+        private static void GetStandartCommands()    // СЮДЫ ДОБАВЛЯЕМ СТАНДАРТНЫЕ КОМАНДЫ
         {
             new PrintHello();
             new GetAllCommands();
@@ -47,14 +88,13 @@ namespace UsersAndCommands1
             new ClearConsole();
             new InfoAboutMe();
             new Exit();
+            new EditMyPrifile(); // в процессе разработки
         }
-        //СЮДЫ ДОБАВЛЯЕМ КОМАНДЫ ДЛЯ РЕДАКТОРОВ
-        public static void GetCreatorCommands()
+        private static void GetCreatorCommands()     // СЮДЫ ДОБАВЛЯЕМ КОМАНДЫ ДЛЯ РЕДАКТОРОВ
         {
             new GetAllUser();
         }
-        
-        public static void UserAccess(User nowActiveUser)
+        private static void UserAccess(User nowActiveUser)   // ОТ УРОВНЯ ПРАВ ДОБАВЛЯЕМ КОМАНДЫ
         {
             if (ActiveUser.IsCreator == false)
             {
@@ -66,7 +106,7 @@ namespace UsersAndCommands1
                 GetCreatorCommands();
             }
         }
-        public static void FindCommand(string findCommand)
+        private static void FindCommand(string findCommand)
         {
             for (int i = 0; i < Command.allCommandList.Count; i++)
             {

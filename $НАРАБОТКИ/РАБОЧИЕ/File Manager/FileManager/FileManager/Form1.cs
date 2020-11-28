@@ -19,7 +19,20 @@ namespace FileManager
         {
             InitializeComponent();
         }
-
+        private void GetDirectoryAndFiles()
+        {
+            DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
+            DirectoryInfo[] dirs = dir.GetDirectories();
+            foreach (DirectoryInfo errDir in dirs)
+            {
+                listBox1.Items.Add(errDir);
+            }
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo crrfile in files)
+            {
+                listBox1.Items.Add(crrfile);
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             label1.BackColor = Color.White;
@@ -27,20 +40,13 @@ namespace FileManager
 
             try
             {
+
                 listBox1.Items.Clear();
+                GetDirectoryAndFiles();
 
-                DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo errDir in dirs)
-                {
-                    listBox1.Items.Add(errDir);
-                }
 
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo crrfile in files)
-                {
-                    listBox1.Items.Add(crrfile);
-                }
+
+
             }
             catch (Exception)
             {
@@ -58,18 +64,7 @@ namespace FileManager
                 label1.BackColor = Color.White;
                 listBox1.Items.Clear();
 
-                DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo errDir in dirs)
-                {
-                    listBox1.Items.Add(errDir);
-                }
-
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo file in files)
-                {
-                    listBox1.Items.Add(file);
-                }
+                GetDirectoryAndFiles();
             }
             catch (Exception)
             {
@@ -86,18 +81,7 @@ namespace FileManager
 
                 listBox1.Items.Clear();
 
-                DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo errDir in dirs)
-                {
-                    listBox1.Items.Add(errDir);
-                }
-
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo crrfile in files)
-                {
-                    listBox1.Items.Add(crrfile);
-                }
+                GetDirectoryAndFiles();
             }
             catch (Exception)
             {
@@ -115,18 +99,7 @@ namespace FileManager
 
                 listBox1.Items.Clear();
 
-                DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo errDir in dirs)
-                {
-                    listBox1.Items.Add(errDir);
-                }
-
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo crrfile in files)
-                {
-                    listBox1.Items.Add(crrfile);
-                }
+                GetDirectoryAndFiles();
             }
             catch (Exception)
             {
@@ -153,18 +126,7 @@ namespace FileManager
 
             try
             {
-                DirectoryInfo dir = new DirectoryInfo(textBox1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo errDir in dirs)
-                {
-                    listBox1.Items.Add(errDir);
-                }
-
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo crrfile in files)
-                {
-                    listBox1.Items.Add(crrfile);
-                }
+                GetDirectoryAndFiles();
             }
             catch (Exception)
             {

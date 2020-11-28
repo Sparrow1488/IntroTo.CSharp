@@ -71,7 +71,7 @@
       <DependentUpon>MainBlogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="autorizationDir\Autorization.cs" />
-    <Compile Include="newsDir\AddNews.cs" />
+    <Compile Include="newsDir\DefaultNews.cs" />
     <Compile Include="newsDir\ControlNews.cs" />
     <Compile Include="newsDir\News.cs" />
     <Compile Include="profilesDir\CreatorsProperties.cs" />

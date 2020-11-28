@@ -40,11 +40,11 @@ namespace NewsBlog
             this.button4 = new System.Windows.Forms.Button();
             this.addNewsButton1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.closeFormButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -69,7 +69,7 @@ namespace NewsBlog
             this.AthtorTextBox.Location = new System.Drawing.Point(455, 326);
             this.AthtorTextBox.Name = "AthtorTextBox";
             this.AthtorTextBox.ReadOnly = true;
-            this.AthtorTextBox.Size = new System.Drawing.Size(156, 17);
+            this.AthtorTextBox.Size = new System.Drawing.Size(128, 17);
             this.AthtorTextBox.TabIndex = 7;
             this.AthtorTextBox.Text = "Автор: Anon";
             // 
@@ -89,7 +89,6 @@ namespace NewsBlog
             // editNewsButton
             // 
             this.editNewsButton.BackColor = System.Drawing.Color.Thistle;
-            this.editNewsButton.Enabled = false;
             this.editNewsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editNewsButton.Location = new System.Drawing.Point(559, 3);
             this.editNewsButton.Name = "editNewsButton";
@@ -102,6 +101,7 @@ namespace NewsBlog
             // 
             // titleTextBox1
             // 
+            this.titleTextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.titleTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.titleTextBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleTextBox1.Location = new System.Drawing.Point(14, 6);
@@ -164,7 +164,6 @@ namespace NewsBlog
             // addNewsButton1
             // 
             this.addNewsButton1.BackColor = System.Drawing.Color.Thistle;
-            this.addNewsButton1.Enabled = false;
             this.addNewsButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addNewsButton1.Location = new System.Drawing.Point(118, 391);
             this.addNewsButton1.Name = "addNewsButton1";
@@ -187,27 +186,27 @@ namespace NewsBlog
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // closeFormButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(609, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.closeFormButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.closeFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.closeFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.closeFormButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeFormButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.closeFormButton.Location = new System.Drawing.Point(609, 3);
+            this.closeFormButton.Name = "closeFormButton";
+            this.closeFormButton.Size = new System.Drawing.Size(25, 23);
+            this.closeFormButton.TabIndex = 5;
+            this.closeFormButton.Text = "X";
+            this.closeFormButton.UseVisualStyleBackColor = false;
+            this.closeFormButton.Click += new System.EventHandler(this.closeFormButton_Click_1);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Thistle;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.closeFormButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -215,6 +214,19 @@ namespace NewsBlog
             this.panel2.TabIndex = 6;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(288, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Login";
             // 
             // label2
             // 
@@ -237,19 +249,6 @@ namespace NewsBlog
             this.label1.TabIndex = 7;
             this.label1.Text = "Проверка";
             this.label1.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(288, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Login";
             // 
             // MainBlogForm
             // 
@@ -288,7 +287,7 @@ namespace NewsBlog
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox descriptionTextBox1;
         private System.Windows.Forms.TextBox titleTextBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button closeFormButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button editNewsButton;

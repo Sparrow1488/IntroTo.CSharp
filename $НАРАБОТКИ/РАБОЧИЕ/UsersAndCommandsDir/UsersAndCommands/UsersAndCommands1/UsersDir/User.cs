@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using UsersAndCommands1;
 
 namespace UsersAndCommands1.UsersDir
 {
@@ -14,8 +15,9 @@ namespace UsersAndCommands1.UsersDir
         };
 
         public string Login { get; protected set; }
-        protected string Password { get; set; }
+        public string Password { get; protected set; }
         public bool IsCreator { get; protected set; }
+        public string Description { get; private set; } = "Человек анонимность";
 
         public User(string login, string password)
         {
@@ -38,7 +40,6 @@ namespace UsersAndCommands1.UsersDir
         {
             if (!string.IsNullOrWhiteSpace(pas)) return true; return false;
         }
-
         private static bool CheckUsersInList(string login, string password)
         {
             for (int i = 0; i < BaseUsers.Count; i++)
@@ -61,7 +62,6 @@ namespace UsersAndCommands1.UsersDir
             }
             return false;
         }
-
         public static void PrintListUsers()
         {
             Console.WriteLine("Default:");
@@ -75,7 +75,6 @@ namespace UsersAndCommands1.UsersDir
                 Console.WriteLine($"Login: {creator.Login};");
             }
         }
-
         public static string AccessRight(string log, string pas)
         {
             bool chList = CheckUsersInList(log, pas);
@@ -87,12 +86,23 @@ namespace UsersAndCommands1.UsersDir
         public static User Autorization(string log, string pas)
         {
             string access = AccessRight(log, pas);
-            if (access == "0") throw new ApplicationException("нет пользователя");
+            if (access == "0") throw new ApplicationException("Пользователь не имэитса");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Access > " + access);
             Console.ForegroundColor = ConsoleColor.White;
 
             return ReturnUser(log, pas);
+        }
+        public static User Registration(string log, string pas)
+        {
+            bool rightLogin = CheckLogin(log);
+            bool rightPassword = CheckPassword(pas);
+            if (pas.Length > 4 && rightLogin && rightPassword)
+            {
+                DefaultUsers defaultUser = new DefaultUsers(log, pas);
+                return defaultUser;
+            }
+            throw new ApplicationException("Ошибка регистрации");
         }
         public static User ReturnUser(string log, string pas)
         {
@@ -110,8 +120,19 @@ namespace UsersAndCommands1.UsersDir
                     return user;
                 }
             }
-            return null;
+            throw new ApplicationException("Пользователь не найден");
         }
+        public static void EditUser(string command)
+        {
+            var me = ReturnUser(Program.ActiveUser.Login, Program.ActiveUser.Password);
+            if (command == "login")
+            {
+                Console.Write("Придумайте логин: ");
+                //TODO: БАХНУТЬ НАДО БЫ РЕДАКТОР ПРОФИЛЯ
+                me.Login = "";
+            }
+        }
+        
         public static void GetLoginPasswordUsers() //для редакторов
         {
             foreach (var user in BaseUsers)
