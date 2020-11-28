@@ -9,3 +9,4 @@ C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧ
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog_review\obj\Debug\NewsBlog_review.pdb
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog_review\obj\Debug\NewsBlog_review.AllForms.MainForm.resources
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog_review\obj\Debug\NewsBlog_review.AllForms.MyProfile.resources
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog_review\obj\Debug\NewsBlog_review.csprojAssemblyReference.cache
