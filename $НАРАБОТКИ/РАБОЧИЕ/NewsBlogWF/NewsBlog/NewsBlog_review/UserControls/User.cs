@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NewsBlog_review.UserControls;
+using System.Drawing;
 
 namespace NewsBlog_review
 {
@@ -14,6 +12,11 @@ namespace NewsBlog_review
         public string Login { get; private set; }
         public string Password { get; private set; }
         public string Access { get; protected set; }
+        public string Description { get; set; }
+        public static string RefAvatar { get; set; } = @"C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\AutorizationImage.jpg";
+        public Image Avatar { get; set; } = Image.FromFile(RefAvatar);
+        public static string RefHatImage { get; set; } = @"C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\hatImage1.jpg";
+        public Image HatImage { get; set; } = Image.FromFile(RefHatImage);
         public User(string login, string password)
         {
             if (CheckInBaseDefaultUsers(login, password) == null && CheckInBaseCreators(login, password) == null)
@@ -73,5 +76,14 @@ namespace NewsBlog_review
             }
             return null;
         }
+        public static User Registration(string login, string password)
+        {
+            string correctLogin = CheckLogin(login);
+            string correctPasswrod = CheckLogin(password);
+            if (CheckInBaseDefaultUsers(login, password) != null) throw new ApplicationException("Пользователь уже существует!");
+            if (CheckInBaseCreators(login, password) != null) throw new ApplicationException("Редактор уже существует!");
+            return new DefaultUser(correctLogin, correctPasswrod);
+        }
+        //TODO: REGISTRATION
     }
 }

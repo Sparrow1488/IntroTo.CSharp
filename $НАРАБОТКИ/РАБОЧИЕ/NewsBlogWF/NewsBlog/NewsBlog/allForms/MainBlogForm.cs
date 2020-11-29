@@ -92,5 +92,9 @@ namespace NewsBlog
             ControlNews.PrintNews(titleTextBox1, descriptionTextBox1, AthtorTextBox);
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

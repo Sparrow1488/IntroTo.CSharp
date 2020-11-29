@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllForms\AddNewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\AddNewsForm.Designer.cs">
+      <DependentUpon>AddNewsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllForms\Autorization.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AllForms\Autorization.Designer.cs">
       <DependentUpon>Autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\EditMyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\EditMyProfile.Designer.cs">
+      <DependentUpon>EditMyProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="AllForms\MainForm.cs">
       <SubType>Form</SubType>
@@ -64,8 +76,22 @@
     <Compile Include="AllForms\MyProfile.Designer.cs">
       <DependentUpon>MyProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllForms\PicturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\PicturesForm.Designer.cs">
+      <DependentUpon>PicturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Controls.cs" />
+    <Compile Include="NewsControls\DefaultImagePost.cs" />
     <Compile Include="NewsControls\News.cs" />
+    <Compile Include="NewsControls\PicturePost.cs" />
     <Compile Include="NewsControls\TestNews.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,14 +99,26 @@
     <Compile Include="UserControls\DefaultUser.cs" />
     <Compile Include="UserControls\MyUser.cs" />
     <Compile Include="UserControls\User.cs" />
+    <EmbeddedResource Include="AllForms\AddNewsForm.resx">
+      <DependentUpon>AddNewsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllForms\Autorization.resx">
       <DependentUpon>Autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\EditMyProfile.resx">
+      <DependentUpon>EditMyProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\MyProfile.resx">
       <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\PicturesForm.resx">
+      <DependentUpon>PicturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgbgbgbgbg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

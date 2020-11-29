@@ -23,3 +23,16 @@ C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧ
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.exe
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.pdb
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\bin\Debug\NewsBlog.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\bin\Debug\NewsBlog.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\bin\Debug\NewsBlog.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.AddNewsForm.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.allForms.EditNewsForm.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.Form1.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.MainBlogForm.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\NewsBlog\obj\Debug\NewsBlog.pdb

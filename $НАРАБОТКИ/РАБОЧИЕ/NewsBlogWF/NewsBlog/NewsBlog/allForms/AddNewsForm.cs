@@ -23,7 +23,6 @@ namespace NewsBlog
         {
             if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                string gg;
                 var news = new DefaultNews(textBox1.Text, textBox2.Text, textBox3.Text);
                 this.Close();
             }
