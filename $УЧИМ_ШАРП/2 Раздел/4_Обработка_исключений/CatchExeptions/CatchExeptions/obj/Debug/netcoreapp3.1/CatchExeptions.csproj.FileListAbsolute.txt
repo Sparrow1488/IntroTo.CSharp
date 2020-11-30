@@ -11,3 +11,16 @@ C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_О
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.dll
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.pdb
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.genruntimeconfig.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\bin\Debug\netcoreapp3.1\CatchExeptions.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\bin\Debug\netcoreapp3.1\CatchExeptions.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\bin\Debug\netcoreapp3.1\CatchExeptions.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\bin\Debug\netcoreapp3.1\CatchExeptions.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\bin\Debug\netcoreapp3.1\CatchExeptions.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\bin\Debug\netcoreapp3.1\CatchExeptions.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\4_Обработка_исключений\CatchExeptions\CatchExeptions\obj\Debug\netcoreapp3.1\CatchExeptions.genruntimeconfig.cache

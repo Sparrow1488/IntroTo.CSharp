@@ -14,9 +14,9 @@ namespace NewsBlog_review
         public string Access { get; protected set; }
         public string Description { get; set; }
         public static string RefAvatar { get; set; } = @"C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\AutorizationImage.jpg";
-        public Image Avatar { get; set; } = Image.FromFile(RefAvatar);
+        public Image Avatar { get; set; } /*= Image.FromFile(RefAvatar);*/
         public static string RefHatImage { get; set; } = @"C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\NewsBlogWF\NewsBlog\hatImage1.jpg";
-        public Image HatImage { get; set; } = Image.FromFile(RefHatImage);
+        public Image HatImage { get; set; } /*= Image.FromFile(RefHatImage);*/
         public User(string login, string password)
         {
             if (CheckInBaseDefaultUsers(login, password) == null && CheckInBaseCreators(login, password) == null)

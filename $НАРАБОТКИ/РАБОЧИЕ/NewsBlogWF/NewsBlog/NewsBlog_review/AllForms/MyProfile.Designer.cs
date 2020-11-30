@@ -88,7 +88,7 @@ namespace NewsBlog_review.AllForms
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 418);
+            this.panel2.Location = new System.Drawing.Point(0, 421);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(555, 29);
             this.panel2.TabIndex = 6;
@@ -135,7 +135,7 @@ namespace NewsBlog_review.AllForms
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 125);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(555, 293);
+            this.panel4.Size = new System.Drawing.Size(555, 296);
             this.panel4.TabIndex = 5;
             // 
             // panel6
@@ -263,7 +263,7 @@ namespace NewsBlog_review.AllForms
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(394, 125);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(161, 293);
+            this.panel3.Size = new System.Drawing.Size(161, 296);
             this.panel3.TabIndex = 10;
             // 
             // MyProfile
@@ -273,7 +273,7 @@ namespace NewsBlog_review.AllForms
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::NewsBlog_review.Properties.Resources.bgbgbgbgbg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(555, 452);
+            this.ClientSize = new System.Drawing.Size(555, 455);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -282,7 +282,7 @@ namespace NewsBlog_review.AllForms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MyProfile";
             this.Padding = new System.Windows.Forms.Padding(0, 3, 0, 5);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyProfile";
             this.Load += new System.EventHandler(this.MyProfile_Load);
             this.profileHatPanel.ResumeLayout(false);

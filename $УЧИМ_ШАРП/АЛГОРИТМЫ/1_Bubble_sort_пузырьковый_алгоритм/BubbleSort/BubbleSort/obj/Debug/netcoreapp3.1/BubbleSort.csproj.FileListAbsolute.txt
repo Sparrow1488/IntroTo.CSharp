@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.genruntimeconfig.cache

@@ -6,30 +6,59 @@ namespace CatchExeptions
     {
         static void Main(string[] args)
         {
-            int num, res = 0;
+            int enterNum = 0, res = 0;
             while (true)
             {
                 try //определяет в коде тип(формат) ошибки
                 {
-                    num = int.Parse(Console.ReadLine());
-                    res = 1000 / num;
+                    enterNum = int.Parse(Console.ReadLine());
+                    res = 10 / enterNum;
                     Console.WriteLine(res);
-                    break;
                 }
                 //в зависимости от типа(формата) кидает нам нуобходимое исключение
-                catch (FormatException)
-                {
-                    Console.WriteLine("Неверный формат");
-                }
                 catch (DivideByZeroException)
                 {
-                    Console.WriteLine("нельзя делить на 0");
+                    Console.WriteLine("Нельзя делить на ноль"); //чет не робит
                 }
                 //код, даже после обработки ошибки, выполняется все-равно
                 finally
                 {
                     Console.WriteLine("*/finally code/*");
                 }
+
+
+                // генерируем наше ичключение
+                try
+                {
+                    throw new MyExceptionCatcher();
+                }
+                catch(MyExceptionCatcher e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+
+
+                try
+                {
+                    /* my code */ы
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("Нельзя делить на ноль!");
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Неверный формат записи!");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    /*  my finally code   */
+                }
+                break;
             }
             Console.WriteLine("Ура, код без исключений!" + res);
 
