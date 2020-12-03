@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\bin\Debug\netcoreapp3.1\MyWorkTeamHW.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\bin\Debug\netcoreapp3.1\MyWorkTeamHW.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\bin\Debug\netcoreapp3.1\MyWorkTeamHW.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\bin\Debug\netcoreapp3.1\MyWorkTeamHW.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\bin\Debug\netcoreapp3.1\MyWorkTeamHW.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\bin\Debug\netcoreapp3.1\MyWorkTeamHW.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.genruntimeconfig.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\MyWorkTeamHW\obj\Debug\netcoreapp3.1\MyWorkTeamHW.csprojAssemblyReference.cache

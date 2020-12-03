@@ -1,0 +1,12 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\bin\Debug\netcoreapp3.1\Event.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\bin\Debug\netcoreapp3.1\Event.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\bin\Debug\netcoreapp3.1\Event.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\bin\Debug\netcoreapp3.1\Event.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\bin\Debug\netcoreapp3.1\Event.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\bin\Debug\netcoreapp3.1\Event.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\obj\Debug\netcoreapp3.1\Event.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\obj\Debug\netcoreapp3.1\Event.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\obj\Debug\netcoreapp3.1\Event.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\obj\Debug\netcoreapp3.1\Event.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\obj\Debug\netcoreapp3.1\Event.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\5_Делегаты_события\Delegate\Event\obj\Debug\netcoreapp3.1\Event.genruntimeconfig.cache

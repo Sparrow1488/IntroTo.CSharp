@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MyWorkTeamHW": {
+      "commandName": "Project"
+    },
+    "newProfile1": {
+      "commandName": "Executable"
+    }
+  }
+}
