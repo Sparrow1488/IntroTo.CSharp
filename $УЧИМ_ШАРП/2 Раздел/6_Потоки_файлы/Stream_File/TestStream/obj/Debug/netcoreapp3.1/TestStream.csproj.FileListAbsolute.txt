@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\bin\Debug\netcoreapp3.1\TestStream.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\bin\Debug\netcoreapp3.1\TestStream.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\bin\Debug\netcoreapp3.1\TestStream.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\bin\Debug\netcoreapp3.1\TestStream.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\bin\Debug\netcoreapp3.1\TestStream.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\bin\Debug\netcoreapp3.1\TestStream.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\TestStream\obj\Debug\netcoreapp3.1\TestStream.genruntimeconfig.cache

@@ -1,0 +1,11 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\bin\Debug\StreamWF1.exe.config
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\bin\Debug\StreamWF1.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\bin\Debug\StreamWF1.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.Form1.resources
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.Properties.Resources.resources
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.csproj.GenerateResource.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\StreamWF1\obj\Debug\StreamWF1.FontProperties.resources
