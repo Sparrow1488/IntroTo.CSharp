@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Null_Null
 {
-    // hello world!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // hello world!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111111111111111111111111111111111111111111111
     class Program
     {
         static int[] GetArray()
