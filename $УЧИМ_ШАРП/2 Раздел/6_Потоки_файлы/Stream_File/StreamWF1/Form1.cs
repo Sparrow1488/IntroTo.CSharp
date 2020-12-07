@@ -7,7 +7,8 @@ namespace StreamWF1
 {
     public partial class Form1 : Form
     {
-        private string path = "";
+        private string openFilePath = "";
+        private string saveFilePath = "";
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace StreamWF1
             {
                 using (var str = new StreamReader(openFileDialog1.FileName))
                 {
-                    path = openFileDialog1.FileName;
+                    openFilePath = openFileDialog1.FileName;
                     textBox1.Text = str.ReadToEnd();
                     //textBox1.Text = path;
                 }
@@ -35,10 +36,22 @@ namespace StreamWF1
 
         private void создатьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (var sw = new StreamWriter("testText1.txt", true))
+            using (var sw = new StreamWriter(openFilePath))
             {
                 sw.WriteLine(textBox1.Text);
             }
+        }
+
+        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog saveFD = new OpenFileDialog();
+
+            //if(saveFD.ShowDialog() == )
+            //{
+            //    saveFilePath = Path.GetDirectoryName(saveFD.FileName);
+            //    textBox1.Text = saveFilePath;
+            //}
+            
         }
     }
 }
