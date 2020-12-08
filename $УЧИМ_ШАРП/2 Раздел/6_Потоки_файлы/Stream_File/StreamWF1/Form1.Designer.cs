@@ -34,10 +34,10 @@ namespace StreamWF1
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.создатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьКакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.шрифтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.размерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.сохранитьКакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@ namespace StreamWF1
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(424, 418);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Стартоый текст";
+            this.textBox1.Text = "Hello user!";
             this.textBox1.WordWrap = false;
             // 
             // menuStrip1
@@ -88,7 +88,14 @@ namespace StreamWF1
             this.создатьToolStripMenuItem.Name = "создатьToolStripMenuItem";
             this.создатьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.создатьToolStripMenuItem.Text = "Сохранить";
-            this.создатьToolStripMenuItem.Click += new System.EventHandler(this.создатьToolStripMenuItem_Click);
+            this.создатьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+            // 
+            // сохранитьКакToolStripMenuItem
+            // 
+            this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
+            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьКакToolStripMenuItem.Text = "Сохранить как";
+            this.сохранитьКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
             // 
             // шрифтToolStripMenuItem
             // 
@@ -108,13 +115,6 @@ namespace StreamWF1
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // сохранитьКакToolStripMenuItem
-            // 
-            this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
-            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.сохранитьКакToolStripMenuItem.Text = "Сохранить как";
-            this.сохранитьКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
             // 
             // Form1
             // 
