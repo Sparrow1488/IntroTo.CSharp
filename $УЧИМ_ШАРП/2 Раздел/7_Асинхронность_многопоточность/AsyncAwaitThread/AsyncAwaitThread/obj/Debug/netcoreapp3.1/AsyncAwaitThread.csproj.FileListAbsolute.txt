@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\bin\Debug\netcoreapp3.1\AsyncAwaitThread.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\bin\Debug\netcoreapp3.1\AsyncAwaitThread.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\bin\Debug\netcoreapp3.1\AsyncAwaitThread.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\bin\Debug\netcoreapp3.1\AsyncAwaitThread.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\bin\Debug\netcoreapp3.1\AsyncAwaitThread.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\bin\Debug\netcoreapp3.1\AsyncAwaitThread.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\7_Асинхронность_многопоточность\AsyncAwaitThread\AsyncAwaitThread\obj\Debug\netcoreapp3.1\AsyncAwaitThread.genruntimeconfig.cache
