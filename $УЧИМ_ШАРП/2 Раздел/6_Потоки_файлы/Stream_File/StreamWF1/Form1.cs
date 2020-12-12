@@ -66,5 +66,10 @@ namespace StreamWF1
                 }
             }
         }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Все права НЕ защищены и принадлежат Sparrow1488\n10.12.2020", "О программе");
+        }
     }
 }
