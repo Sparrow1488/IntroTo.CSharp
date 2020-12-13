@@ -235,49 +235,55 @@ namespace ConsoleTagsSortApplication.Commands
             {
                 Console.Write("Введите ID: ");
                 if(int.TryParse(Console.ReadLine(), out int id))
-                {
+                { //TODO: че то там с стандартным path
                     ActiveControls.ActiveNews = News.News.GetNewsForID(id);
                     ActiveControls.ActiveNews.ReadActiveNews();
-                    Console.WriteLine("Save? (Y/N)");
+                    Console.WriteLine("Save? (Y)");
                     string chooseSave = Console.ReadLine();
-                    if(chooseSave == "Y")
+                    if (chooseSave == "Y")
                     {
                         Console.WriteLine("Path: ");
                         string path = Console.ReadLine();
                         if (!string.IsNullOrWhiteSpace(path))
-                        {
-                            using (var sw = new StreamWriter(path + ".txt", false))
-                            {
-                                sw.WriteLine(ActiveControls.ActiveNews.Title);
-                                sw.Write(ActiveControls.ActiveNews.Descriprion);
-                            }
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine("Saved!\nPath: " + path);
-                            Console.ForegroundColor = ConsoleColor.White;
-                        }
+                            SaveSelectPath(path);
                         else
-                        {
-                            path = @"\ConsoleTagsSortApplication\MySaveNews";
-                            using (var sw = new StreamWriter(ActiveControls.ActiveNews.Title + ".txt"))
-                            {
-                                sw.Write(ActiveControls.ActiveNews.Title);
-                                sw.Write(ActiveControls.ActiveNews.Descriprion);
-                            }
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine("Saved!\nPath: " + path);
-                            Console.ForegroundColor = ConsoleColor.White;
-                        }
+                            SaveStandartPath(path);
                     }
-                    else 
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Отмэна");
-                        Console.ForegroundColor = ConsoleColor.White;
-                    }
+                    else
+                        MessageCancel("Отмена действий");
                 }
+                else MessageCancel("Ошибка ввода");
             }
         }
+        private static void SaveSelectPath(string enterPath)
+        {
+            using (var sw = new StreamWriter(enterPath + ".txt", false))
+            {
+                sw.WriteLine(ActiveControls.ActiveNews.Title);
+                sw.Write(ActiveControls.ActiveNews.Descriprion);
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Saved!\nPath: " + enterPath);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        private static void SaveStandartPath(string enterPath)
+        {
+            enterPath = @"\ConsoleTagsSortApplication\MySaveNews";
+            using (var sw = new StreamWriter(ActiveControls.ActiveNews.Title + ".txt"))
+            {
+                sw.Write(ActiveControls.ActiveNews.Title);
+                sw.Write(ActiveControls.ActiveNews.Descriprion);
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Saved!\nPath: " + enterPath);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        private static void MessageCancel(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
     }
-    //TODO: добавить описание команд в консоли!
 
 }
