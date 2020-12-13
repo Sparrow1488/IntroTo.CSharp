@@ -51,20 +51,21 @@ namespace ConsoleTagsSortApplication.News
                     if (findTag.tagName == tag)
                     {
                         news.ReadActiveNews();
-                    }
-                        
+                    } 
                 }
             }
         }
         public static News GetNewsForID(int id)
         {
-            return newsAll[id];
+            if (id < newsAll.Count)
+                return newsAll[id];
+            else return null;
         }
         public void AddTagInNews(ref Tag tag)
         {
             tagsInNews.Add(tag);
         }
-        public void ShowTagsInActiveNews()
+        public void ShowTagsActiveNews()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Новость: '{Title}' с тегами: ");
@@ -79,10 +80,11 @@ namespace ConsoleTagsSortApplication.News
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(Title);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("  " + Descriprion);
+            Console.WriteLine(Descriprion);
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("ID:" + ID);
             Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
         }
     }
 }
