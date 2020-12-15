@@ -1,14 +1,15 @@
 ﻿using System;
 using ConsoleTagsSortApplication.Tags;
-using System.Runtime;
+using ConsoleTagsSortApplication.NewsDir;
 
 namespace ConsoleTagsSortApplication
 {
     public class ActiveControls
     {
-        public static News.News ActiveNews;
-        public static Tag ActiveTag;
+        public News ActiveNews;
+        public Tag ActiveTag;
         public static string ActiveUser = Environment.MachineName;
         public static string ActiveUserName = "Valentin";
+        public static string ByeName = ActiveUserName; //выводится при завешении сеанса
     }
 }

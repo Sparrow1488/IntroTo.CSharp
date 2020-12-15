@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleTagsSortApplication.Commands;
 
 namespace ConsoleTagsSortApplication.Tags
 {
@@ -31,14 +32,21 @@ namespace ConsoleTagsSortApplication.Tags
             }
             return null;
         }
-        private bool CheckTagNameInList(string checkedName)
+        public static void CreateBase()
+        {
+            new Sport();
+            new Polityc();
+            new Games();
+            new Funny();
+            new Science();
+            new ExitApplication();
+        }
+        public static bool CheckTagNameInList(string checkedName)
         {
             foreach (var tag in tagsAll)
             {
                 if (checkedName == tag.tagName)
-                {
                     return true;
-                }
             }
             return false;
         }

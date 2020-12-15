@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleTagsSortApplication.Commands
 {
@@ -12,7 +11,16 @@ namespace ConsoleTagsSortApplication.Commands
         {
             commandsAll.Add(this);
         }
-
+        public static void CreateBase()
+        {
+            new CreateNews();
+            new ReadCommand();
+            new ClearConsole();
+            new SetCommand();
+            new HelpCommand();
+            new UserCommand();
+            new SaveCommand();
+        }
         public abstract void GetMyCommand(string[] enterCommand);
         public abstract void GetInfoCommand();
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Сортировака по тегам\\ConsoleTagsSortApplication\\ConsoleTagsSortApplication\\ConsoleTagsSortApplication.csproj",
-      "projectName": "ConsoleTagsSortApplication",
-      "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Сортировака по тегам\\ConsoleTagsSortApplication\\ConsoleTagsSortApplication\\ConsoleTagsSortApplication.csproj",
+      "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Сортировака по тегам\\ConsoleTagsSortApplication\\TestProgggg\\TestProgggg.csproj",
+      "projectName": "TestProgggg",
+      "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Сортировака по тегам\\ConsoleTagsSortApplication\\TestProgggg\\TestProgggg.csproj",
       "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Сортировака по тегам\\ConsoleTagsSortApplication\\ConsoleTagsSortApplication\\obj\\",
+      "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Сортировака по тегам\\ConsoleTagsSortApplication\\TestProgggg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,44 +1,18 @@
 ﻿using System;
 using ConsoleTagsSortApplication.Tags;
-using System.Runtime;
+using ConsoleTagsSortApplication.Commands;
+using ConsoleTagsSortApplication.NewsDir;
 
 namespace ConsoleTagsSortApplication
 {
     class Program
     {
-        
-
-        static void AddAllTags()
-        {
-            new Sport();
-            new Polityc();
-            new Games();
-            new Funny();
-            new Science();
-        }
-        static void AddAllNews()
-        {
-            ActiveControls.ActiveNews = new News.News("Убили негра", "Не смешно");
-            new News.News("Забили гол в негра", "Почти смешно");
-            new News.News("В киберпанке 2077 убрали негров", "Ахахахахах");
-            new News.News("Перегрузки", "Этот метод выполняет порядковое сравнение (с учетом регистра и без учета языка и региональных параметров). Поиск начинается с позиции первого символа этой строки и продолжается до последней позиции символа. \n" +
-            "Чтобы выполнить сравнение с учетом языка и региональных параметров или порядкового номера без учета регистра: ");
-        }
-        static void AddAllCommands()
-        {
-            new Commands.CreateNews();
-            new Commands.ReadCommand();
-            new Commands.ClearConsole();
-            new Commands.SetCommand();
-            new Commands.HelpCommand();
-            new Commands.UserCommand();
-            new Commands.SaveCommand();
-        }
         static void Main(string[] args)
         {
-            AddAllTags();
-            AddAllNews();
-            AddAllCommands();
+            Command.CreateBase();
+            Tag.CreateBase();
+            News.CreateBase();
+
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -59,7 +33,6 @@ namespace ConsoleTagsSortApplication
                         getCommand.GetInfoCommand();
                     else
                         getCommand.GetMyCommand(splitCommand);
-                    
                 }
             }
         }
