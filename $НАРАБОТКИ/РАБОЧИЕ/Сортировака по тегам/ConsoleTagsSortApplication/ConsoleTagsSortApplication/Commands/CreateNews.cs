@@ -47,8 +47,8 @@ namespace ConsoleTagsSortApplication.Commands
             if (enterCommand[0] == myCommand && enterCommand.Length == 1)
                 News.ShowTitleAllNews();
 
-            else if (enterCommand[0] == myCommand && int.TryParse(enterCommand[1], out int result))
-                News.GetNewsForID(result).ReadActiveNews();
+            else if (enterCommand[0] == myCommand && int.TryParse(enterCommand[1], out int id)) // 'id'
+                News.GetNewsForID(id).ReadActiveNews();
 
             else if (enterCommand[0] == myCommand && enterCommand[1] == "id")
             {
@@ -70,9 +70,12 @@ namespace ConsoleTagsSortApplication.Commands
                         _findTags.Add(Tag.GetTag(tag));
                     if (tag == "") break;
                 }
-                var getFindNews = News.ShowAllFindNewsList(_findTags);
+                var getFindNews = News.ShowAllNews(_findTags);
                 foreach (var news in getFindNews)
+                {
                     news.ReadActiveNews();
+                    news.ShowTags();//TODO: реализовать вывод новостей с их тегами
+                }
             }
 
             else if (enterCommand[0] == myCommand && enterCommand[1] == "all" && enterCommand.Length == 2)
@@ -81,7 +84,7 @@ namespace ConsoleTagsSortApplication.Commands
             {
                 Console.Write("ID: ");
                 if(int.TryParse(Console.ReadLine(), out int id))
-                    News.GetNewsForID(id).ShowTagsActiveNews();
+                    News.GetNewsForID(id).ShowTags();
                 else Console.WriteLine("Ошибка ввода!");
             }
         }
@@ -162,7 +165,7 @@ namespace ConsoleTagsSortApplication.Commands
                     if (tagEnter == tag.tagName)
                     {
                         ActiveTag = Tag.GetTag(tagEnter);
-                        ActiveNews.AddTagInNews(ref ActiveTag);
+                        ActiveNews.AddTag(ref ActiveTag);
                     }
                 }
             }
@@ -188,7 +191,7 @@ namespace ConsoleTagsSortApplication.Commands
             if (tag == "")
             {
                 Console.WriteLine("save");
-                ActiveNews.ShowTagsActiveNews();
+                ActiveNews.ShowTags();
                 return true;
             }
             return false;

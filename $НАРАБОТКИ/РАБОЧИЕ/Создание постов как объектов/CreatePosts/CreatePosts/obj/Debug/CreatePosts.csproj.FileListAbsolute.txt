@@ -8,3 +8,14 @@ C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\С�
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.csproj.CoreCompileInputs.cache
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.exe
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\bin\Debug\CreatePosts.exe.config
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\bin\Debug\CreatePosts.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\bin\Debug\CreatePosts.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.Form1.resources
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.Properties.Resources.resources
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.csproj.GenerateResource.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.Testfrm.resources
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Создание постов как объектов\CreatePosts\CreatePosts\obj\Debug\CreatePosts.csprojAssemblyReference.cache

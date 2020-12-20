@@ -10,6 +10,7 @@ namespace Locker_AsyncAwaitThread2
         static int x = 0;
         static object locker = new object();
         public static string path = "testThread.txt";
+        static bool writeComplete = false;
 
         static void Main(string[] args)
         {
@@ -26,14 +27,16 @@ namespace Locker_AsyncAwaitThread2
             // Чтобы не произошло кринжа и мы сначала не прочитали пустой файл, а только потом его заполнили
             // мы бахнули локер и метод Sleep, чтобы сначала началась запись, а затем вывод. 
             // TODO: довести систему до ума. Избавиться от данных костылей
-
             Console.WriteLine("Пошел поток");
             Thread threadWrite = new Thread(WriteThread);
+            threadWrite.Priority = ThreadPriority.Highest; //устанавливаем приоритетность выполенения потоков
             Thread threadRead = new Thread(ReadThread);
+            threadRead.Priority = ThreadPriority.Lowest;
+
             threadWrite.Start();
             threadRead.Start();
-
-            WaitCompleteThread(threadRead);
+            Console.ReadLine();
+            WaitCompleteThread(threadWrite);
             #endregion
         }
         public static void Count()
@@ -51,17 +54,16 @@ namespace Locker_AsyncAwaitThread2
         }
         public static void WriteThread()
         {
-            Console.WriteLine("Write...");
-
             string text = "";
             var rnd = new Random();
-
             lock (locker)
             {
+                Console.WriteLine("Write...");
+
                 for (int i = 0; i < 10; i++)
                 {
                     text += rnd.Next(0, 10) + " ";
-                    Thread.Sleep(50);
+                    Thread.Sleep(1000);
                 }
                 using (var sw = new StreamWriter(path, false))
                 {
@@ -71,11 +73,10 @@ namespace Locker_AsyncAwaitThread2
         }
         public static void ReadThread()
         {
-            Console.WriteLine("Read...");
-
-            Thread.Sleep(100);
             lock (locker)
             {
+                Console.WriteLine("Read...");
+
                 using (var sr = new StreamReader(path))
                 {
                     Console.WriteLine(sr.ReadToEnd());
@@ -86,9 +87,9 @@ namespace Locker_AsyncAwaitThread2
         {
             while (true)
             {
-                Console.ReadLine();
                 if (!waitThread.IsAlive)
                 {
+                    writeComplete = true;
                     Console.WriteLine("Done!");
                     break;
                 }

@@ -11,7 +11,7 @@ namespace AsyncAwaitThread
         static void Main(string[] args)
         {
             #region thread
-            // Многопоточность создается с помощью отдельног потока
+            // Многопоточность создается с помощью отдельного потока
             //Thread thread = new Thread(new ThreadStart(DoWork)); // если наш метод void, то в параметры передаем делегат ThreadStart
             //                                                     // если у метода есть параметры, то в параметр Thread передаем делегат ParameterizedThreadStart (принимает только object)
             //thread.Start();

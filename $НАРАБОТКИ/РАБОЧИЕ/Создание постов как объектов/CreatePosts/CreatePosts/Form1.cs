@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CreatePosts.Posts;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace CreatePosts
 {
@@ -22,13 +17,34 @@ namespace CreatePosts
             var body = new Panel();
             var title = new TextBox();
             var text = new TextBox();
-            new Posts.Post(body, title, text)
+            new Post(body, title, text)
             {
                 postBody = body,
-                postTitle = textBox2,
-                postText = textBox3
+                postTitle = title,
+                titleText = textBox1.Text,
+                postText = text,
+                text = textBox2.Text
             };
-            Posts.Post.ShowPosts(panel1);
+            Post.ShowAllPosts(mainPanel);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int right = 50;
+
+            // Create Image + Text
+            PictureBox pbox = new PictureBox();
+            pbox.Size = new Size(140, 80);
+            pbox.Location = new Point(right, 0);
+            pbox.BackColor = Color.Black;
+
+            // Create label
+            Label lblPlateNOBAR = new Label();
+            lblPlateNOBAR.Text = textBox1.Text;
+            lblPlateNOBAR.Location = new Point(right + 20, 80);
+
+            mainPanel.Controls.Add(pbox);
+            mainPanel.Controls.Add(lblPlateNOBAR);
         }
     }
 }

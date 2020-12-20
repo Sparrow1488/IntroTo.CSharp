@@ -11,14 +11,19 @@ namespace CreatePosts.Posts
         public Panel postBody;
         public TextBox postTitle;
         public TextBox postText;
+
+        public string titleText;
+        public string text;
+        public int id;
         public Post(Panel body, TextBox title, TextBox description)
         {
             postBody = body;
             postTitle = title;
             postText = description;
             allPosts.Add(this);
+            id = allPosts.Count - 1;
         }
-        public static void ShowPosts(Panel mainPanel)
+        public static void ShowAllPosts(Panel mainPanel)
         {
             foreach (var item in allPosts)
             {
@@ -28,6 +33,12 @@ namespace CreatePosts.Posts
                 item.postBody.Container.Add(item.postTitle);
                 item.postBody.Container.Add(item.postText);
             }
+        }
+        public static void ShowPost(Post post, Panel mainPanel)
+        {
+            mainPanel.Controls.Add(allPosts[post.id].postBody);
+            post.postBody.Height = 200;
+            post.postBody.BackColor = Color.Red;
         }
     }
 }

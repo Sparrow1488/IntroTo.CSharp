@@ -55,17 +55,6 @@ namespace ConsoleTagsSortApplication.NewsDir
                 Console.WriteLine($"ID: {news.ID} Title: {news.Title}");
             }
         }
-        public static News ShowFirstFindNews(string tag)
-        {
-            foreach (var news in newsAll)
-            {
-                foreach (var findTag in news.tagsInNews)
-                {
-                    if (findTag.tagName == tag) return news;
-                }
-            }
-            return null;
-        }
         public static void ShowAllFindNews(string tag)
         {
             foreach (var news in newsAll)
@@ -77,7 +66,7 @@ namespace ConsoleTagsSortApplication.NewsDir
                 }
             }
         }
-        public static List<News> ShowAllFindNewsList(List<Tag> tags) // Я ЭТО ПИСАЛ 3 ЧАСААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+        public static List<News> ShowAllNews(List<Tag> tags) // Я ЭТО ПИСАЛ 3 ЧАСААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
         {
             var active = new ActiveControls();
             var newsList = new List<News>();
@@ -115,11 +104,11 @@ namespace ConsoleTagsSortApplication.NewsDir
                 return newsAll[id];
             else return null;
         }
-        public void AddTagInNews(ref Tag tag)
+        public void AddTag(ref Tag tag)
         {
             tagsInNews.Add(tag);
         }
-        public void ShowTagsActiveNews()
+        public void ShowTags()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Новость: '{Title}' с тегами: ");
@@ -130,7 +119,7 @@ namespace ConsoleTagsSortApplication.NewsDir
         }
         public void ReadActiveNews()
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine(Title);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(Descriprion);

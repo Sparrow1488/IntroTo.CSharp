@@ -3,11 +3,14 @@ using System.Windows.Forms;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace AsyncThreadWork
 {
     public partial class Form1 : Form
     {
+        static object locker = new object();
+        public static string path = "testFile111.txt";
         public Form1()
         {
             InitializeComponent();
@@ -17,21 +20,32 @@ namespace AsyncThreadWork
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WriteFile("testOperation1.txt");
+            WriteFile(path);
         }
         public async Task WriteFile(string path)
         {
-            await Task.Run(() => {
-                using (var sw = new StreamWriter(path, false, Encoding.UTF8))
+            button4.Enabled = false;
+            await Task.Run(()=> {
+                Random rnd = new Random();
+                lock (locker)
                 {
-                    timer2.Enabled = true;
-                    timer2.Interval = 100;
-                    sw.WriteLine(writeText);
+                    for (int i = 0; i < 20; i++)
+                    {
+                        writeText += $"{rnd.Next(0,10)} ";
+                        Thread.Sleep(100);
+                    }
+                    using (var sw = new StreamWriter(path, false, Encoding.UTF8))
+                    {
+                        sw.WriteLine(writeText);
+                    }
                 }
             });
+            button4.Enabled = true;
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            button4.Enabled = false;
             timer1.Interval = 1000;
             timer1.Start();
         }
@@ -40,55 +54,16 @@ namespace AsyncThreadWork
         {
             label1.Text = DateTime.Now.ToLongTimeString();
         }
-
-        int count = 0;
-        private void button3_Click(object sender, EventArgs e)
-        {
-            MethodProgressBar();
-            count++;
-            label2.Text = $"{count}";
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
-            ReadFile("testOperation1.txt");
+            ReadFile(path);
         }
-        private async Task ReadFile(string path)
+        private void ReadFile(string path)
         {
-            await Task.Run(() => {
-                using (var sr = new StreamReader(path))
-                {
-                    textBox1.Text = sr.ReadToEnd();
-                }
-            });
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            WriteFile("testOperation2.txt");
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            ReadFile("testOperation2.txt");
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            var rnd = new Random();
-            for (int i = 0; i < 100; i++)
+            using (var sr = new StreamReader(path))
             {
-                writeText += $"{rnd.Next()} ";
+                textBox1.Text = sr.ReadToEnd();
             }
-        }
-
-        public async void MethodProgressBar()
-        {
-            await Task.Run(() => {
-                while (progressBar1.Value != 100)
-                    progressBar1.Value++;
-                label2.Text = "complete";
-            });
         }
     }
 }
