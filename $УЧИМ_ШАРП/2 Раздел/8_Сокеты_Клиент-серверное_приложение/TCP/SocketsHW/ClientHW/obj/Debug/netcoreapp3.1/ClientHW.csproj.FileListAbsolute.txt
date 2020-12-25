@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\bin\Debug\netcoreapp3.1\ClientHW.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\bin\Debug\netcoreapp3.1\ClientHW.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\bin\Debug\netcoreapp3.1\ClientHW.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\bin\Debug\netcoreapp3.1\ClientHW.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\bin\Debug\netcoreapp3.1\ClientHW.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\bin\Debug\netcoreapp3.1\ClientHW.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\ClientHW\obj\Debug\netcoreapp3.1\ClientHW.genruntimeconfig.cache
