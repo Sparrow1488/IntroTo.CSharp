@@ -9,7 +9,7 @@ namespace SocketsHW
 {
     class Program
     {
-        static string path = @"C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\SocketsHW\Sho1.txt";
+        static string path = @"C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\TCP\SocketsHW\SocketsHW\Sho1.txt";
         static string commandWrite = "";
         static void Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace SocketsHW
             var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Bind(endPoint);
             socket.Listen(2);
-
+            
             //Thread threadCommand = new Thread(new ParameterizedThreadStart(WriteCommand));
             //threadCommand.Start(socket);
             try
@@ -50,6 +50,9 @@ namespace SocketsHW
                         listener.Send(Encoding.UTF8.GetBytes("/рандомное число/"));
                         WriteRandom(path, listener);
                     }
+                    if(data.Equals("GET / HTTP/1.1"))
+                        Console.WriteLine("что");
+
                     listener.Send(Encoding.UTF8.GetBytes(data.ToString()));
                     Console.WriteLine("Команда user: " + data);
 

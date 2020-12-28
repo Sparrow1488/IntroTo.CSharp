@@ -1,0 +1,13 @@
+C:\Users\Dom\source\repos\FileRename\FileRename\bin\Debug\netcoreapp3.1\FileRename.exe
+C:\Users\Dom\source\repos\FileRename\FileRename\bin\Debug\netcoreapp3.1\FileRename.deps.json
+C:\Users\Dom\source\repos\FileRename\FileRename\bin\Debug\netcoreapp3.1\FileRename.runtimeconfig.json
+C:\Users\Dom\source\repos\FileRename\FileRename\bin\Debug\netcoreapp3.1\FileRename.runtimeconfig.dev.json
+C:\Users\Dom\source\repos\FileRename\FileRename\bin\Debug\netcoreapp3.1\FileRename.dll
+C:\Users\Dom\source\repos\FileRename\FileRename\bin\Debug\netcoreapp3.1\FileRename.pdb
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.csprojAssemblyReference.cache
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.AssemblyInfoInputs.cache
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.AssemblyInfo.cs
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.csproj.CoreCompileInputs.cache
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.dll
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.pdb
+C:\Users\Dom\source\repos\FileRename\FileRename\obj\Debug\netcoreapp3.1\FileRename.genruntimeconfig.cache
