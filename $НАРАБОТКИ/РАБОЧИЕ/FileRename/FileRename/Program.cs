@@ -1,46 +1,81 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.InteropServices;
 
 namespace FileRename
 {
     class Program
     {
+        public static string path = null;
+        public static string rename = "renameFile";
+        public static string extension = null;
         static void Main(string[] args)
         {
-            string path = null;
+            while (true)
+                if (WhitePath())
+                    break;
 
-            Console.Write("Path: ");
-            path = Console.ReadLine();
+            while (true)
+                if (WriteExtension())
+                    break;
 
-            #region GetHeightWidth
-            //int frameWidth = 0;
-            //int frameHeight = 0;
-            //byte[] fileDataByte = new byte[8];
-            //using (FileStream stream = new FileStream(@"G:\фильмс\sfm\$отдельно sfm\отсторт\BioShock\[Bioshock Infinite] Metssfm,pixie Willow 6952.mp4", FileMode.Open))
-            //{
-            //    stream.Seek(64, SeekOrigin.Begin);
-            //    stream.Read(fileDataByte, 0, 8);
-            //    frameWidth = BitConverter.ToInt32(fileDataByte, 63);
-            //    frameHeight = BitConverter.ToInt32(fileDataByte, 31);
-            //    Console.WriteLine(frameWidth);
-            //    Console.WriteLine(frameHeight);
-            //}
-            //DirectoryInfo dirInfo = new DirectoryInfo(path);
-            #endregion
+            while (true)
+                if (WriteRename())
+                    break;
+
             DirectoryInfo dirInfo = new DirectoryInfo(path);
             FileInfo[] fileInfo = dirInfo.GetFiles();
-            var testFile = fileInfo[0];
-            var rnd = new Random();
-            testFile.MoveTo(testFile.Name + $"{ rnd.Next(1000, 9999).ToString()}");
 
             foreach (var file in fileInfo)
             {
-                Console.WriteLine(file.Name);
-                Console.WriteLine();
+                if (file.Extension.Equals(extension))
+                {
+                    var rndID = new Random();
+                    ShowInfo.FileInfo(file);
+                    
+                    Rename.ShowRename(file);
+                    Console.WriteLine();
+                }
             }
-            Console.WriteLine("===");
-            //using (var files = new FileInfo)
+
+            ShowInfo.ShowCommands();
+            Console.Write("Write: ");
+            var choose = Console.ReadLine();
+
+            if (choose.Equals("fast"))
+                Rename.FastRenameComplete(fileInfo);
+            if (choose.Equals("sel"))
+                Rename.SelectivelyRenameComplete(fileInfo);
+
+            Console.WriteLine("Exit");
+        }
+
+        static bool WhitePath()
+        {
+            Console.Write("Path: ");
+            path = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(path))
+                throw new ArgumentException("Некорректная ссылка");
+            else 
+                return true;
+        }
+        static bool WriteExtension()
+        {
+            Console.Write("Find for .txt/.png/.mp4 ...: ");
+            extension = Console.ReadLine().Trim();
+            var chExtension = extension.ToCharArray();
+            if (!extension[0].Equals('.'))
+                throw new ArgumentException("Некорректный ввод");
+            else
+                return true;
+        }
+        static bool WriteRename()
+        {
+            Console.Write("Your new Files name: ");
+            rename = Console.ReadLine().Trim();
+            if (string.IsNullOrWhiteSpace(rename))
+                throw new ArgumentException("Некорректный ввод");
+            else
+                return true;
         }
     }
 }

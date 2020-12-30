@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\bin\Debug\netcoreapp3.1\ClientConsole.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\bin\Debug\netcoreapp3.1\ClientConsole.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\bin\Debug\netcoreapp3.1\ClientConsole.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\bin\Debug\netcoreapp3.1\ClientConsole.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\bin\Debug\netcoreapp3.1\ClientConsole.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\bin\Debug\netcoreapp3.1\ClientConsole.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ClientConsole\obj\Debug\netcoreapp3.1\ClientConsole.genruntimeconfig.cache

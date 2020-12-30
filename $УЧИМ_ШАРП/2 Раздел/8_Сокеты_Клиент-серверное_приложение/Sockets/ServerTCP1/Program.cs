@@ -59,19 +59,20 @@ namespace ServerTCP1
             var udpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             udpSocket.Bind(udpEndPoint);
 
-            var data = new StringBuilder();
-            var buffer = new byte[256];
-            var size = 0;
-
-            EndPoint senderEndPoint = new IPEndPoint(IPAddress.Any, 0); // сюда сохраняем адресс клиента
-            size = udpSocket.ReceiveFrom(buffer, ref senderEndPoint);
-
-            do
+            while (true)
             {
+                var data = new StringBuilder();
+                var buffer = new byte[256];
 
+                EndPoint senderEndPoint = new IPEndPoint(IPAddress.Any, 0); // сюда сохраняем адресс клиента
+
+                udpSocket.ReceiveFrom(buffer, ref senderEndPoint);
+                data.Append(Encoding.UTF8.GetString(buffer));
+
+                udpSocket.SendTo(Encoding.UTF8.GetBytes(data.ToString()), senderEndPoint);
+
+                Console.WriteLine(data);
             }
-            while (udpSocket.Available > 0);
-
             #endregion
         }
 

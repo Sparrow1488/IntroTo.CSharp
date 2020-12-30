@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace ServerWF
@@ -32,8 +33,8 @@ namespace ServerWF
         }
         private void SendData(byte[] buffer, Socket socket)
         {
-            socket.Connect(senderEndPoint);
-            socket.Send(buffer);
+            //socket.Connect(senderEndPoint);
+            socket.SendTo(Encoding.UTF8.GetBytes(buffer.ToString()), senderEndPoint);
         }
         public void CreateSocket()
         {

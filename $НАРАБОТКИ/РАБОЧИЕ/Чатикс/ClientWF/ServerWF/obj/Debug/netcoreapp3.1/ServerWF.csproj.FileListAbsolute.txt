@@ -11,3 +11,16 @@ C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Ч�
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.dll
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.pdb
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.genruntimeconfig.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\bin\Debug\netcoreapp3.1\ServerWF.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\bin\Debug\netcoreapp3.1\ServerWF.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\bin\Debug\netcoreapp3.1\ServerWF.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\bin\Debug\netcoreapp3.1\ServerWF.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\bin\Debug\netcoreapp3.1\ServerWF.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\bin\Debug\netcoreapp3.1\ServerWF.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Чатикс\ClientWF\ServerWF\obj\Debug\netcoreapp3.1\ServerWF.genruntimeconfig.cache

@@ -7,15 +7,13 @@ namespace ServerWF
         static void Main(string[] args)
         {
             Console.WriteLine("Server started");
-            var server = new Server("127.0.0.3", 8090);
+            var server = new Server("127.0.0.1", 8090);
 
             while (true)
             {
                 server.CreateSocket();
                 server.ProcessingRequest();
             }
-                
-
         }
     }
 }

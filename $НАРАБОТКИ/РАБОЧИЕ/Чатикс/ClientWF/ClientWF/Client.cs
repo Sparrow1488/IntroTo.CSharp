@@ -50,15 +50,21 @@ namespace ClientWF
             {
                 while (true)
                 {
-                    var socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-                    var data = new byte[256];
-                    socket.Receive(data);
+                    try
+                    {
+                        var socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                        var data = new byte[256];
+                    
+                        socket.Receive(data);
 
-                    var getMessage = Encoding.UTF8.GetString(data);
-                    listMessages.Items.Add(GetMessage);
+                        var getMessage = Encoding.UTF8.GetString(data);
+                        listMessages.Items.Add(GetMessage);
 
-                    socket.Shutdown(SocketShutdown.Both);
-                    socket.Close();
+                        //socket.Shutdown(SocketShutdown.Both);
+                        //socket.Close();
+                    }
+                    catch (SocketException) {  }
+                    
                 }
             });
         }

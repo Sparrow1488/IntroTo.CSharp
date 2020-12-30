@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Dom\\.nuget\\packages\\": {}
+    "C:\\Users\\DOM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dom\\source\\repos\\FileRename\\FileRename\\FileRename.csproj",
+      "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\FileRename\\FileRename\\FileRename.csproj",
       "projectName": "FileRename",
-      "projectPath": "C:\\Users\\Dom\\source\\repos\\FileRename\\FileRename\\FileRename.csproj",
-      "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dom\\source\\repos\\FileRename\\FileRename\\obj\\",
+      "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\FileRename\\FileRename\\FileRename.csproj",
+      "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\FileRename\\FileRename\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
