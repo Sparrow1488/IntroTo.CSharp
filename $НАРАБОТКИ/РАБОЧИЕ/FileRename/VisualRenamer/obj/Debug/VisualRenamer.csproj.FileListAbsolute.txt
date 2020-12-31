@@ -11,7 +11,6 @@ C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧ
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\bin\Debug\VisualRenamer.exe.config
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\bin\Debug\VisualRenamer.exe
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\bin\Debug\VisualRenamer.pdb
-C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.csprojAssemblyReference.cache
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.Properties.Resources.resources
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.csproj.GenerateResource.cache
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.csproj.CoreCompileInputs.cache
@@ -19,3 +18,4 @@ C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\Fil
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.pdb
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.AddTagForm.resources
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.RenameForm.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\FileRename\VisualRenamer\obj\Debug\VisualRenamer.csprojAssemblyReference.cache

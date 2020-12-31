@@ -52,6 +52,8 @@
     <Compile Include="AddTagForm.Designer.cs">
       <DependentUpon>AddTagForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Files\MyTag.cs" />
+    <Compile Include="Files\TagCollection.cs" />
     <Compile Include="Settings\Data.cs" />
     <Compile Include="RenameForm.cs">
       <SubType>Form</SubType>

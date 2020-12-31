@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using VisualRenamer.Files;
 
 namespace VisualRenamer
 {
@@ -11,6 +11,7 @@ namespace VisualRenamer
         public RenameForm()
         {
             InitializeComponent();
+
         }
 
         private void getFilesButton_Click(object sender, EventArgs e)
@@ -24,7 +25,10 @@ namespace VisualRenamer
                     getFilesButton.Enabled = false;
                     renamePanel.Visible = true;
                     correctExtensionTextBox.Enabled = false;
+                    collectionsListBox.Visible = true;
                     tagsListBox.Visible = true;
+                    
+                    panel14.BackgroundImage = null;
                 }
                 else Data.ShowExceptionPanel("Вы ввели некорректный путь или несуществующее расширение, " +
                     "либо папка пустая", exceptionPanel);
@@ -58,7 +62,8 @@ namespace VisualRenamer
 
         private void filesList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Rename.FileInfo(MyFile.receivedFiles[filesList.SelectedIndex], nameTextBox, extensionTextBox, fullNameTextBox, dateCreateTextBox);
+            Rename.FileInfoImage(MyFile.receivedFiles[filesList.SelectedIndex], nameTextBox, extensionTextBox, fullNameTextBox, dateCreateTextBox, panel14);
+            ActiveForm.Size = MaximumSize;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,6 +76,13 @@ namespace VisualRenamer
             correctExtensionTextBox.Enabled = true;
             exceptionPanel.Visible = false;
             tagsListBox.Visible = false;
+            collectionsListBox.Visible = false;
+            ActiveForm.Size = MinimumSize;
+            panel14.Visible = false;
+            nameTextBox.Text = "";
+            extensionTextBox.Text = "";
+            fullNameTextBox.Text = "";
+            dateCreateTextBox.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -104,13 +116,43 @@ namespace VisualRenamer
 
         private void RenameForm_Load(object sender, EventArgs e)
         {
-            Data.CreateStandartTags();
-            Data.ShowTags(tagsListBox);
+            var baseTags = MyTag.CreateStandartTags();
+            new TagCollection(baseTags, "Базовые теги");
+
+            TagCollection.ShowAll(collectionsListBox);
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
-            Data.ShowTags(tagsListBox);
+            TagCollection.ShowAll(collectionsListBox);
+        }
+
+        private void collectionsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (collectionsListBox.SelectedItem != null)
+            {
+                MyTag.ShowTagCollection(tagsListBox, TagCollection.FindCollectionByName(collectionsListBox.SelectedItem.ToString()));
+            }
+        }
+
+        private void оПриложенииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Хм, и для чего же оно?", "Справка");
+        }
+
+        private void миниToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Size = MinimumSize;
+        }
+
+        private void максимальныйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Size = MaximumSize;
+        }
+
+        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            открытьToolStripMenuItem.Click += getFilesButton_Click;
         }
     }
 }

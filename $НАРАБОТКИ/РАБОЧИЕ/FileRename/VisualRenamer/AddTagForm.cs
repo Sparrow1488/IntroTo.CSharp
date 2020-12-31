@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using VisualRenamer.Files;
 
 namespace VisualRenamer
 {
@@ -19,16 +13,19 @@ namespace VisualRenamer
 
         private void AddTagForm_Load(object sender, EventArgs e)
         {
-            Data.ShowTags(listBox1);
+            TagCollection.ShowAll(listBox2);
         }
 
         private void addTagBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text.Trim()) || Data.HasTag(textBox1.Text))
+            if (string.IsNullOrEmpty(textBox1.Text.Trim()) || MyTag.HasTag(textBox1.Text))
                 Data.ShowExceptionPanel("Возможно, Вы вели некорректный тэг, либо он уже существует", exceprionPanel);
             else
-                Data.tagsList.Add(textBox1.Text);
-            Data.ShowTags(listBox1);
+            {
+                var newTag = new MyTag(textBox1.Text);
+                TagCollection.Add(TagCollection.FindCollectionByName(listBox2.SelectedItem?.ToString()), newTag);
+                MyTag.ShowTagCollection(listBox1, TagCollection.FindCollectionByName(listBox2.SelectedItem.ToString()));
+            }
         }
 
         private void exceptionAcceptBtn_Click(object sender, EventArgs e)
@@ -47,8 +44,24 @@ namespace VisualRenamer
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             var deleteTag = listBox1.Items[listBox1.SelectedIndex].ToString();
-            Data.tagsList.Remove(deleteTag);
-            Data.ShowTags(listBox1);
+            MyTag.Delete(deleteTag);
+            MyTag.ShowTagCollection(listBox1, TagCollection.allCollections[0]);
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(listBox2.SelectedItem != null)
+            {
+                MyTag.ShowTagCollection(listBox1, TagCollection.FindCollectionByName(listBox2.SelectedItem.ToString()));
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox4.Text))
+                Data.ShowExceptionPanel("Вы не можете создать коллекцию без названия", exceprionPanel);
+            else new TagCollection(textBox4.Text.Trim());
+            TagCollection.ShowAll(listBox2);
         }
     }
 }
