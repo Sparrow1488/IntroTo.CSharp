@@ -12,6 +12,7 @@ namespace VisualRenamer
         public string extension;
         public string creationDate;
         public string newName = "StandartNewRename";
+        public long dateLong;
 
         public static List<MyFile> receivedFiles = new List<MyFile>();
         public static string findExtension;

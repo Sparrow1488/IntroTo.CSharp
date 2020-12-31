@@ -33,6 +33,13 @@ namespace VisualRenamer
             this.pathTextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.режимToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.миниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.максимальныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПриложенииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getFilesButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -49,6 +56,8 @@ namespace VisualRenamer
             this.collectionsListBox = new System.Windows.Forms.ListBox();
             this.tagsListBox = new System.Windows.Forms.ListBox();
             this.renamePanel = new System.Windows.Forms.Panel();
+            this.modeBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -72,16 +81,9 @@ namespace VisualRenamer
             this.label3 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оПриложенииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.режимToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.миниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.максимальныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modeListBox = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -96,7 +98,6 @@ namespace VisualRenamer
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // filesList
@@ -129,7 +130,7 @@ namespace VisualRenamer
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(345, 392);
+            this.panel1.Size = new System.Drawing.Size(345, 410);
             this.panel1.TabIndex = 2;
             // 
             // button1
@@ -145,6 +146,63 @@ namespace VisualRenamer
             this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.открытьToolStripMenuItem,
+            this.режимToolStripMenuItem,
+            this.справкаToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(345, 24);
+            this.menuStrip1.TabIndex = 17;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // открытьToolStripMenuItem
+            // 
+            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.открытьToolStripMenuItem.Text = "Открыть";
+            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            // 
+            // режимToolStripMenuItem
+            // 
+            this.режимToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.миниToolStripMenuItem,
+            this.максимальныйToolStripMenuItem});
+            this.режимToolStripMenuItem.Name = "режимToolStripMenuItem";
+            this.режимToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.режимToolStripMenuItem.Text = "Режим";
+            // 
+            // миниToolStripMenuItem
+            // 
+            this.миниToolStripMenuItem.Name = "миниToolStripMenuItem";
+            this.миниToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.миниToolStripMenuItem.Text = "Мини";
+            this.миниToolStripMenuItem.Click += new System.EventHandler(this.миниToolStripMenuItem_Click);
+            // 
+            // максимальныйToolStripMenuItem
+            // 
+            this.максимальныйToolStripMenuItem.Name = "максимальныйToolStripMenuItem";
+            this.максимальныйToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.максимальныйToolStripMenuItem.Text = "Максимальный";
+            this.максимальныйToolStripMenuItem.Click += new System.EventHandler(this.максимальныйToolStripMenuItem_Click);
+            // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.оПриложенииToolStripMenuItem});
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.справкаToolStripMenuItem.Text = "Справка";
+            // 
+            // оПриложенииToolStripMenuItem
+            // 
+            this.оПриложенииToolStripMenuItem.Name = "оПриложенииToolStripMenuItem";
+            this.оПриложенииToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.оПриложенииToolStripMenuItem.Text = "О приложении";
+            this.оПриложенииToolStripMenuItem.Click += new System.EventHandler(this.оПриложенииToolStripMenuItem_Click);
             // 
             // getFilesButton
             // 
@@ -166,11 +224,12 @@ namespace VisualRenamer
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(345, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 392);
+            this.panel2.Size = new System.Drawing.Size(375, 410);
             this.panel2.TabIndex = 3;
             // 
             // panel13
             // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel13.Controls.Add(this.pathTextBox);
             this.panel13.Controls.Add(this.label1);
             this.panel13.Controls.Add(this.getFilesButton);
@@ -205,7 +264,7 @@ namespace VisualRenamer
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(0, 29);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 364);
+            this.panel3.Size = new System.Drawing.Size(375, 380);
             this.panel3.TabIndex = 3;
             // 
             // exceptionPanel
@@ -213,7 +272,8 @@ namespace VisualRenamer
             this.exceptionPanel.BackColor = System.Drawing.Color.LightCoral;
             this.exceptionPanel.Controls.Add(this.exceptionAcceptBtn);
             this.exceptionPanel.Controls.Add(this.exceptionText);
-            this.exceptionPanel.Location = new System.Drawing.Point(0, 297);
+            this.exceptionPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.exceptionPanel.Location = new System.Drawing.Point(0, 313);
             this.exceptionPanel.Name = "exceptionPanel";
             this.exceptionPanel.Size = new System.Drawing.Size(375, 67);
             this.exceptionPanel.TabIndex = 20;
@@ -320,7 +380,9 @@ namespace VisualRenamer
             // 
             // renamePanel
             // 
-            this.renamePanel.Controls.Add(this.button4);
+            this.renamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.renamePanel.Controls.Add(this.modeListBox);
+            this.renamePanel.Controls.Add(this.modeBtn);
             this.renamePanel.Controls.Add(this.button2);
             this.renamePanel.Controls.Add(this.textBox2);
             this.renamePanel.Controls.Add(this.label11);
@@ -329,9 +391,32 @@ namespace VisualRenamer
             this.renamePanel.Controls.Add(this.label10);
             this.renamePanel.Location = new System.Drawing.Point(0, 209);
             this.renamePanel.Name = "renamePanel";
-            this.renamePanel.Size = new System.Drawing.Size(375, 88);
+            this.renamePanel.Size = new System.Drawing.Size(375, 104);
             this.renamePanel.TabIndex = 19;
             this.renamePanel.Visible = false;
+            // 
+            // modeBtn
+            // 
+            this.modeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.modeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modeBtn.Location = new System.Drawing.Point(5, 55);
+            this.modeBtn.Name = "modeBtn";
+            this.modeBtn.Size = new System.Drawing.Size(80, 23);
+            this.modeBtn.TabIndex = 24;
+            this.modeBtn.Text = "MODE";
+            this.modeBtn.UseVisualStyleBackColor = false;
+            this.modeBtn.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(216, 55);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "SELECTIVE";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
@@ -359,9 +444,9 @@ namespace VisualRenamer
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(267, 55);
+            this.button3.Location = new System.Drawing.Point(297, 55);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 23);
+            this.button3.Size = new System.Drawing.Size(66, 23);
             this.button3.TabIndex = 18;
             this.button3.Text = "FAST";
             this.button3.UseVisualStyleBackColor = false;
@@ -573,88 +658,25 @@ namespace VisualRenamer
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(720, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(0, 392);
+            this.panel14.Size = new System.Drawing.Size(0, 410);
             this.panel14.TabIndex = 4;
             this.panel14.Visible = false;
             // 
-            // button2
+            // modeListBox
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(169, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 23);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "SELECTIVE";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(5, 55);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 23);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "MODE";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.открытьToolStripMenuItem,
-            this.режимToolStripMenuItem,
-            this.справкаToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(345, 24);
-            this.menuStrip1.TabIndex = 17;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // справкаToolStripMenuItem
-            // 
-            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.оПриложенииToolStripMenuItem});
-            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.справкаToolStripMenuItem.Text = "Справка";
-            // 
-            // оПриложенииToolStripMenuItem
-            // 
-            this.оПриложенииToolStripMenuItem.Name = "оПриложенииToolStripMenuItem";
-            this.оПриложенииToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.оПриложенииToolStripMenuItem.Text = "О приложении";
-            this.оПриложенииToolStripMenuItem.Click += new System.EventHandler(this.оПриложенииToolStripMenuItem_Click);
-            // 
-            // режимToolStripMenuItem
-            // 
-            this.режимToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.миниToolStripMenuItem,
-            this.максимальныйToolStripMenuItem});
-            this.режимToolStripMenuItem.Name = "режимToolStripMenuItem";
-            this.режимToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.режимToolStripMenuItem.Text = "Режим";
-            // 
-            // миниToolStripMenuItem
-            // 
-            this.миниToolStripMenuItem.Name = "миниToolStripMenuItem";
-            this.миниToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.миниToolStripMenuItem.Text = "Мини";
-            this.миниToolStripMenuItem.Click += new System.EventHandler(this.миниToolStripMenuItem_Click);
-            // 
-            // максимальныйToolStripMenuItem
-            // 
-            this.максимальныйToolStripMenuItem.Name = "максимальныйToolStripMenuItem";
-            this.максимальныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.максимальныйToolStripMenuItem.Text = "Максимальный";
-            this.максимальныйToolStripMenuItem.Click += new System.EventHandler(this.максимальныйToolStripMenuItem_Click);
-            // 
-            // открытьToolStripMenuItem
-            // 
-            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.открытьToolStripMenuItem.Text = "Открыть";
-            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            this.modeListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.modeListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.modeListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.modeListBox.FormattingEnabled = true;
+            this.modeListBox.Items.AddRange(new object[] {
+            "Date",
+            "Numerate"});
+            this.modeListBox.Location = new System.Drawing.Point(92, 55);
+            this.modeListBox.Name = "modeListBox";
+            this.modeListBox.Size = new System.Drawing.Size(118, 34);
+            this.modeListBox.TabIndex = 25;
+            this.modeListBox.Visible = false;
+            this.modeListBox.SelectedIndexChanged += new System.EventHandler(this.modeListBox_SelectedIndexChanged);
             // 
             // RenameForm
             // 
@@ -662,18 +684,20 @@ namespace VisualRenamer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(719, 392);
+            this.ClientSize = new System.Drawing.Size(719, 410);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1280, 720);
-            this.MinimumSize = new System.Drawing.Size(735, 431);
+            this.MinimumSize = new System.Drawing.Size(735, 449);
             this.Name = "RenameForm";
             this.Text = "Renamer 1.0";
             this.Load += new System.EventHandler(this.RenameForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
@@ -697,8 +721,6 @@ namespace VisualRenamer
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -749,7 +771,7 @@ namespace VisualRenamer
         private System.Windows.Forms.ListBox collectionsListBox;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button modeBtn;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оПриложенииToolStripMenuItem;
@@ -757,6 +779,7 @@ namespace VisualRenamer
         private System.Windows.Forms.ToolStripMenuItem миниToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem максимальныйToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
+        private System.Windows.Forms.CheckedListBox modeListBox;
     }
 }
 

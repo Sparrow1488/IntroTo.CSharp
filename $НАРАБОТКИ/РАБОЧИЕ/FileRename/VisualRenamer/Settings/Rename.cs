@@ -16,7 +16,7 @@ namespace VisualRenamer
             fullNameTB.Text = file.fullName;
             createDateFileTB.Text = file.creationDate.ToString();
         }
-        public static void FileInfoImage(MyFile file, TextBox nameFileTB, TextBox extensFilTeTB, TextBox fullNameTB, TextBox createDateFileTB, Panel d)
+        public static bool FileInfoImage(MyFile file, TextBox nameFileTB, TextBox extensFilTeTB, TextBox fullNameTB, TextBox createDateFileTB, Panel picture)
         {
             nameFileTB.Text = file?.name;
             extensFilTeTB.Text = file?.extension;
@@ -24,15 +24,21 @@ namespace VisualRenamer
             createDateFileTB.Text = file?.creationDate.ToString();
             if (file.extension.Equals(".png") || file.extension.Equals(".jpg"))
             {
-                d.Visible = true;
-                d.BackgroundImage = new Bitmap(file?.fullName);
+                try
+                {
+                    picture.Visible = true;
+                    picture.BackgroundImage = new Bitmap(file?.fullName);
+                    return true;
+                }
+                catch (Exception) { return false; }
             }
+            return false;
         }
         public static void RenameComplete(MyFile file)
         {
             var fullRename = Path.Combine(file.parentDir, file.newName);
-            string dateCreate = file.creationDate.ToString().Replace(".", "").Replace(":", "").Replace(" ", "");
-            var resultName = $"{fullRename} - [{dateCreate}]{file.extension}";
+            string dateCreateNumeral = file.creationDate.ToString().Replace(".", "").Replace(":", "").Replace(" ", "");
+            var resultName = $"{fullRename} - [{dateCreateNumeral}]{file.extension}";
             try
             {
                 if (!file.fullName.Equals(resultName))
@@ -40,6 +46,16 @@ namespace VisualRenamer
             }
             catch (IOException) { }
         }
+        //private static void ApplyRenameModes(MyFile file)
+        //{
+        //    if(Data.applyModes != null)
+        //    {
+        //        foreach (var mode in Data.applyModes)
+        //        {
+        //            if(mode.ToLower().Equals("date"))
+        //        }
+        //    }
+        //}
         public static void FastRename(TextBox findByExtension)
         {
             foreach (var file in MyFile.receivedFiles)
@@ -47,6 +63,11 @@ namespace VisualRenamer
                 if (file.extension.Equals(MyFile.findExtension) || findByExtension.Text.Equals("".Trim()))
                     RenameComplete(file);
             }
+        }
+        public static void UseRenameModes(CheckedListBox modeList)
+        {
+            foreach (var mode in modeList.CheckedItems)
+                Data.applyModes.Add(mode.ToString());
         }
     }
 }

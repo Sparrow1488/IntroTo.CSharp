@@ -7,3 +7,13 @@ C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОР�
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.csproj.CoreCompileInputs.cache
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.exe
 C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\bin\Debug\BubbleSortWF.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\bin\Debug\BubbleSortWF.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\bin\Debug\BubbleSortWF.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.Form1.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\АЛГОРИТМЫ\1_Bubble_sort_пузырьковый_алгоритм\BubbleSort\BubbleSortWF\obj\Debug\BubbleSortWF.pdb

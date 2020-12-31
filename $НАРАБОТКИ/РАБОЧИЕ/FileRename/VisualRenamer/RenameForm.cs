@@ -11,7 +11,6 @@ namespace VisualRenamer
         public RenameForm()
         {
             InitializeComponent();
-
         }
 
         private void getFilesButton_Click(object sender, EventArgs e)
@@ -57,13 +56,12 @@ namespace VisualRenamer
                 return false;
             }
         }
-        
-        
-
         private void filesList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Rename.FileInfoImage(MyFile.receivedFiles[filesList.SelectedIndex], nameTextBox, extensionTextBox, fullNameTextBox, dateCreateTextBox, panel14);
-            ActiveForm.Size = MaximumSize;
+            var imagePanel = Rename.FileInfoImage(MyFile.receivedFiles[filesList.SelectedIndex], nameTextBox, extensionTextBox, fullNameTextBox, dateCreateTextBox, panel14);
+            if (imagePanel)
+                ActiveForm.Size = MaximumSize;
+            else ActiveForm.Size = MinimumSize;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,17 +83,18 @@ namespace VisualRenamer
             dateCreateTextBox.Text = "";
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) //<!--FAST RENAME-->
         {
-            var result = MessageBox.Show("Are you sure you want rename all find files in directory " + pathTextBox.Text + "?", "Warning!", MessageBoxButtons.YesNo);
             if (!newNameTextBox.Text.Equals("".Trim()))
+            {
+                var result = MessageBox.Show("Are you sure you want rename all find files in directory " + pathTextBox.Text + "?", "Warning!", MessageBoxButtons.YesNo);
                 MyFile.SetNewName(newNameTextBox.Text);
+                if (result == DialogResult.Yes)
+                    Rename.FastRename(correctExtensionTextBox);
 
-            if (result == DialogResult.Yes)
-                Rename.FastRename(correctExtensionTextBox);
-
-            GetFilesFrom(pathTextBox, filesList, correctExtensionTextBox);
-            Name += " - Complete!";
+                GetFilesFrom(pathTextBox, filesList, correctExtensionTextBox);
+                Name += " - Complete!";
+            }
         }
 
         private void exceptionAcceptBtn_Click(object sender, EventArgs e)
@@ -153,6 +152,16 @@ namespace VisualRenamer
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             открытьToolStripMenuItem.Click += getFilesButton_Click;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Data.ModeControl(modeBtn, modeListBox);
+        }
+
+        private void modeListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
