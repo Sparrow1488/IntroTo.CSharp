@@ -19,14 +19,24 @@ namespace VisualRenamer.Files
         public static MyTag[] CreateStandartTags()
         {
             string path = @"G:\фильмс\sfm\$отдельно sfm\отсторт";
-            DirectoryInfo[] directs = new DirectoryInfo(path).GetDirectories();
-            var tagArr = new MyTag[directs.Length];
-
-            for (int i = 0; i < directs.Length; i++)
+            if (Directory.Exists(path))
             {
-                tagArr[i] = new MyTag($"[{directs[i].Name}]");
+                DirectoryInfo[] directs = new DirectoryInfo(path).GetDirectories();
+                var tagArrFrom = new MyTag[directs.Length];
+
+                for (int i = 0; i < directs.Length; i++)
+                    tagArrFrom[i] = new MyTag($"[{directs[i].Name}]");
+                return tagArrFrom;
             }
-            return tagArr;
+            else
+            {
+                var tagArr = new MyTag[]
+                {
+                    new MyTag("TestTag"),
+                    new MyTag("SecondTag")
+                };
+                return tagArr;
+            }
         }
         
         public static bool HasTag(string tagName)

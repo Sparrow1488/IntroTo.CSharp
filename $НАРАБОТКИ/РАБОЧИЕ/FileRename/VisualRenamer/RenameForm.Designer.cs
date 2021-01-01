@@ -56,6 +56,7 @@ namespace VisualRenamer
             this.collectionsListBox = new System.Windows.Forms.ListBox();
             this.tagsListBox = new System.Windows.Forms.ListBox();
             this.renamePanel = new System.Windows.Forms.Panel();
+            this.modeListBox = new System.Windows.Forms.CheckedListBox();
             this.modeBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -81,7 +82,6 @@ namespace VisualRenamer
             this.label3 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.modeListBox = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -395,6 +395,22 @@ namespace VisualRenamer
             this.renamePanel.TabIndex = 19;
             this.renamePanel.Visible = false;
             // 
+            // modeListBox
+            // 
+            this.modeListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.modeListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.modeListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.modeListBox.FormattingEnabled = true;
+            this.modeListBox.Items.AddRange(new object[] {
+            "Date",
+            "Numerate"});
+            this.modeListBox.Location = new System.Drawing.Point(92, 55);
+            this.modeListBox.Name = "modeListBox";
+            this.modeListBox.Size = new System.Drawing.Size(118, 34);
+            this.modeListBox.TabIndex = 25;
+            this.modeListBox.Visible = false;
+            this.modeListBox.SelectedIndexChanged += new System.EventHandler(this.modeListBox_SelectedIndexChanged);
+            // 
             // modeBtn
             // 
             this.modeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -661,22 +677,6 @@ namespace VisualRenamer
             this.panel14.Size = new System.Drawing.Size(0, 410);
             this.panel14.TabIndex = 4;
             this.panel14.Visible = false;
-            // 
-            // modeListBox
-            // 
-            this.modeListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.modeListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.modeListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.modeListBox.FormattingEnabled = true;
-            this.modeListBox.Items.AddRange(new object[] {
-            "Date",
-            "Numerate"});
-            this.modeListBox.Location = new System.Drawing.Point(92, 55);
-            this.modeListBox.Name = "modeListBox";
-            this.modeListBox.Size = new System.Drawing.Size(118, 34);
-            this.modeListBox.TabIndex = 25;
-            this.modeListBox.Visible = false;
-            this.modeListBox.SelectedIndexChanged += new System.EventHandler(this.modeListBox_SelectedIndexChanged);
             // 
             // RenameForm
             // 

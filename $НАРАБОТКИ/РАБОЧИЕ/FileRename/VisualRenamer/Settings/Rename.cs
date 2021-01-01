@@ -18,19 +18,22 @@ namespace VisualRenamer
         }
         public static bool FileInfoImage(MyFile file, TextBox nameFileTB, TextBox extensFilTeTB, TextBox fullNameTB, TextBox createDateFileTB, Panel picture)
         {
-            nameFileTB.Text = file?.name;
-            extensFilTeTB.Text = file?.extension;
-            fullNameTB.Text = file?.fullName;
-            createDateFileTB.Text = file?.creationDate.ToString();
-            if (file.extension.Equals(".png") || file.extension.Equals(".jpg"))
+            if (File.Exists(file?.fullName))
             {
-                try
+                nameFileTB.Text = file?.name;
+                extensFilTeTB.Text = file?.extension;
+                fullNameTB.Text = file?.fullName;
+                createDateFileTB.Text = file?.creationDate.ToString();
+                if (file.extension.Equals(".png") || file.extension.Equals(".jpg"))
                 {
-                    picture.Visible = true;
-                    picture.BackgroundImage = new Bitmap(file?.fullName);
-                    return true;
+                    try
+                    {
+                        picture.Visible = true;
+                        picture.BackgroundImage = new Bitmap(file?.fullName);
+                        return true;
+                    }
+                    catch (Exception) { return false; }
                 }
-                catch (Exception) { return false; }
             }
             return false;
         }
