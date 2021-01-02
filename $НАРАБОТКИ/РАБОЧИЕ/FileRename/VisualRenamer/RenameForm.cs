@@ -12,78 +12,51 @@ namespace VisualRenamer
         {
             InitializeComponent();
         }
-
-        private void getFilesButton_Click(object sender, EventArgs e)
+        private void RenameForm_Load(object sender, EventArgs e)
         {
-            MyFile.findExtension = correctExtensionTextBox.Text;
-            if (!string.IsNullOrWhiteSpace(pathTextBox.Text))
-            {
-                var recieveCorrect = GetFilesFrom(pathTextBox, filesList, correctExtensionTextBox);
-                if (recieveCorrect && MyFile.receivedFiles.Count > 0)
-                {
-                    getFilesButton.Enabled = false;
-                    renamePanel.Visible = true;
-                    correctExtensionTextBox.Enabled = false;
-                    collectionsListBox.Visible = true;
-                    tagsListBox.Visible = true;
-                    
-                    panel14.BackgroundImage = null;
-                }
-                else Data.ShowExceptionPanel("Вы ввели некорректный путь или несуществующее расширение, " +
-                    "либо папка пустая", exceptionPanel);
-            }
+            var baseTags = MyTag.CreateStandartTags();
+            new TagCollection(baseTags, "Базовые теги");
+
+            TagCollection.ShowAll(collectionsListBox);
         }
-        private static bool GetFilesFrom(TextBox pathTextBox, ListBox filesList, TextBox correctExtensionTextBox)
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            ResetAllControls();
+        }
+        private void exceptionAcceptBtn_Click(object sender, EventArgs e)
+        {
+            exceptionPanel.Visible = false;
+        }
+
+
+        #region GetFilesControls
+        private void getFilesButton_Click(object sender, EventArgs e)
         {
             try
             {
-                DirectoryInfo dirInfo = new DirectoryInfo(pathTextBox.Text);
-
-                var findFiles = dirInfo.GetFiles();
-                filesList.Items.Clear();
-                MyFile.receivedFiles.Clear();
-                foreach (var file in findFiles)
+                MyFile.findExtension = correctExtensionTextBox.Text;
+                if (!string.IsNullOrWhiteSpace(pathTextBox.Text))
                 {
-                    if (file.Extension.Equals(correctExtensionTextBox.Text.Trim()) || correctExtensionTextBox.Text.Equals("".Trim()))
-                        filesList.Items.Add(new MyFile(file).name);
+                    var recieveCorrect = GetFilesFrom(pathTextBox, filesList, correctExtensionTextBox);
+                    if (recieveCorrect && MyFile.receivedFiles.Count > 0)
+                    {
+                        HideFindControls(false);
+                        collectionsListBox.Visible = true;
+                        tagsListBox.Visible = true;
+                        imagePanel.BackgroundImage = null;
+                    }
                 }
-                return true;
             }
-            catch (DirectoryNotFoundException) 
+            catch (Exception)
             {
-                Control[] controls = ActiveForm.Controls.Find("exceptionPanel", true);
-                Data.ShowExceptionPanel("Ошибка директории", (Panel)controls[0]);
-                return false;
+                Data.ShowExceptionPanel("Вы ввели некорректный путь или несуществующее расширение, " +
+                "либо папка пустая", exceptionPanel);
             }
         }
-        private void filesList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var imagePanel = Rename.FileInfoImage(MyFile.receivedFiles[filesList.SelectedIndex], nameTextBox, extensionTextBox, fullNameTextBox, dateCreateTextBox, panel14);
-            if (imagePanel)
-                ActiveForm.Size = MaximumSize;
-            else ActiveForm.Size = MinimumSize;
-        }
+        #endregion
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            pathTextBox.Text = "";
-            correctExtensionTextBox.Text = "";
-            filesList.Items.Clear();
-            getFilesButton.Enabled = true;
-            renamePanel.Visible = false;
-            correctExtensionTextBox.Enabled = true;
-            exceptionPanel.Visible = false;
-            tagsListBox.Visible = false;
-            collectionsListBox.Visible = false;
-            ActiveForm.Size = MinimumSize;
-            panel14.Visible = false;
-            nameTextBox.Text = "";
-            extensionTextBox.Text = "";
-            fullNameTextBox.Text = "";
-            dateCreateTextBox.Text = "";
-        }
-
-        private void button3_Click(object sender, EventArgs e) //<!--FAST RENAME-->
+        #region RenamePanel
+        private void fastRenameBtn_Click(object sender, EventArgs e) //<!--FAST RENAME-->
         {
             if (!newNameTextBox.Text.Equals("".Trim()))
             {
@@ -96,36 +69,26 @@ namespace VisualRenamer
                 Name += " - Complete!";
             }
         }
-
-        private void exceptionAcceptBtn_Click(object sender, EventArgs e)
+        private void modeBtn_Click(object sender, EventArgs e)
         {
-            exceptionPanel.Visible = false;
+            Data.ModeControlActive(modeBtn, modeListBox);
+        }
+        private void modeListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void selectiveRenameBtn_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void tagsListBox_DoubleClick(object sender, EventArgs e)
-        {
-            newNameTextBox.Text += tagsListBox.SelectedItem.ToString();
-        }
+        #endregion
 
-        private void addTagBtn_Click(object sender, EventArgs e)
-        {
-            AddTagForm addTagForm = new AddTagForm();
-            addTagForm.ShowDialog();
-        }
-
-        private void RenameForm_Load(object sender, EventArgs e)
-        {
-            var baseTags = MyTag.CreateStandartTags();
-            new TagCollection(baseTags, "Базовые теги");
-
-            TagCollection.ShowAll(collectionsListBox);
-        }
-
+        #region TagsAndCollectionsPanel
         private void label9_Click(object sender, EventArgs e)
         {
             TagCollection.ShowAll(collectionsListBox);
         }
-
         private void collectionsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (collectionsListBox.SelectedItem != null)
@@ -133,7 +96,13 @@ namespace VisualRenamer
                 MyTag.ShowTagCollection(tagsListBox, TagCollection.FindCollectionByName(collectionsListBox.SelectedItem.ToString()));
             }
         }
+        private void tagsListBox_DoubleClick(object sender, EventArgs e)
+        {
+            newNameTextBox.Text += tagsListBox.SelectedItem.ToString();
+        }
+        #endregion
 
+        #region ToolStripMenu
         private void оПриложенииToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Хм, и для чего же оно?", "Справка");
@@ -153,15 +122,74 @@ namespace VisualRenamer
         {
             открытьToolStripMenuItem.Click += getFilesButton_Click;
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Data.ModeControl(modeBtn, modeListBox);
+            AddTagForm addTagForm = new AddTagForm();
+            addTagForm.ShowDialog();
         }
+        #endregion
 
-        private void modeListBox_SelectedIndexChanged(object sender, EventArgs e)
+        #region FilesControls
+        private void filesList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            var imagePanel = Rename.FileInfoImage(MyFile.receivedFiles[filesList.SelectedIndex], nameTextBox, extensionTextBox, fullNameTextBox, dateCreateTextBox, this.imagePanel);
+            if (imagePanel)
+                ActiveForm.Size = MaximumSize;
+            else ActiveForm.Size = MinimumSize;
         }
+        #endregion
+
+        #region OtherMethods
+        private void HideFindControls(bool mode)
+        {
+            getFilesButton.Enabled = mode;
+            renamePanel.Visible = !mode;
+            correctExtensionTextBox.Enabled = mode;
+            открытьToolStripMenuItem.Enabled = mode;
+        }
+        private void ResetInfoFile()
+        {
+            nameTextBox.Text = "";
+            extensionTextBox.Text = "";
+            fullNameTextBox.Text = "";
+            dateCreateTextBox.Text = "";
+        }
+        private void ResetFindControls()
+        {
+            pathTextBox.Text = "";
+            correctExtensionTextBox.Text = "";
+        }
+        private void HideTagControls()
+        {
+            tagsListBox.Visible = false;
+            collectionsListBox.Visible = false;
+        }
+        private void ResetAllControls()
+        {
+            ResetFindControls();
+            HideFindControls(true);
+            ResetInfoFile();
+            HideTagControls();
+            filesList.Items.Clear();
+            exceptionPanel.Visible = false;
+            ActiveForm.Size = MinimumSize;
+            imagePanel.Visible = false;
+        }
+        private bool GetFilesFrom(TextBox pathTextBox, ListBox filesList, TextBox correctExtensionTextBox)
+        {
+            DirectoryInfo dirInfo = new DirectoryInfo(pathTextBox.Text);
+
+            var findFiles = dirInfo.GetFiles();
+            filesList.Items.Clear();
+            MyFile.receivedFiles.Clear();
+            foreach (var file in findFiles)
+            {
+                if (file.Extension.Equals(correctExtensionTextBox.Text.Trim()) || correctExtensionTextBox.Text.Equals("".Trim()))
+                    filesList.Items.Add(new MyFile(file).name);
+            }
+            return true;
+        }
+        #endregion
+
     }
 }

@@ -56,6 +56,7 @@ namespace VisualRenamer.Files
                 throw new ArgumentException("Вы передали пустую коллекцию");
             if(tag == null)
                 throw new ArgumentException("Вы передали несуществующий тег");
+            
             collection.collection.Add(tag);
         }
     }

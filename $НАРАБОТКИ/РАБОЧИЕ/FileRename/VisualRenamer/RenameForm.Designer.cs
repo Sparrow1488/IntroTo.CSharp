@@ -31,17 +31,18 @@ namespace VisualRenamer
         {
             this.filesList = new System.Windows.Forms.ListBox();
             this.pathTextBox = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.leftFilesPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.режимToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.миниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.максимальныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПриложенииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getFilesButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -66,7 +67,6 @@ namespace VisualRenamer
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.addTagBtn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -81,10 +81,10 @@ namespace VisualRenamer
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.imagePanel = new System.Windows.Forms.Panel();
+            this.leftFilesPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel3.SuspendLayout();
             this.exceptionPanel.SuspendLayout();
@@ -102,7 +102,9 @@ namespace VisualRenamer
             // 
             // filesList
             // 
-            this.filesList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.filesList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.filesList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.filesList.FormattingEnabled = true;
             this.filesList.HorizontalScrollbar = true;
@@ -122,21 +124,21 @@ namespace VisualRenamer
             this.pathTextBox.Size = new System.Drawing.Size(245, 22);
             this.pathTextBox.TabIndex = 1;
             // 
-            // panel1
+            // leftFilesPanel
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.filesList);
-            this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(345, 410);
-            this.panel1.TabIndex = 2;
+            this.leftFilesPanel.Controls.Add(this.button1);
+            this.leftFilesPanel.Controls.Add(this.filesList);
+            this.leftFilesPanel.Controls.Add(this.menuStrip1);
+            this.leftFilesPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.leftFilesPanel.Location = new System.Drawing.Point(0, 0);
+            this.leftFilesPanel.Name = "leftFilesPanel";
+            this.leftFilesPanel.Size = new System.Drawing.Size(345, 410);
+            this.leftFilesPanel.TabIndex = 2;
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(0, 348);
@@ -145,12 +147,13 @@ namespace VisualRenamer
             this.button1.TabIndex = 16;
             this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.открытьToolStripMenuItem,
+            this.добавитьToolStripMenuItem,
             this.режимToolStripMenuItem,
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -165,6 +168,13 @@ namespace VisualRenamer
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            // 
+            // добавитьToolStripMenuItem
+            // 
+            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.добавитьToolStripMenuItem.Text = "Добавить";
+            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // режимToolStripMenuItem
             // 
@@ -216,16 +226,16 @@ namespace VisualRenamer
             this.getFilesButton.UseVisualStyleBackColor = false;
             this.getFilesButton.Click += new System.EventHandler(this.getFilesButton_Click);
             // 
-            // panel2
+            // mainPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.panel13);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(345, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 410);
-            this.panel2.TabIndex = 3;
+            this.mainPanel.BackColor = System.Drawing.Color.White;
+            this.mainPanel.Controls.Add(this.panel13);
+            this.mainPanel.Controls.Add(this.panel3);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mainPanel.Location = new System.Drawing.Point(345, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(376, 410);
+            this.mainPanel.TabIndex = 3;
             // 
             // panel13
             // 
@@ -233,7 +243,6 @@ namespace VisualRenamer
             this.panel13.Controls.Add(this.pathTextBox);
             this.panel13.Controls.Add(this.label1);
             this.panel13.Controls.Add(this.getFilesButton);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(375, 29);
@@ -312,7 +321,7 @@ namespace VisualRenamer
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 139);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(375, 70);
+            this.panel8.Size = new System.Drawing.Size(375, 69);
             this.panel8.TabIndex = 16;
             // 
             // panel10
@@ -327,12 +336,12 @@ namespace VisualRenamer
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(1, 6);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(-1, 6);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 16);
+            this.label8.Size = new System.Drawing.Size(79, 16);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Extension";
+            this.label8.Text = "Extension:";
             // 
             // correctExtensionTextBox
             // 
@@ -421,7 +430,7 @@ namespace VisualRenamer
             this.modeBtn.TabIndex = 24;
             this.modeBtn.Text = "MODE";
             this.modeBtn.UseVisualStyleBackColor = false;
-            this.modeBtn.Click += new System.EventHandler(this.button4_Click);
+            this.modeBtn.Click += new System.EventHandler(this.modeBtn_Click);
             // 
             // button2
             // 
@@ -433,6 +442,7 @@ namespace VisualRenamer
             this.button2.TabIndex = 23;
             this.button2.Text = "SELECTIVE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.selectiveRenameBtn_Click);
             // 
             // textBox2
             // 
@@ -466,7 +476,7 @@ namespace VisualRenamer
             this.button3.TabIndex = 18;
             this.button3.Text = "FAST";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.fastRenameBtn_Click);
             // 
             // newNameTextBox
             // 
@@ -500,7 +510,6 @@ namespace VisualRenamer
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel12.Controls.Add(this.addTagBtn);
             this.panel12.Controls.Add(this.label7);
             this.panel12.Controls.Add(this.label9);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
@@ -508,19 +517,6 @@ namespace VisualRenamer
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(375, 34);
             this.panel12.TabIndex = 19;
-            // 
-            // addTagBtn
-            // 
-            this.addTagBtn.BackColor = System.Drawing.Color.White;
-            this.addTagBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addTagBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addTagBtn.Location = new System.Drawing.Point(288, 5);
-            this.addTagBtn.Name = "addTagBtn";
-            this.addTagBtn.Size = new System.Drawing.Size(75, 26);
-            this.addTagBtn.TabIndex = 18;
-            this.addTagBtn.Text = "Add tag";
-            this.addTagBtn.UseVisualStyleBackColor = false;
-            this.addTagBtn.Click += new System.EventHandler(this.addTagBtn_Click);
             // 
             // label7
             // 
@@ -540,11 +536,11 @@ namespace VisualRenamer
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label9.Location = new System.Drawing.Point(165, 7);
+            this.label9.Location = new System.Drawing.Point(143, 7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 20);
+            this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Set tags";
+            this.label9.Text = "Templates";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel7
@@ -560,12 +556,12 @@ namespace VisualRenamer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(13, 4);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(2, 4);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 16);
+            this.label6.Size = new System.Drawing.Size(93, 16);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Date create";
+            this.label6.Text = "Date create:";
             // 
             // dateCreateTextBox
             // 
@@ -590,12 +586,12 @@ namespace VisualRenamer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(24, 4);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(16, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 16);
+            this.label5.Size = new System.Drawing.Size(79, 16);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Full name";
+            this.label5.Text = "Full name:";
             // 
             // fullNameTextBox
             // 
@@ -620,12 +616,12 @@ namespace VisualRenamer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(25, 3);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(16, 4);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 16);
+            this.label4.Size = new System.Drawing.Size(79, 16);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Extension";
+            this.label4.Text = "Extension:";
             // 
             // extensionTextBox
             // 
@@ -650,12 +646,12 @@ namespace VisualRenamer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(46, 4);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(42, 4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Name";
+            this.label3.Text = "Name:";
             // 
             // nameTextBox
             // 
@@ -667,16 +663,16 @@ namespace VisualRenamer
             this.nameTextBox.Size = new System.Drawing.Size(266, 22);
             this.nameTextBox.TabIndex = 4;
             // 
-            // panel14
+            // imagePanel
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(720, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(0, 410);
-            this.panel14.TabIndex = 4;
-            this.panel14.Visible = false;
+            this.imagePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.imagePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imagePanel.Location = new System.Drawing.Point(721, 0);
+            this.imagePanel.Name = "imagePanel";
+            this.imagePanel.Size = new System.Drawing.Size(0, 410);
+            this.imagePanel.TabIndex = 4;
+            this.imagePanel.Visible = false;
             // 
             // RenameForm
             // 
@@ -685,20 +681,20 @@ namespace VisualRenamer
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(719, 410);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.imagePanel);
+            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.leftFilesPanel);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1280, 720);
             this.MinimumSize = new System.Drawing.Size(735, 449);
             this.Name = "RenameForm";
             this.Text = "Renamer 1.0";
             this.Load += new System.EventHandler(this.RenameForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.leftFilesPanel.ResumeLayout(false);
+            this.leftFilesPanel.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.mainPanel.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -729,8 +725,8 @@ namespace VisualRenamer
 
         private System.Windows.Forms.ListBox filesList;
         private System.Windows.Forms.TextBox pathTextBox;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel leftFilesPanel;
+        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
@@ -766,10 +762,9 @@ namespace VisualRenamer
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.ListBox tagsListBox;
-        private System.Windows.Forms.Button addTagBtn;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.ListBox collectionsListBox;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel imagePanel;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button modeBtn;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -780,6 +775,7 @@ namespace VisualRenamer
         private System.Windows.Forms.ToolStripMenuItem максимальныйToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
         private System.Windows.Forms.CheckedListBox modeListBox;
+        private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem;
     }
 }
 

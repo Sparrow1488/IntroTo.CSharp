@@ -18,14 +18,22 @@ namespace VisualRenamer
 
         private void addTagBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text.Trim()) || MyTag.HasTag(textBox1.Text))
-                Data.ShowExceptionPanel("Возможно, Вы вели некорректный тэг, либо он уже существует", exceprionPanel);
-            else
+            try
             {
-                var newTag = new MyTag(textBox1.Text);
-                TagCollection.Add(TagCollection.FindCollectionByName(listBox2.SelectedItem?.ToString()), newTag);
-                MyTag.ShowTagCollection(listBox1, TagCollection.FindCollectionByName(listBox2.SelectedItem.ToString()));
+                if (string.IsNullOrEmpty(textBox1.Text.Trim()) || MyTag.HasTag(textBox1.Text))
+                    throw new ArgumentException("Вы вели некорректный тэг, либо он уже существует");
+                else
+                {
+                    var newTag = new MyTag(textBox1.Text);
+                    TagCollection.Add(TagCollection.FindCollectionByName(listBox2.SelectedItem?.ToString()), newTag);
+                    MyTag.ShowTagCollection(listBox1, TagCollection.FindCollectionByName(listBox2.SelectedItem.ToString()));
+                }
             }
+            catch (Exception ex)
+            {
+                Data.ShowExceptionPanel(ex.Message, exceprionPanel);
+            }
+            finally { textBox1.Text = ""; }
         }
 
         private void exceptionAcceptBtn_Click(object sender, EventArgs e)
@@ -43,9 +51,9 @@ namespace VisualRenamer
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            var deleteTag = listBox1.Items[listBox1.SelectedIndex].ToString();
+            var deleteTag = listBox1.SelectedItem.ToString();
             MyTag.Delete(deleteTag);
-            MyTag.ShowTagCollection(listBox1, TagCollection.allCollections[0]);
+            MyTag.ShowTagCollection(listBox1, TagCollection.allCollections[listBox2.SelectedIndex]);
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,7 +68,8 @@ namespace VisualRenamer
         {
             if (string.IsNullOrWhiteSpace(textBox4.Text))
                 Data.ShowExceptionPanel("Вы не можете создать коллекцию без названия", exceprionPanel);
-            else new TagCollection(textBox4.Text.Trim());
+            else 
+                new TagCollection(textBox4.Text.Trim());
             TagCollection.ShowAll(listBox2);
         }
     }

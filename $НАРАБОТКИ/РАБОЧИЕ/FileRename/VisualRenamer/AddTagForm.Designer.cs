@@ -32,6 +32,9 @@ namespace VisualRenamer
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.leftPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.exceprionPanel = new System.Windows.Forms.Panel();
             this.exceptionAcceptBtn = new System.Windows.Forms.Button();
@@ -41,9 +44,6 @@ namespace VisualRenamer
             this.rightPanel = new System.Windows.Forms.Panel();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.leftPanel.SuspendLayout();
             this.exceprionPanel.SuspendLayout();
             this.rightPanel.SuspendLayout();
@@ -87,6 +87,39 @@ namespace VisualRenamer
             this.leftPanel.Size = new System.Drawing.Size(200, 282);
             this.leftPanel.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(3, 159);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Add collection";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox4.Location = new System.Drawing.Point(3, 139);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(194, 20);
+            this.textBox4.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(3, 97);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(194, 42);
+            this.textBox3.TabIndex = 5;
+            this.textBox3.Text = "Write name collection to add it in project:";
+            // 
             // deleteBtn
             // 
             this.deleteBtn.Dock = System.Windows.Forms.DockStyle.Top;
@@ -98,7 +131,6 @@ namespace VisualRenamer
             this.deleteBtn.TabIndex = 4;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
-            this.deleteBtn.Visible = false;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // exceprionPanel
@@ -193,39 +225,6 @@ namespace VisualRenamer
             this.panel1.Padding = new System.Windows.Forms.Padding(3);
             this.panel1.Size = new System.Drawing.Size(137, 282);
             this.panel1.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(3, 97);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(194, 42);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "Write name collection to add it in project:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox4.Location = new System.Drawing.Point(3, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 20);
-            this.textBox4.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Add collection";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AddTagForm
             // 

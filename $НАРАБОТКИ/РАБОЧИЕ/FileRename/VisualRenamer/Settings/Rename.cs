@@ -49,16 +49,6 @@ namespace VisualRenamer
             }
             catch (IOException) { }
         }
-        //private static void ApplyRenameModes(MyFile file)
-        //{
-        //    if(Data.applyModes != null)
-        //    {
-        //        foreach (var mode in Data.applyModes)
-        //        {
-        //            if(mode.ToLower().Equals("date"))
-        //        }
-        //    }
-        //}
         public static void FastRename(TextBox findByExtension)
         {
             foreach (var file in MyFile.receivedFiles)

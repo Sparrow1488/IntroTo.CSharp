@@ -43,7 +43,7 @@ namespace VisualRenamer.Files
         {
             foreach (var tag in tagsList)
             {
-                if (tag.Equals(tagName))
+                if (tag.name.Equals(tagName))
                     return true;
             }
             return false;
@@ -69,6 +69,7 @@ namespace VisualRenamer.Files
             {
                 if (tag.name.Equals(tagName))
                     tagsList.Remove(tag);
+                break;
             }
         }
     }

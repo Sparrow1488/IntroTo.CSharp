@@ -11,3 +11,16 @@ C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_П
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.dll
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.pdb
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.genruntimeconfig.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\bin\Debug\netcoreapp3.1\FileStreamProj.exe
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\bin\Debug\netcoreapp3.1\FileStreamProj.deps.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\bin\Debug\netcoreapp3.1\FileStreamProj.runtimeconfig.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\bin\Debug\netcoreapp3.1\FileStreamProj.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\bin\Debug\netcoreapp3.1\FileStreamProj.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\bin\Debug\netcoreapp3.1\FileStreamProj.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.AssemblyInfo.cs
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.dll
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.pdb
+C:\Users\DOM\Desktop\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\6_Потоки_файлы\Stream_File\FileStream\obj\Debug\netcoreapp3.1\FileStreamProj.genruntimeconfig.cache

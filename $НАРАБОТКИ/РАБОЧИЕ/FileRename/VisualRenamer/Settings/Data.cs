@@ -16,7 +16,7 @@ namespace VisualRenamer
             if(controls.Length >= 0)
                 controls[0].Text = text;
         }
-        public static void ModeControl(Button button, CheckedListBox modeListBox)
+        public static void ModeControlActive(Button button, CheckedListBox modeListBox)
         {
             if (!ModeRename)
             {

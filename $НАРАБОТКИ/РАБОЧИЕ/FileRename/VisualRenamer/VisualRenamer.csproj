@@ -64,6 +64,7 @@
     <Compile Include="Files\MyFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\Mode.cs" />
     <Compile Include="Settings\Rename.cs" />
     <EmbeddedResource Include="AddTagForm.resx">
       <DependentUpon>AddTagForm.cs</DependentUpon>

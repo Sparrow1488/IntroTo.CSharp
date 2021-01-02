@@ -11,7 +11,18 @@ namespace VisualRenamer
         public string parentDir;
         public string extension;
         public string creationDate;
-        public string newName = "StandartNewRename";
+        //{
+        //    get { return creationDate; }
+        //    set { value.ToString().Replace(".", "").Replace(":", "").Replace(" ", ""); }
+        //}
+        public string newName;
+        //{ 
+        //    get{ return newName; }
+        //    set
+        //    {
+        //        newName = $"{value} [{creationDate}].{extension}";
+        //    }
+        //}
         public long dateLong;
 
         public static List<MyFile> receivedFiles = new List<MyFile>();
