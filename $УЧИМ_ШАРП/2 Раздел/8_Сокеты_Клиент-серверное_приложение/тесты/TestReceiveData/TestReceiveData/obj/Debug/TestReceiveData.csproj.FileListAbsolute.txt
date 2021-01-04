@@ -1,0 +1,10 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\bin\Debug\TestReceiveData.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\bin\Debug\TestReceiveData.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\bin\Debug\TestReceiveData.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.Form1.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\8_Сокеты_Клиент-серверное_приложение\тесты\TestReceiveData\TestReceiveData\obj\Debug\TestReceiveData.pdb

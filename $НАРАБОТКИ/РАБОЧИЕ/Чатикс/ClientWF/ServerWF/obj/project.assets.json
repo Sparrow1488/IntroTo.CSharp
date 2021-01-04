@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\DOM\\.nuget\\packages\\": {}
+    "C:\\Users\\Dom\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ServerWF\\ServerWF.csproj",
+      "projectUniqueName": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ServerWF\\ServerWF.csproj",
       "projectName": "ServerWF",
-      "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ServerWF\\ServerWF.csproj",
-      "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ServerWF\\obj\\",
+      "projectPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ServerWF\\ServerWF.csproj",
+      "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ServerWF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
