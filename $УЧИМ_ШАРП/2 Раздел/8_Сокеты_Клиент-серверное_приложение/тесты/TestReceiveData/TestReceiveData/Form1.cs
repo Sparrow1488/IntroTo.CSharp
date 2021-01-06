@@ -19,9 +19,7 @@ namespace TestReceiveData
         {
             IPEndPoint remoteIP = new IPEndPoint(IPAddress.Any, 9000);
             byte[] received = myClient.EndReceive(res, ref remoteIP);
-
             getData = Encoding.ASCII.GetString(received);
-
 
             //MethodInvoket - делегат, в котором мы можем просто указать любой метода / действие
             Invoke(new MethodInvoker(delegate
@@ -36,6 +34,8 @@ namespace TestReceiveData
             try
             {
                 myClient.BeginReceive(new AsyncCallback(recv), null);
+                //BeginReceive - асинхронный прием данных
+                //Receive - прием данных
             }
             catch (Exception ex)
             {
