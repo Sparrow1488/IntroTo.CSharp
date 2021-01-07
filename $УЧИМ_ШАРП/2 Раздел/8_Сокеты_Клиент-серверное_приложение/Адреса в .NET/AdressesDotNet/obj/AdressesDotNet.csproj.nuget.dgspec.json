@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj": {}
+    "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj": {
+    "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj",
+        "projectUniqueName": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj",
         "projectName": "AdressesDotNet",
-        "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj",
-        "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\obj\\",
+        "projectPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\AdressesDotNet.csproj",
+        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\2 Раздел\\8_Сокеты_Клиент-серверное_приложение\\Адреса в .NET\\AdressesDotNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

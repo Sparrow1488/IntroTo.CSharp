@@ -15,7 +15,7 @@ namespace ClientTCP
         // 3. подключаем сокет к конечной точке
         // 4. <отправляем>
         // 5. <ожидаем ответ>
-        static void Main(string[] args)
+        static async void Main(string[] args)
         {
             #region TCPClient
             //const string ip = "127.0.0.1";
@@ -79,7 +79,7 @@ namespace ClientTCP
                 EndPoint serverEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8090);
                 udpSocket.SendTo(Encoding.UTF8.GetBytes($"{login}> {message}"), serverEndPoint);
 
-                PullData(udpSocket, serverEndPoint);
+                await PullData(udpSocket, serverEndPoint);
             }
             Console.WriteLine("End");
             #endregion
