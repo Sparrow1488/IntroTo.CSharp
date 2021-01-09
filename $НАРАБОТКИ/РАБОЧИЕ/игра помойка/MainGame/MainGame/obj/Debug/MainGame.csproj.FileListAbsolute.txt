@@ -1,0 +1,10 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\bin\Debug\MainGame.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\bin\Debug\MainGame.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\bin\Debug\MainGame.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.GamePanel.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\игра помойка\MainGame\MainGame\obj\Debug\MainGame.pdb
