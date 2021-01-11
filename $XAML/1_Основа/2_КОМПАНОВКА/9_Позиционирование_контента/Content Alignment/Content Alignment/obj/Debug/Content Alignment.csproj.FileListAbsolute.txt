@@ -1,0 +1,15 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\bin\Debug\Content Alignment.exe.config
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\bin\Debug\Content Alignment.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\bin\Debug\Content Alignment.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\MainWindow.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\App.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment_MarkupCompile.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment_MarkupCompile.lref
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\MainWindow.baml
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment.g.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content_Alignment.Properties.Resources.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment.csproj.GenerateResource.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\9_Позиционирование_контента\Content Alignment\Content Alignment\obj\Debug\Content Alignment.pdb

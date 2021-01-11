@@ -1,0 +1,14 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\bin\Debug\WindowButtonsBase.exe.config
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\bin\Debug\WindowButtonsBase.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\bin\Debug\WindowButtonsBase.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\MainWindow.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\App.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase_MarkupCompile.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase_MarkupCompile.lref
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\MainWindow.baml
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase.g.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase.Properties.Resources.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase.csproj.GenerateResource.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\obj\Debug\WindowButtonsBase.pdb

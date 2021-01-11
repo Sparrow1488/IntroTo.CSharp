@@ -1,0 +1,32 @@
+﻿<Window x:Class="WindowWrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowWrapPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="328">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" MaxWidth="160" MinWidth="40"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Column="2" Background="CadetBlue"/>
+        <!--ОБЪЯСНЯЮ, ЭЛЕМЕНТЫ КОМПАНУЮТСЯ В ЗАВИСИМОСТИ ОТ РАЗМЕРОВ ФОРМЫ (НАПРИМЕР ПРИ СЖАТИИ ФОРМЫ )-->
+        <WrapPanel Orientation="Vertical" ItemWidth="40" ItemHeight="40">
+            <Button Content="1" Background="Crimson"/>
+            <Button Content="2" Background="DarkKhaki"/>
+            <Button Content="3" Background="Cyan"/>
+            <Button Content="4" Background="Cyan"/>
+            <Button Content="5" Background="Cyan"/>
+            <Button Content="6" Background="Cyan"/>
+            <Button Content="7" Background="Cyan"/>
+            <Button Content="8" Background="Cyan"/>
+            <Button Content="9" Background="Cyan"/>
+            <Button Content="10" Background="Cyan"/>
+        </WrapPanel>
+        <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3"
+        HorizontalAlignment="Center" VerticalAlignment="Stretch" Background="Black"/>
+    </Grid>
+</Window>

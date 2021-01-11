@@ -1,0 +1,46 @@
+﻿<Window x:Class="WindowButtonsBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowButtonsBase"
+        mc:Ignorable="d"
+        Title="WindowButtons" Height="250" Width="250">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="BUTTONS"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold"/>
+            <Button x:Name="btn1" 
+                    Content="Just button" 
+                    Background="#FFA2A2A2"
+                    Click="btn1_Click"
+                    MaxHeight="50"/>
+            <CheckBox x:Name="checkBox1" 
+                      Content="Just checkBox" 
+                      HorizontalAlignment="Center" 
+                      Margin="0 1"
+                      Checked="checkBox1_Checked"/>
+            <ToggleButton x:Name="tgBtn1" 
+                          Content="Toggle button 1" 
+                          Margin="0 1" 
+                          Background="#FFA2A2A2"/>
+            <ToggleButton x:Name="tgBtn2" 
+                          Content="Toggle button 2" 
+                          Margin="0 1" 
+                          Background="#FFA2A2A2"/>
+            <RadioButton x:Name="rdBtn1" 
+                         Content="RadioButton 1" 
+                         HorizontalAlignment="Center" 
+                         Margin="0 1"/>
+            <RadioButton x:Name="rdBtn2" 
+                         Content="RadioButton 2" 
+                         HorizontalAlignment="Center" 
+                         Margin="0 1"/>
+            <RepeatButton x:Name="repeatBtn1" 
+                          Content="repeat button" 
+                          Background="#FFA2A2A2"/>
+            <TextBox Background="Lavender" Height="Auto" Text="Text"/>
+        </StackPanel>
+    </Grid>
+</Window>

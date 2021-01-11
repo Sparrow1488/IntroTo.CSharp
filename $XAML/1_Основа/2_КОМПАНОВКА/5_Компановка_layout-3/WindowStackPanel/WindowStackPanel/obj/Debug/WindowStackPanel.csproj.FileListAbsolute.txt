@@ -1,0 +1,14 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\bin\Debug\WindowStackPanel.exe.config
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\bin\Debug\WindowStackPanel.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\bin\Debug\WindowStackPanel.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\MainWindow.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\App.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel_MarkupCompile.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel_MarkupCompile.lref
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\MainWindow.baml
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel.g.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel.Properties.Resources.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel.csproj.GenerateResource.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\5_Компановка_layout-3\WindowStackPanel\WindowStackPanel\obj\Debug\WindowStackPanel.pdb

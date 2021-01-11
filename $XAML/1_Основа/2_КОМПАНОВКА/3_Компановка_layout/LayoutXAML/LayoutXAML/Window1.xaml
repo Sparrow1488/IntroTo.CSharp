@@ -1,0 +1,27 @@
+﻿<Window x:Class="LayoutXAML.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LayoutXAML"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <UniformGrid Rows="2" Columns="3">
+            <Button Content="TExt1">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="TExt2"/>
+            <Button Content="TExt3"/>
+            <Button Content="TExt4">
+                <Button.Effect>
+                    <BlurEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="TExt5"/>
+            <Button Content="TExt6"/>
+        </UniformGrid>
+    </Grid>
+</Window>
