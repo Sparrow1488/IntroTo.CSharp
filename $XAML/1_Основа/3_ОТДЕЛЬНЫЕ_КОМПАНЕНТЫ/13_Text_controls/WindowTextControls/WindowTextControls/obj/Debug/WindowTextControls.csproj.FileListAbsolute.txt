@@ -1,0 +1,15 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\bin\Debug\WindowTextControls.exe.config
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\bin\Debug\WindowTextControls.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\bin\Debug\WindowTextControls.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\MainWindow.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\App.g.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls_MarkupCompile.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls_MarkupCompile.lref
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\MainWindow.baml
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.g.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.Properties.Resources.resources
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.csproj.GenerateResource.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\13_Text_controls\WindowTextControls\WindowTextControls\obj\Debug\WindowTextControls.pdb

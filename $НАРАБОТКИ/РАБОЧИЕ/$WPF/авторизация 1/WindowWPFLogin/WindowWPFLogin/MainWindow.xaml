@@ -1,0 +1,81 @@
+﻿<Window x:Class="WindowWPFLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowWPFLogin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="684.935" 
+        MinHeight="500"
+        MinWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--TOP-->
+        <StackPanel x:Name="topDecorate" Grid.Row="0">
+            <Canvas Height="20">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA6A6A6"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+            </Canvas>
+        </StackPanel>
+
+        <!--MAINCONTENT-->
+        <StackPanel x:Name="contentPanel" 
+                    Grid.Row="1" 
+                    Orientation="Vertical"
+                    MinWidth="500">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$НАРАБОТКИ\РАБОЧИЕ\$WPF\авторизация 1\WindowWPFLogin\ref\bg1.png"
+                            Stretch="Uniform"/>
+            </StackPanel.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <!--LEFT-->
+                <StackPanel x:Name="leftMenu" Grid.Column="0">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFBFBFBF" Offset="1"/>
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="White" Offset="0.548"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                </StackPanel>
+                <!--RIGHT-->
+                <StackPanel x:Name="rightMenu" 
+                            Grid.Column="1">
+                    
+                    <TextBlock Text="TEXT" 
+                               HorizontalAlignment="Center"
+                               FontSize="28"/>
+                    <StackPanel x:Name="authPanel"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Height="200"
+                                >
+                        <Grid>
+                            <UniformGrid Columns="2">
+                                <TextBlock Text="Text"
+                                       HorizontalAlignment="Right"
+                                       FontSize="24"/>
+                                <TextBox Text="txt_text"
+                                     FontSize="24" HorizontalAlignment="Left" Width="165"
+                                     />
+                            </UniformGrid>
+
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

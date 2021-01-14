@@ -5,42 +5,117 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WindowButtonsBase"
         mc:Ignorable="d"
-        Title="WindowButtons" Height="250" Width="250">
+        Title="WindowButtons" Height="500" Width="350">
     <Grid>
-        <StackPanel Orientation="Vertical">
-            <TextBlock Text="BUTTONS"
+        <StackPanel Orientation="Vertical" Background="AliceBlue">
+
+            <!--JUST BUTTONS-->
+
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="BUTTONS"
                        HorizontalAlignment="Center"
                        FontWeight="Bold"/>
-            <Button x:Name="btn1" 
-                    Content="Just button" 
+                <Button x:Name="btn1" 
+                    Content="Button" 
                     Background="#FFA2A2A2"
                     Click="btn1_Click"
                     MaxHeight="50"/>
-            <CheckBox x:Name="checkBox1" 
-                      Content="Just checkBox" 
+                <CheckBox x:Name="checkBox1" 
+                      Content="Just checkBox 1" 
                       HorizontalAlignment="Center" 
                       Margin="0 1"
                       Checked="checkBox1_Checked"/>
-            <ToggleButton x:Name="tgBtn1" 
+                <CheckBox x:Name="checkBox2" 
+                      Content="Just checkBox 2" 
+                      HorizontalAlignment="Center" 
+                      Margin="0 1"
+                      IsThreeState="True"
+                      Checked="checkBox2_Checked"
+                      Unchecked="checkBox2_Unchecked"
+                      Indeterminate="checkBox2_Indeterminate"/>
+                <ToggleButton x:Name="tgBtn1" 
                           Content="Toggle button 1" 
                           Margin="0 1" 
                           Background="#FFA2A2A2"/>
-            <ToggleButton x:Name="tgBtn2" 
+                <ToggleButton x:Name="tgBtn2" 
                           Content="Toggle button 2" 
                           Margin="0 1" 
                           Background="#FFA2A2A2"/>
-            <RadioButton x:Name="rdBtn1" 
+                <RadioButton x:Name="rdBtn1" 
                          Content="RadioButton 1" 
                          HorizontalAlignment="Center" 
                          Margin="0 1"/>
-            <RadioButton x:Name="rdBtn2" 
+                <RadioButton x:Name="rdBtn2" 
                          Content="RadioButton 2" 
                          HorizontalAlignment="Center" 
                          Margin="0 1"/>
-            <RepeatButton x:Name="repeatBtn1" 
+                <RepeatButton x:Name="repeatBtn1" 
                           Content="repeat button" 
                           Background="#FFA2A2A2"/>
-            <TextBox Background="Lavender" Height="Auto" Text="Text"/>
+                <TextBox Background="Honeydew" Height="Auto" Text="Text"/>
+            </StackPanel>
+            
+            <!--RADIOBUTTONS-->
+
+            <StackPanel Orientation="Vertical" Margin="0 10">
+                <TextBlock Text="RadioButtons"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold"/>
+                <StackPanel Background="LightGoldenrodYellow">
+                    <RadioButton GroupName="Names" Content="Mike" FontWeight="Bold"/>
+                    <RadioButton GroupName="Names" Content="Vera" IsChecked="True"/>
+                    <RadioButton GroupName="Names" Content="Dima"/>
+                </StackPanel>
+
+                <StackPanel Background="SaddleBrown">
+                    <RadioButton GroupName="Cars" Content="Chevrolet" FontWeight="Bold"/>
+                    <RadioButton GroupName="Cars" Content="BMW" IsChecked="{x:Null}"/>
+                    <RadioButton GroupName="Cars" Content="Bugatti" IsChecked="True"/>
+                </StackPanel>
+            </StackPanel>
+            
+
+            <!--TOOLTIP-->
+
+            <StackPanel Orientation="Vertical" Margin="0 10">
+                <TextBlock Text="ToolTip"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold"/>
+                <Button Content="Info button" 
+                    ToolTip="Это информация о моей кнопке"/>
+                <TextBox Text="Какой то текст непонятного TextBox`а." 
+                         ToolTipService.ShowDuration="7000">
+                    <TextBox.ToolTip>
+                        <ToolTip MaxWidth="350"
+                             HasDropShadow="True"
+                             Placement="Mouse" >
+                            <StackPanel Background="AliceBlue">
+                                <TextBlock Text="Это информация об этом TextBlock"/>
+                                <Image Source="C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$XAML\1_Основа\3_ОТДЕЛЬНЫЕ_КОМПАНЕНТЫ\10_Buttons\WindowButtonsBase\WindowButtonsBase\ref\TLD.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </TextBox.ToolTip>
+                </TextBox>
+            </StackPanel>
+            
+            <!--POPUP-->
+
+            <StackPanel Orientation="Vertical" Margin=" 0 10">
+                <TextBlock Text="POPUP"
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"/>
+                <TextBox x:Name="popupTextBox" 
+                         Text="Test TEXT"/>
+                <Button x:Name="popupBtn" 
+                        Content="Show popup" 
+                        Click="popupBtn_Click"/>
+                <Popup x:Name="testPopup" 
+                       StaysOpen="False"
+                       Placement="Mouse">
+                    <TextBlock x:Name="txtBlockPopup" 
+                               Background="Orange"/>
+                </Popup>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

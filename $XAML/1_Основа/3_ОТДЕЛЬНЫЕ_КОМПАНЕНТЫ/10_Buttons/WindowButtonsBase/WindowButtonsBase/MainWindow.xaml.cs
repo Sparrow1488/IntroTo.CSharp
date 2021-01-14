@@ -35,5 +35,26 @@ namespace WindowButtonsBase
         {
             checkBox1.Background = new SolidColorBrush(Colors.Fuchsia);
         }
+
+        private void checkBox2_Checked(object sender, RoutedEventArgs e)
+        {
+            checkBox2.Content = "Checked";
+        }
+
+        private void checkBox2_Unchecked(object sender, RoutedEventArgs e)
+        {
+            checkBox2.Content = "Unchecked";
+        }
+
+        private void checkBox2_Indeterminate(object sender, RoutedEventArgs e)
+        {
+            checkBox2.Content = "Indeterminate";
+        }
+
+        private void popupBtn_Click(object sender, RoutedEventArgs e)
+        {
+            txtBlockPopup.Text = popupTextBox.Text;
+            testPopup.IsOpen = true;
+        }
     }
 }
