@@ -21,38 +21,44 @@
         <StackPanel Grid.Row="1" 
                     MinHeight="250" 
                     MinWidth="400"
-                    Height="250"
+                    Height="280"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center">
             <TextBlock Text="Welcome" FontSize="30" FontWeight="Bold"/>
-            <TextBox FontSize="22"
-                     x:Name="loginTB"
-                     BorderBrush="Transparent"
-                     BorderThickness="0"
-                     PreviewKeyDown="loginTB_PreviewKeyDown"/>
+            <GroupBox Header="Login" FontSize="20">
+                <TextBox FontSize="22"
+                         x:Name="loginTB"
+                         BorderBrush="Transparent"
+                         BorderThickness="0"
+                         PreviewKeyDown="loginTB_PreviewKeyDown"/>
+            </GroupBox>
+
             <DockPanel>
                 <StackPanel Background="Purple" 
                             DockPanel.Dock="Top"
                             Height="1"/>
             </DockPanel>
-            <PasswordBox FontSize="22"
+            <GroupBox Header="Password" FontSize="20">
+                <PasswordBox FontSize="22"
                          x:Name="passTB"
                          BorderBrush="Transparent"
                          Margin="0 10 0 0"
                          BorderThickness="0"
                          PreviewKeyDown="loginTB_PreviewKeyDown"/>
+            </GroupBox>
+
             <DockPanel>
                 <StackPanel Background="Purple" 
                             DockPanel.Dock="Top"
                             Height="1"/>
             </DockPanel>
 
-            <Button Content="Log in"
+            <Button Content="Register"
                     x:Name="authBtn"
                     Margin="0 10 0 10"
                     FontSize="18"
                     Background="White"
-                    BorderBrush="Transparent"
+                    BorderBrush="#FF0068FD"
                     Click="authBtn_Click"/>
             <TextBlock Text="Обработка ошибки"
                        x:Name="exceptionText"

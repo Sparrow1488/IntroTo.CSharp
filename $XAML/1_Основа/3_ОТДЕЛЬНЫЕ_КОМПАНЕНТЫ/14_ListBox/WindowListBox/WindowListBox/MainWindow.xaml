@@ -1,0 +1,20 @@
+﻿<Window x:Class="WindowListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowListBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    <Grid>
+        <StackPanel>
+            <ListBox Name="MyList" DisplayMemberPath="Name">
+                <local:Person Name="Ivan" Age="1234"/>
+                <local:Person Name="Kira" Age="1222234"/>
+                <local:Person Name="Biba" Age="12234"/>
+            </ListBox>
+            <Button x:Name="addBtn" Click="Button_Click" Content="add" IsEnabled="false"/>
+            <Button x:Name="sourceBtn" Click="Button_Click_1" Content="Standart sourse"/>
+        </StackPanel>
+    </Grid>
+</Window>

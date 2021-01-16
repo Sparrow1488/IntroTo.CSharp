@@ -12,5 +12,6 @@ namespace testAuth.Classes
             Login = login;
             Password = password;
         }
+        public static MyUser ActiveUser = null;
     }
 }

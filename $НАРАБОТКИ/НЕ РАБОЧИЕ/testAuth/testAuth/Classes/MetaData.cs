@@ -13,6 +13,5 @@ namespace testAuth
         };
         public static string parentPath = "authWPF_Users";
         public static IFirebaseClient client = null;
-        public static My
     }
 }
