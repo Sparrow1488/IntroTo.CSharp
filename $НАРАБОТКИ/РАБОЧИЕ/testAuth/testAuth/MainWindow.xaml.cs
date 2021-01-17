@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -28,29 +29,39 @@ namespace testAuth
                 exceptionText.Visibility = Visibility.Hidden;
             }
         }
-        private void authBtn_Click(object sender, RoutedEventArgs e)
+        private async void authBtn_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                exceptionText.Visibility = Visibility.Hidden;
-                string treatLogin = loginTB.Text;
-                string treatPassword = passTB.Password;
+                await GetInfo();
+            }
+            catch (Exception ex)
+            {
+                ExceptionBlock(ex.Message);
+            }
+        }
+        private async Task GetInfo()
+        {
+            exceptionText.Visibility = Visibility.Visible;
+            exceptionText.Text = "Пожалуйста, подождите...";
+            exceptionText.Foreground = new SolidColorBrush(Colors.Blue);
+            string treatLogin = loginTB.Text;
+            string treatPassword = passTB.Password;
+            await Task.Run(() =>
+            {
                 CheckAbsentPasOrLog(treatLogin, treatPassword);
-                if (CheckUniqueUser(treatLogin))
+                if (CheckUniqueUser(treatLogin).Result)
                 {
                     MyUser.ActiveUser = new MyUser(treatLogin, treatPassword);
-                    MetaData.client.Set(MetaData.parentPath + "/" + MyUser.ActiveUser.Login, MyUser.ActiveUser);
+                    MetaData.client.SetAsync(MetaData.parentPath + "/" + MyUser.ActiveUser.Login, MyUser.ActiveUser);
                     MessageBox.Show(MyUser.ActiveUser.Login);
                 }
                 else
                 {
                     throw new ArgumentException("Такой пользователь уже существует!");
                 }
-            }
-            catch (Exception ex)
-            {
-                ExceptionBlock(ex.Message);
-            }
+            });
+            exceptionText.Visibility = Visibility.Hidden;
         }
         private void loginTB_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
@@ -58,9 +69,9 @@ namespace testAuth
         }
 
         #region MoreMethods
-        private bool CheckUniqueUser(string login)
+        private async Task<bool> CheckUniqueUser(string login)
         {
-            var response = MetaData.client.Get($"{MetaData.parentPath}/{login}");
+            var response = await MetaData.client.GetAsync($"{MetaData.parentPath}/{login}");
             var getUser = response.ResultAs<MyUser>();
             if (getUser == null)
             {
@@ -70,6 +81,7 @@ namespace testAuth
         }
         private void ExceptionBlock(string exception)
         {
+            exceptionText.Foreground = new SolidColorBrush(Colors.Red);
             exceptionText.Visibility = Visibility.Visible;
             exceptionText.Text = exception;
         }
