@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FireSharpTest</id>
+    <version>1.0.0</version>
+    <authors>FireSharpTest</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="FireSharp" version="2.0.4" exclude="Build,Analyzers" />
+        <dependency id="FireSharp.Serialization.JsonNet" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Google.Cloud.Firestore" version="2.3.0" exclude="Build,Analyzers" />
+        <dependency id="Google.Cloud.Storage.V1" version="3.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp3.1/client-server-testapp-key.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\FireSharpTest.runtimeconfig.json" target="lib\netcoreapp3.1\FireSharpTest.runtimeconfig.json" />
+    <file src="C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\FireSharpTest.dll" target="lib\netcoreapp3.1\FireSharpTest.dll" />
+    <file src="C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireSharpTest\FireSharpTest\client-server-testapp-key.json" target="content\client-server-testapp-key.json" />
+    <file src="C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireSharpTest\FireSharpTest\client-server-testapp-key.json" target="contentFiles\any\netcoreapp3.1\client-server-testapp-key.json" />
+  </files>
+</package>
