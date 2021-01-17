@@ -38,7 +38,8 @@ namespace FireSharpTest
             //Console.ForegroundColor = ConsoleColor.Green;
             //Console.WriteLine($"Login: {ActiveUser.Login}\nPassword: {ActiveUser.Password}\nID: {ActiveUser.ID}");
             //Console.ForegroundColor = ConsoleColor.White;
-
+            
+            //ОТСУТСВУЕТ .JSON KEY ИЗ FIRECLOUD
             string path = AppDomain.CurrentDomain.BaseDirectory + "client-server-testapp-key.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
             FirestoreDb db = FirestoreDb.Create("client-server-testapp");
