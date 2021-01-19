@@ -11,12 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="client-server-testapp-key.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.4.0" />
+    <PackageReference Include="FirebaseSharp" Version="2.0.4" />
     <PackageReference Include="FireSharp" Version="2.0.4" />
     <PackageReference Include="FireSharp.Serialization.JsonNet" Version="1.1.0" />
     <PackageReference Include="Google.Cloud.Firestore" Version="2.3.0" />
