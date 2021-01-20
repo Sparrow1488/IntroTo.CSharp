@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj": {}
+    "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj": {
+    "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj",
+        "projectUniqueName": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj",
         "projectName": "FireSharpTest",
-        "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj",
-        "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\obj\\",
+        "projectPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj",
+        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +47,10 @@
             "FireSharp.Serialization.JsonNet": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "Firebase.Auth": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",

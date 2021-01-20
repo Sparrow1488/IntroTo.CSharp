@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "jzAXZrrd7g0V9vsRaOdhEDk/PP3SvA5w+64iapBg4N7QQWI+WKTkVsPMiT4hJRazoTLYJgUsdsHq1hb4Ie43+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\Google sheets\\GoogleSheetsApp\\GoogleSheetsApp\\GoogleSheetsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dom\\.nuget\\packages\\google.apis\\1.49.0\\google.apis.1.49.0.nupkg.sha512",
+    "C:\\Users\\Dom\\.nuget\\packages\\google.apis.auth\\1.49.0\\google.apis.auth.1.49.0.nupkg.sha512",
+    "C:\\Users\\Dom\\.nuget\\packages\\google.apis.core\\1.49.0\\google.apis.core.1.49.0.nupkg.sha512",
+    "C:\\Users\\Dom\\.nuget\\packages\\google.apis.sheets.v4\\1.49.0.2175\\google.apis.sheets.v4.1.49.0.2175.nupkg.sha512",
+    "C:\\Users\\Dom\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
