@@ -16,63 +16,63 @@ namespace ServerTCP1
         static void Main(string[] args)
         {
             #region TCPserver
-            //const string ip = "127.0.0.1";
-            //const int port = 8080;
+            const string ip = "127.0.0.1";
+            const int port = 8080;
 
-            //var tcpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port); // парсим наш ip (string) в стандартный формат подключения.
+            var tcpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port); // парсим наш ip (string) в стандартный формат подключения.
 
-            //// <!-- СОЗДАЕМ СОКЕТ В РЕЖИМЕ ОЖИДАНИЯ-->
-            //var tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); // шаблонный параметр (не должен изменяться) (1. протокол сетевого уровня 2. протокол транспортного уровня 3. сам протокол tcp)
-            //tcpSocket.Bind(tcpEndPoint); // связываем наш сокет с конечной точной
-            //tcpSocket.Listen(5); // сколько пользователей мы можем держать в режиме ожидания (некая защита от перегрузки)
+            // <!-- СОЗДАЕМ СОКЕТ В РЕЖИМЕ ОЖИДАНИЯ-->
+            var tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); // шаблонный параметр (не должен изменяться) (1. протокол сетевого уровня 2. протокол транспортного уровня 3. сам протокол tcp)
+            tcpSocket.Bind(tcpEndPoint); // связываем наш сокет с конечной точной
+            tcpSocket.Listen(5); // сколько пользователей мы можем держать в режиме ожидания (некая защита от перегрузки)
 
-            //// <!--ПРОЦЕСС ПРОСЛУШИВАНИЯ-->
-            //while (true)
-            //{
-            //    var listener = tcpSocket.Accept();
-            //    var buffer = new byte[256]; // создаем хранилище, куда будут залетать наши полученные данные (указываем то, сколько мы можем принять байт)
-            //    var sizeFact = 0; // по факту полученные байты
-            //    var data = new StringBuilder();
+            // <!--ПРОЦЕСС ПРОСЛУШИВАНИЯ-->
+            while (true)
+            {
+                var listener = tcpSocket.Accept();
+                var buffer = new byte[256]; // создаем хранилище, куда будут залетать наши полученные данные (указываем то, сколько мы можем принять байт)
+                var sizeFact = 0; // по факту полученные байты
+                var data = new StringBuilder();
 
-            //    do
-            //    {
-            //        sizeFact = listener.Receive(buffer); // получаем по факту полученный размер байт
-            //        data.Append(Encoding.UTF8.GetString(buffer), 0, sizeFact);
-            //    }
-            //    while (tcpSocket.Available > 0); // выполнять до тех пор, пока в нашем подключении будут какие либо данные
+                do
+                {
+                    sizeFact = listener.Receive(buffer); // получаем по факту полученный размер байт
+                    data.Append(Encoding.UTF8.GetString(buffer), 0, sizeFact);
+                }
+                while (tcpSocket.Available > 0); // выполнять до тех пор, пока в нашем подключении будут какие либо данные
 
-            //    Console.WriteLine(data);
+                Console.WriteLine(data);
 
-            //    listener.Send(Encoding.UTF8.GetBytes("Успех!"));
+                listener.Send(Encoding.UTF8.GetBytes("Успех!"));
 
-            //    listener.Shutdown(SocketShutdown.Both); // корректно выключили
-            //    listener.Close(); // закрыли
-            //}
+                listener.Shutdown(SocketShutdown.Both); // корректно выключили
+                listener.Close(); // закрыли
+            }
             #endregion
 
             #region UDPserver
             // <!--ПО ПРОТОКОЛУ UDP МОЖЕТ ПОДКЛЮЧИТЬСЯ ЛЮБОЙ-->
-            const string ip = "127.0.0.1";
-            const int port = 8090;
+            //const string ip = "127.0.0.1";
+            //const int port = 8090;
 
-            var udpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);
-            var udpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-            udpSocket.Bind(udpEndPoint);
+            //var udpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);
+            //var udpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            //udpSocket.Bind(udpEndPoint);
 
-            while (true)
-            {
-                var data = new StringBuilder();
-                var buffer = new byte[256];
+            //while (true)
+            //{
+            //    var data = new StringBuilder();
+            //    var buffer = new byte[256];
 
-                EndPoint senderEndPoint = new IPEndPoint(IPAddress.Any, 0); // сюда сохраняем адресс клиента
+            //    EndPoint senderEndPoint = new IPEndPoint(IPAddress.Any, 0); // сюда сохраняем адресс клиента
 
-                udpSocket.ReceiveFrom(buffer, ref senderEndPoint);
-                data.Append(Encoding.UTF8.GetString(buffer));
+            //    udpSocket.ReceiveFrom(buffer, ref senderEndPoint);
+            //    data.Append(Encoding.UTF8.GetString(buffer));
 
-                udpSocket.SendTo(Encoding.UTF8.GetBytes(data.ToString()), senderEndPoint);
+            //    udpSocket.SendTo(Encoding.UTF8.GetBytes(data.ToString()), senderEndPoint);
 
-                Console.WriteLine(data);
-            }
+            //    Console.WriteLine(data);
+            //}
             #endregion
         }
 

@@ -183,3 +183,5 @@ C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpT
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\obj\Debug\netcoreapp3.1\FireSharpTest.dll
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\obj\Debug\netcoreapp3.1\FireSharpTest.pdb
 C:\Users\Dom\Desktop\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\obj\Debug\netcoreapp3.1\FireSharpTest.genruntimeconfig.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\client_secret.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\System.ServiceModel.dll

@@ -1,0 +1,41 @@
+﻿<Window x:Class="WindowTabControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowTabControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <Grid>
+        <TabControl x:Name="products">
+            <TabItem x:Name="smartphonesTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Height="10" Width="10" Fill="Black" />
+                        <TextBlock Margin="3">Смартфоны</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <StackPanel.ContextMenu>
+                            <ContextMenu>
+                                <TextBlock Text="Отменить"/>
+                            </ContextMenu>
+                        </StackPanel.ContextMenu>
+                        <RadioButton IsChecked="True">iPhone S6</RadioButton>
+                        <RadioButton>LG G 4</RadioButton>
+                        <RadioButton>Lumia 550</RadioButton>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="tabletsTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Height="10" Width="10" Fill="Black" />
+                        <TextBlock Margin="3">Планшеты</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
