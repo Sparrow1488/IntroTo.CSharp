@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj": {}
+    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj": {
+    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj",
+        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj",
         "projectName": "ClientConsole",
-        "projectPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj",
-        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dom\\Desktop\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\obj\\",
+        "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\ClientConsole.csproj",
+        "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$НАРАБОТКИ\\РАБОЧИЕ\\Чатикс\\ClientWF\\ClientConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
