@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "kBB2PXnwlTgEDGRR4j/gaVcdI649nPf5LdruRhjFBMMM3kT+s1UXP8J1PKoFmxnIIoD4hv6L3K7M9G9TDDbrfg==",
+=======
+  "dgSpecHash": "3DgAT3UubHOaw6WdAcSSnp86SgIynboeZSyNrp0QOJmTUmjS3qLmaFrMtrlG5OpRwAoOaRNOZsCDEFmre26XXg==",
+>>>>>>> a8443d59729a64d67335aba647faa8afb8fbc5d6
   "success": true,
   "projectFilePath": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\FireSharpTest\\FireSharpTest.csproj",
   "expectedPackageFiles": [

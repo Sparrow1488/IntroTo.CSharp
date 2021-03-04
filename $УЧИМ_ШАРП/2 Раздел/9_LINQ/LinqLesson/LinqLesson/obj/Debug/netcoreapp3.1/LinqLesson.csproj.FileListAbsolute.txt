@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\bin\Debug\netcoreapp3.1\LinqLesson.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\bin\Debug\netcoreapp3.1\LinqLesson.deps.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\bin\Debug\netcoreapp3.1\LinqLesson.runtimeconfig.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\bin\Debug\netcoreapp3.1\LinqLesson.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\bin\Debug\netcoreapp3.1\LinqLesson.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\bin\Debug\netcoreapp3.1\LinqLesson.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.AssemblyInfo.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\2 Раздел\9_LINQ\LinqLesson\LinqLesson\obj\Debug\netcoreapp3.1\LinqLesson.genruntimeconfig.cache

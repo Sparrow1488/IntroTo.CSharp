@@ -3,10 +3,6 @@ using FireSharp.Config;
 using FireSharp;
 using FireSharp.Interfaces;
 using System.Threading.Tasks;
-using Google.Cloud.Firestore;
-using System.Collections.Generic;
-using Google.Cloud.Firestore.V1;
-using FireSharp.Response;
 
 namespace FireSharpTest
 {
@@ -24,19 +20,40 @@ namespace FireSharpTest
         {
             CreateClient();
 
-            Console.Write("Write login: ");
-            string log = Console.ReadLine();
-            Console.Write("Write password: ");
-            string pass = Console.ReadLine();
-            ActiveUser = CreateUser(log, pass);
+            var list = new ListNews(new News() { Title = "title1", Description = "asdasd"}, new News() { Title = "title2", Description = "qwqw234234dfadfasd" });
+            await client.SetAsync($"Multi-server-news/{list.MyName}", list);
 
+<<<<<<< HEAD
             SetResponse setClient = await client.SetAsync($"{parentPath}/{ActiveUser.Login}", ActiveUser);
             Console.WriteLine("Wait...");
             Console.WriteLine("New user is create!");
+=======
+            var addNews = new News() { Title = "tita", Description = "desca"};
+            await client.SetAsync($"Multi-server-news/{list.MyName}", addNews);
+>>>>>>> a8443d59729a64d67335aba647faa8afb8fbc5d6
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Login: {ActiveUser.Login}\nPassword: {ActiveUser.Password}\nID: {ActiveUser.ID}");
-            Console.ForegroundColor = ConsoleColor.White;
+            var respose = await client.GetAsync($"Multi-server-news/{list.MyName}");
+            var getList = respose.ResultAs<ListNews>();
+            foreach (var news in getList.list)
+            {
+                Console.WriteLine(news.Title);
+                Console.WriteLine(news.Description);
+            }
+
+            #region Blabla
+            //Console.Write("Write login: ");
+            //string log = Console.ReadLine();
+            //Console.Write("Write password: ");
+            //string pass = Console.ReadLine();
+            //ActiveUser = CreateUser(log, pass);
+
+            //SetResponse setClient = client.Set($"{parentPath}/{ActiveUser.Login}", ActiveUser);
+            //Console.WriteLine("Wait...");
+            //Console.WriteLine("New user is create!");
+
+            //Console.ForegroundColor = ConsoleColor.Green;
+            //Console.WriteLine($"Login: {ActiveUser.Login}\nPassword: {ActiveUser.Password}\nID: {ActiveUser.ID}");
+            //Console.ForegroundColor = ConsoleColor.White;
 
             //< СОЗДАНИЕ СЕРВИСНОГО АККАУНТА, ТК GOOGLE_APPLICATION_CREDENTIALS ТОЛЬКО ДЛЯ СЕРВИСНЫХ АККОВ
             //ОТСУТСВУЕТ.JSON KEY ИЗ FIRECLOUD
@@ -78,6 +95,7 @@ namespace FireSharpTest
             //var user = auth.User.Email;
             //auth.User.E. ShouldBeEquivalentTo(email);
             //FireBaseApp
+            #endregion
         }
         #region Other Methods
         private static void CreateClient()

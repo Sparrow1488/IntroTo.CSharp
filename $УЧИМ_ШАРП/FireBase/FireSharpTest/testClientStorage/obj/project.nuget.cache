@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "sF36O2SjQLtbYC8v4eAohDrTnLvrv0fUOyUh8ec8QIaEN9IYgm9h3KPVjC2hpX1WdIqVSA+psZgbXuDlaBo4hg==",
+=======
+  "dgSpecHash": "67gWjJmeQUhe5do5fq1i8g0gKPJ6u20A+eOaYtYzQrX5BLHsd+F2PU+L+M16pXFL5eCgQDR9xKcDISCaqviu4w==",
+>>>>>>> a8443d59729a64d67335aba647faa8afb8fbc5d6
   "success": true,
   "projectFilePath": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj",
   "expectedPackageFiles": [
