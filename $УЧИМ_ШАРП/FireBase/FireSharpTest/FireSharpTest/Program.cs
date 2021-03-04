@@ -30,7 +30,7 @@ namespace FireSharpTest
             string pass = Console.ReadLine();
             ActiveUser = CreateUser(log, pass);
 
-            SetResponse setClient = client.Set($"{parentPath}/{ActiveUser.Login}", ActiveUser);
+            SetResponse setClient = await client.SetAsync($"{parentPath}/{ActiveUser.Login}", ActiveUser);
             Console.WriteLine("Wait...");
             Console.WriteLine("New user is create!");
 

@@ -1,0 +1,33 @@
+﻿<Window
+    x:Class="Vk_Wall_Editor.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Vk_Wall_Editor"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="defBtn">
+            <Setter Property="ItemsControl.FontSize" Value="24" />
+            <Setter Property="ItemsControl.Margin" Value="5 2" />
+            <Setter Property="ItemsControl.Padding" Value="5 2" />
+            <Setter Property="ItemsControl.BorderThickness" Value="0" />
+            <Setter Property="ItemsControl.Background" Value="Transparent" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <WrapPanel Margin="40">
+            <Button
+                Click="Button_Click"
+                Content="GetOnline"
+                Style="{StaticResource defBtn}" />
+            <Button
+                Click="Button_Click_1"
+                Content="Get"
+                Style="{StaticResource defBtn}" />
+        </WrapPanel>
+    </Grid>
+</Window>

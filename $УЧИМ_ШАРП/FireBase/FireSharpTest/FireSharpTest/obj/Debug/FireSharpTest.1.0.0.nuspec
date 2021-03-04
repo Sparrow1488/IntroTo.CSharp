@@ -19,7 +19,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\FireSharpTest.runtimeconfig.json" target="lib\netcoreapp3.1\FireSharpTest.runtimeconfig.json" />
-    <file src="C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\FireSharpTest.dll" target="lib\netcoreapp3.1\FireSharpTest.dll" />
+    <file src="C:\Users\Dom\Desktop\Репозитории\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\FireSharpTest.runtimeconfig.json" target="lib\netcoreapp3.1\FireSharpTest.runtimeconfig.json" />
+    <file src="C:\Users\Dom\Desktop\Репозитории\The-basis-of-CScharp\$УЧИМ_ШАРП\FireBase\FireSharpTest\FireSharpTest\bin\Debug\netcoreapp3.1\FireSharpTest.dll" target="lib\netcoreapp3.1\FireSharpTest.dll" />
   </files>
 </package>

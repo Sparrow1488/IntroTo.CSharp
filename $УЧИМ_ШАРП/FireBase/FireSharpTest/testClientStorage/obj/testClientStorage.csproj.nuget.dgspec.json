@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj": {}
+    "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj": {
+    "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj",
+        "projectUniqueName": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj",
         "projectName": "testClientStorage",
-        "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj",
-        "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\obj\\",
+        "projectPath": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\testClientStorage.csproj",
+        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\FireBase\\FireSharpTest\\testClientStorage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
