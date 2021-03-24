@@ -15,7 +15,8 @@ namespace Anonymous_typers
 
             var product2 = new
             {
-                Name = "Not-magic-eat"
+                Name = "Not-magic-eat",
+                Pricee = 200
             };
         }
     }
