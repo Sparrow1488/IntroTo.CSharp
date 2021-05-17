@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Memento.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Memento.deps.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Memento.runtimeconfig.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Memento.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Memento.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Memento.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.AssemblyInfo.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Memento.genruntimeconfig.cache

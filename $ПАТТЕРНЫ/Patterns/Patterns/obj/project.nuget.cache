@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GFbH1oKoO3/0vXXtEF35HA6veg3DEGgVz59i2MXFP9PRaD6jsAV+22o/nRvg2DYyZDxUZgtXLyK0kxO3+XDTXQ==",
+  "dgSpecHash": "04jS6qu365lA0pXS4lqwyFDL+eubc+7fdlEk3dOmMlaYQGSUqtAPZSDi7ET0XUAibqOqxa4u2ZRuRjSRQN6HoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Patterns.csproj",
+  "projectFilePath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

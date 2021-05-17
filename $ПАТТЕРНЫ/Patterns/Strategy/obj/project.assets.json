@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
-      "projectName": "Memento",
-      "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
+      "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Strategy\\Strategy.csproj",
+      "projectName": "Strategy",
+      "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Strategy\\Strategy.csproj",
       "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\obj\\",
+      "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Strategy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
