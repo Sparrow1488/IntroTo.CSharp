@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Patterns.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Patterns.deps.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Patterns.runtimeconfig.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Patterns.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Patterns.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\bin\Debug\netcoreapp3.1\Patterns.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.AssemblyInfo.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$ПАТТЕРНЫ\Patterns\Patterns\obj\Debug\netcoreapp3.1\Patterns.genruntimeconfig.cache
