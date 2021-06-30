@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\bin\Debug\netcoreapp3.1\8_Tuple.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\bin\Debug\netcoreapp3.1\8_Tuple.deps.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\bin\Debug\netcoreapp3.1\8_Tuple.runtimeconfig.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\bin\Debug\netcoreapp3.1\8_Tuple.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\bin\Debug\netcoreapp3.1\8_Tuple.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\bin\Debug\netcoreapp3.1\8_Tuple.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.AssemblyInfo.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\8_Кортежи\8_Tuple\8_Tuple\obj\Debug\netcoreapp3.1\8_Tuple.genruntimeconfig.cache

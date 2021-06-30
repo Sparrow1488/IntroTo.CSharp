@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "10_Explicit_implicit/1.0.0": {
+        "runtime": {
+          "10_Explicit_implicit.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "10_Explicit_implicit/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
