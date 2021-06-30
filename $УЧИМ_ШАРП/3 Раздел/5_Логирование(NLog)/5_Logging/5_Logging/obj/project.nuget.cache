@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "C9itaqwv9XHg52cXUxACizSNb6feHJmNwwt9UxNYuRKLg7icaktLokTGDxbOLvhKwSia6q6hmjFgglI7aKdTdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$УЧИМ_ШАРП\\3 Раздел\\5_Логирование(NLog)\\5_Logging\\5_Logging\\5_Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DOM\\.nuget\\packages\\nlog\\4.7.10\\nlog.4.7.10.nupkg.sha512",
+    "C:\\Users\\DOM\\.nuget\\packages\\nlog.config\\4.7.10\\nlog.config.4.7.10.nupkg.sha512",
+    "C:\\Users\\DOM\\.nuget\\packages\\nlog.schema\\4.7.10\\nlog.schema.4.7.10.nupkg.sha512"
+  ],
+  "logs": []
+}
