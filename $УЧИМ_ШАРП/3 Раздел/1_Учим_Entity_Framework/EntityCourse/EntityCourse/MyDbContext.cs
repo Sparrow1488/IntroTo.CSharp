@@ -13,5 +13,6 @@ namespace EntityCourse
         }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Song> Songs { get; set; }
+        public DbSet<Holo> Holos { get; set; }
     }
 }

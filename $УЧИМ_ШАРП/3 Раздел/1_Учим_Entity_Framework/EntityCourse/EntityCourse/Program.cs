@@ -7,6 +7,18 @@ namespace EntityCourse
     {
         static void Main(string[] args)
         {
+            //using (var context1 = new MyDbContext())
+            //{
+            //    var holo = new Holo() { Name = "1212" };
+            //    context1.Holos.Add(holo);
+            //    context1.SaveChanges();
+
+            //    foreach (var item in context1.Holos)
+            //    {
+            //        Console.WriteLine(item.Name);
+            //    };
+            //}
+
             using (var context = new MyDbContext())
             {
                 var group = new Group()

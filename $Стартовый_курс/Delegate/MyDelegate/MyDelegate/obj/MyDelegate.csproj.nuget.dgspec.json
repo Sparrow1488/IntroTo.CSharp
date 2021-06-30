@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj": {}
+    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj": {
+    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj",
+        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj",
         "projectName": "MyDelegate",
-        "projectPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj",
+        "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\MyDelegate.csproj",
         "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOM\\Desktop\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\obj\\",
+        "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$Стартовый_курс\\Delegate\\MyDelegate\\MyDelegate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
