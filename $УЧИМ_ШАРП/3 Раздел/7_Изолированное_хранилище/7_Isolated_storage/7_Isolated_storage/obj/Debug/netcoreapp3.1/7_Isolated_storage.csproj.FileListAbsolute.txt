@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\bin\Debug\netcoreapp3.1\7_Isolated_storage.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\bin\Debug\netcoreapp3.1\7_Isolated_storage.deps.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\bin\Debug\netcoreapp3.1\7_Isolated_storage.runtimeconfig.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\bin\Debug\netcoreapp3.1\7_Isolated_storage.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\bin\Debug\netcoreapp3.1\7_Isolated_storage.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\bin\Debug\netcoreapp3.1\7_Isolated_storage.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.AssemblyInfo.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\7_Изолированное_хранилище\7_Isolated_storage\7_Isolated_storage\obj\Debug\netcoreapp3.1\7_Isolated_storage.genruntimeconfig.cache
