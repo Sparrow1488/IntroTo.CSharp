@@ -1,21 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Data;
 
 namespace MyDelegate
 {
     public class MyClass
     {
-        delegate void Hello();
-        Hello helloW;
-        Hello getTime;
+        public delegate void Hello();
+        public Hello helloW;
+        public Hello getTime;
         public static Dictionary<string, Delegate> dCollection = new Dictionary<string, Delegate>()
         {
             { "hello", new MyClass().helloW},
             { "get", new MyClass().getTime}
         };
-        
         
         public void AddAllDelegate()
         {

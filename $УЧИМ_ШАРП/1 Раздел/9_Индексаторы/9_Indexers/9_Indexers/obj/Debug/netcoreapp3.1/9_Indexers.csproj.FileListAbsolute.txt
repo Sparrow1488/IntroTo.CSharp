@@ -1,0 +1,13 @@
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\bin\Debug\netcoreapp3.1\9_Indexers.exe
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\bin\Debug\netcoreapp3.1\9_Indexers.deps.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\bin\Debug\netcoreapp3.1\9_Indexers.runtimeconfig.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\bin\Debug\netcoreapp3.1\9_Indexers.runtimeconfig.dev.json
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\bin\Debug\netcoreapp3.1\9_Indexers.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\bin\Debug\netcoreapp3.1\9_Indexers.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.csprojAssemblyReference.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.AssemblyInfoInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.AssemblyInfo.cs
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.csproj.CoreCompileInputs.cache
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.dll
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.pdb
+C:\Users\DOM\Desktop\ИЛЬЯ\HTML\C#\The-basis-of-CScharp\$УЧИМ_ШАРП\1 Раздел\9_Индексаторы\9_Indexers\9_Indexers\obj\Debug\netcoreapp3.1\9_Indexers.genruntimeconfig.cache
