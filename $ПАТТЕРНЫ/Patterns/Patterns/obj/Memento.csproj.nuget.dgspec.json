@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj": {}
+    "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj": {
+    "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
+        "projectUniqueName": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
         "projectName": "Memento",
-        "projectPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
-        "packagesPath": "C:\\Users\\DOM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DOM\\Desktop\\ИЛЬЯ\\HTML\\C#\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\obj\\",
+        "projectPath": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\Memento.csproj",
+        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dom\\Desktop\\Репозитории\\The-basis-of-CScharp\\$ПАТТЕРНЫ\\Patterns\\Patterns\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
