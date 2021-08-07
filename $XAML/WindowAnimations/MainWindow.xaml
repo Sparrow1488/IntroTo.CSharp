@@ -1,0 +1,62 @@
+﻿<Window
+    x:Class="WindowAnimations.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WindowAnimations"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="clr-namespace:WindowAnimations.ViewModels"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    Background="#323232"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <viewModel:MainViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style x:Key="NavigationButton" TargetType="Button">
+            <Setter Property="Height" Value="30" />
+            <Setter Property="Margin" Value="4,4,6,4" />
+            <Setter Property="Width" Value="120" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="2">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="White" />
+                                <Setter Property="BorderBrush" Value="Black" />
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel>
+        <StackPanel Background="#626262" Orientation="Horizontal">
+            <Button
+                Command="{Binding NavigateOnePage}"
+                Content="СТРАНИЦА 1"
+                Style="{StaticResource NavigationButton}" />
+            <Button
+                Command="{Binding NavigateTwoPage}"
+                Content="СТРАНИЦА 2"
+                Style="{StaticResource NavigationButton}" />
+        </StackPanel>
+        <Frame
+            x:Name="ContentFrame"
+            Content="{Binding CurrentPage}"
+            NavigationUIVisibility="Hidden" />
+
+    </StackPanel>
+</Window>
