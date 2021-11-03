@@ -5,6 +5,7 @@ namespace _1.Threads
 {
     public class Program
     {
+        
         private static Thread _first;
         private static Thread _second;
         public static void Main(string[] args)
@@ -39,6 +40,7 @@ namespace _1.Threads
         }
         private static void PrintThreadInfo()
         {
+            
             Console.WriteLine($"\n[{_first.Name}]{_first.ThreadState}");
             Console.WriteLine($"[{_second.Name}]{_second.ThreadState}");
         }

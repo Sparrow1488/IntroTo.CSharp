@@ -1,0 +1,14 @@
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\bin\Debug\netcoreapp3.1\2.Threads.Lock.exe
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\bin\Debug\netcoreapp3.1\2.Threads.Lock.deps.json
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\bin\Debug\netcoreapp3.1\2.Threads.Lock.runtimeconfig.json
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\bin\Debug\netcoreapp3.1\2.Threads.Lock.runtimeconfig.dev.json
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\bin\Debug\netcoreapp3.1\2.Threads.Lock.dll
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\bin\Debug\netcoreapp3.1\2.Threads.Lock.pdb
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.csproj.AssemblyReference.cache
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.AssemblyInfoInputs.cache
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.AssemblyInfo.cs
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.csproj.CoreCompileInputs.cache
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.dll
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.pdb
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\2.Threads.Lock\obj\Debug\netcoreapp3.1\2.Threads.Lock.genruntimeconfig.cache

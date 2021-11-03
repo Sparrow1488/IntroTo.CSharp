@@ -1,0 +1,14 @@
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\bin\Debug\netcoreapp3.1\Threads.Monitor.exe
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\bin\Debug\netcoreapp3.1\Threads.Monitor.deps.json
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\bin\Debug\netcoreapp3.1\Threads.Monitor.runtimeconfig.json
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\bin\Debug\netcoreapp3.1\Threads.Monitor.runtimeconfig.dev.json
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\bin\Debug\netcoreapp3.1\Threads.Monitor.dll
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\bin\Debug\netcoreapp3.1\Threads.Monitor.pdb
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.AssemblyInfoInputs.cache
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.AssemblyInfo.cs
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.csproj.CoreCompileInputs.cache
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.dll
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.pdb
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.genruntimeconfig.cache
+C:\Users\aleks\OneDrive\Desktop\Илья\Repositories\The-basis-of-CScharp\$УЧИМ_ШАРП\3 Раздел\RepeatApp\Threads.Monitor\obj\Debug\netcoreapp3.1\Threads.Monitor.csproj.AssemblyReference.cache
