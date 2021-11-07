@@ -26,7 +26,7 @@
     <Grid x:Name="Wrapper">
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition x:Name="PlayerHandlePanel" MaxHeight="40" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Border
             Grid.RowSpan="5"
@@ -36,10 +36,11 @@
                 Name="Player"
                 LoadedBehavior="Manual"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="C:\Users\Dom\Downloads\1438307388129.mp4"
+                Source="C:\Users\Dom\Downloads\1883982727826.mp4"
                 Stretch="Uniform" />
         </Border>
-        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <TextBlock
                 x:Name="SubtitlesText"
                 Margin="0,30"
@@ -47,20 +48,28 @@
                 Background="Black"
                 FontSize="20"
                 Foreground="White"
+                Opacity="0.7"
                 Text="No Subtitles"
                 TextAlignment="Center"
                 TextWrapping="Wrap" />
-        </WrapPanel>
-        <DockPanel Grid.Row="1" HorizontalAlignment="Center">
-            <Button
-                Click="Button_Click"
-                Content="Play"
-                Style="{StaticResource MediaPlayerBtn}" />
-            <Button
-                Click="Button_Click_1"
-                Content="Pause"
-                Style="{StaticResource MediaPlayerBtn}" />
-        </DockPanel>
+        </Border>
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <DockPanel
+                x:Name="PlayerHandlePanel"
+                Grid.Row="1"
+                HorizontalAlignment="Center">
+                <Button
+                    Click="Button_Click"
+                    Content="Play"
+                    Style="{StaticResource MediaPlayerBtn}" />
+                <Button
+                    Click="Button_Click_1"
+                    Content="Pause"
+                    Style="{StaticResource MediaPlayerBtn}" />
+            </DockPanel>
+        </Border>
+
     </Grid>
 
 
