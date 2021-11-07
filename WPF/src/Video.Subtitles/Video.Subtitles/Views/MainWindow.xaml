@@ -1,19 +1,20 @@
 ﻿<Window
-    x:Class="Video.Subtitles.MainWindow"
+    x:Class="Video.Subtitles.Views.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:Video.Subtitles"
+    xmlns:local="clr-namespace:Video.Subtitles.Views"
+    xmlns:local1="clr-namespace:Video.Subtitles.Converters"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="Window"
     Title="MainWindow"
-    Width="509"
-    Height="722"
+    Width="844"
+    Height="637"
     MinWidth="400"
     FontSize="22"
     mc:Ignorable="d">
     <Window.Resources>
-        <local:TestConverter x:Key="TestConverter" />
+        <local1:SizeConverter x:Key="SizeConverter" />
 
         <Style x:Key="NavigationBtn" TargetType="Button">
             <Setter Property="Padding" Value="10,5" />
@@ -24,7 +25,7 @@
         <Style x:Key="AdaptivePlayerPanel" TargetType="Grid">
             <Setter Property="Grid.ColumnSpan" Value="2" />
             <Style.Triggers>
-                <DataTrigger Binding="{Binding ActualWidth, ElementName=Window, Converter={StaticResource TestConverter}, ConverterParameter=720}" Value="True">
+                <DataTrigger Binding="{Binding ActualWidth, ElementName=Window, Converter={StaticResource SizeConverter}, ConverterParameter=720}" Value="True">
                     <Setter Property="Grid.Column" Value="0" />
                     <Setter Property="Grid.ColumnSpan" Value="1" />
                 </DataTrigger>
@@ -36,7 +37,7 @@
             <Setter Property="Grid.Row" Value="1" />
             <Setter Property="Grid.RowSpan" Value="2" />
             <Style.Triggers>
-                <DataTrigger Binding="{Binding ActualWidth, ElementName=Window, Converter={StaticResource TestConverter}, ConverterParameter=720}" Value="True">
+                <DataTrigger Binding="{Binding ActualWidth, ElementName=Window, Converter={StaticResource SizeConverter}, ConverterParameter=720}" Value="True">
                     <Setter Property="Grid.ColumnSpan" Value="1" />
                     <Setter Property="Grid.Column" Value="1" />
                     <Setter Property="Grid.Row" Value="0" />
@@ -70,7 +71,7 @@
                 </Grid.RowDefinitions>
                 <Grid Margin="20,0" Style="{StaticResource AdaptivePlayerPanel}">
                     <StackPanel>
-                        <local:VideoPlayer x:Name="MediaPlayer" />
+                        <local:VideoPlayer x:Name="MediaPlayer" MinHeight="250" />
                         <TextBlock
                             FontSize="28"
                             FontWeight="Bold"

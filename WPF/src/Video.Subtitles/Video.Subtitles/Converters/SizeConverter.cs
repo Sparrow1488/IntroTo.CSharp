@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace Video.Subtitles
+namespace Video.Subtitles.Converters
 {
-    public class TestConverter : IValueConverter
+    public class SizeConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
