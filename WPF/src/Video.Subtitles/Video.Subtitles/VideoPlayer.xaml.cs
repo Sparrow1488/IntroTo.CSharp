@@ -9,6 +9,7 @@ namespace Video.Subtitles
         public VideoPlayer()
         {
             InitializeComponent();
+            PlayerHandlePanel.Opacity = 0;
             Wrapper.MouseEnter += OnMouseEnter;
             Wrapper.MouseLeave += Player_MouseLeave; ;
         }

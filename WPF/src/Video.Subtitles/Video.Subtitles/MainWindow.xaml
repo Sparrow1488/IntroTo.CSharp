@@ -70,11 +70,7 @@
                 </Grid.RowDefinitions>
                 <Grid Margin="20,0" Style="{StaticResource AdaptivePlayerPanel}">
                     <StackPanel>
-
-                        <!--  СДЕЛАТЬ МАКСИМАЛЬНУЮ ВЫСОТУ НЕ БОЛЬШЕ ВЫСОТЫ ТЕКУЩЕГО РАЗМЕРА WINDOW  -->
-
-
-                        <local:VideoPlayer x:Name="MediaPlayer" MaxHeight="600" />
+                        <local:VideoPlayer x:Name="MediaPlayer" />
                         <TextBlock
                             FontSize="28"
                             FontWeight="Bold"

@@ -21,16 +21,16 @@
     <Grid x:Name="Wrapper">
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition MaxHeight="40" />
+            <RowDefinition MaxHeight="50" />
         </Grid.RowDefinitions>
         <Border
             Grid.RowSpan="5"
             Padding="10"
-            Background="Black">
+            Background="#101010">
             <MediaElement
                 Name="Player"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="C:\Users\Dom\Downloads\Инженер.mp4"
+                Source="C:\Users\Dom\Downloads\1438307388129.mp4"
                 Stretch="Uniform" />
         </Border>
         <DockPanel

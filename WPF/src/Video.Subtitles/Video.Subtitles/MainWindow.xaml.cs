@@ -10,6 +10,7 @@ namespace Video.Subtitles
         public MainWindow()
         {
             InitializeComponent();
+            MediaPlayer.MaxHeight = SystemParameters.VirtualScreenHeight - 200;
         }
     }
 }
