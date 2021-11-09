@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -18,6 +16,8 @@ namespace Video.Subtitles.Views
         public VideoPlayer()
         {
             InitializeComponent();
+            Player.MediaEnded += Player_MediaEnded;
+            MainPlayButton.MouseUp += MainPlayButton_MouseUp;
             PlayerHandlePanel.MaxHeight = 0;
             Wrapper.MouseEnter += OnMouseEnter;
             Wrapper.MouseLeave += Player_MouseLeave;
@@ -34,6 +34,19 @@ namespace Video.Subtitles.Views
             };
         }
 
+        private void Player_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            Player.Position = new TimeSpan(0);
+            Player.Stop();
+            MainPlayButton.Visibility = Visibility.Visible;
+        }
+
+        private void MainPlayButton_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            MainPlayButton.Visibility = Visibility.Hidden;
+            PlayVideo();
+        }
+
         private void Player_MouseLeave(object sender, MouseEventArgs e)
         {
             HidePlayerHandler();
@@ -45,6 +58,11 @@ namespace Video.Subtitles.Views
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            PlayVideo();
+        }
+
+        private void PlayVideo()
         {
             Player.Play();
             _timer = CreateTimer();
@@ -90,7 +108,7 @@ namespace Video.Subtitles.Views
             return timer;
         }
 
-        private void Button_Click_1(object sender, System.Windows.RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Player.Pause();
         }

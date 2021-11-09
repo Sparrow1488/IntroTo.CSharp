@@ -36,8 +36,18 @@
                 Name="Player"
                 LoadedBehavior="Manual"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="C:\Users\Dom\Downloads\1883982727826.mp4"
+                Source="C:\Users\Александр\Downloads\Test-Media\tumblr nsfw - D.Va and Pharah snap by Yeero.mp4"
                 Stretch="Uniform" />
+        </Border>
+
+        <Border Height="120" 
+                Width="120" 
+                Cursor="Hand"
+                CornerRadius="100"
+                x:Name="MainPlayButton">
+            <Border.Background>
+                <ImageBrush ImageSource="../Source/Icons/play-icon.png"/>
+            </Border.Background>
         </Border>
 
         <Border HorizontalAlignment="Center" VerticalAlignment="Bottom">
