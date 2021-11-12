@@ -1,11 +1,13 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
 using Video.Subtitles.Commands;
+using Video.Subtitles.Views.CustomComponents;
 
 namespace Video.Subtitles.ViewModels
 {
@@ -13,30 +15,27 @@ namespace Video.Subtitles.ViewModels
     {
         public PlayerViewModel()
         {
-            _subtitlesCollection = new List<Subtitles>
-            {
-                new Subtitles{ Text = "Добрый день дамусы и настрадамусы" , Position = new TimeSpan(0, 0, 1) },
-                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 3) },
-                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 5) },
-                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 8) },
-                new Subtitles{ Text = "s5" , Position = new TimeSpan(0, 0, 10) },
-                new Subtitles{ Text = "Вообще то есть еще субтитры, получайте!" , Position = new TimeSpan(0, 0, 12) },
-                new Subtitles{ Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis diam, commodo at varius at, efficitur eget erat." , Position = new TimeSpan(0, 0, 14) },
-                new Subtitles{ Text = "Cras vehicula suscipit erat, non mollis ante semper vitae." , Position = new TimeSpan(0, 0, 16) },
-            };
+            Messenger.Default.Register<MediaElement>(this, InitPlayer);
+
+            _subtitlesCollection = CreateTestSubtitles();
         }
 
         private DispatcherTimer _timer;
         private List<Subtitles> _subtitlesCollection;
         private Subtitles _subtitles;
-        private MediaPlayer _player;
+        private MediaElement _player;
         private string _subtitlesText;
         private bool isPlay = false;
-
+        
 
         public string SubtitlesText
         {
-            get => _subtitlesText;
+            get
+            {
+                if (_subtitlesText == null)
+                    return "No Subtitles";
+                return _subtitlesText;
+            }
             set
             {
                 OnPropertyChanged(nameof(SubtitlesText));
@@ -52,7 +51,7 @@ namespace Video.Subtitles.ViewModels
                 _subtitles = value;
             }
         }
-        public MediaPlayer Player
+        public MediaElement Player
         {
             get => _player;
             set
@@ -61,6 +60,8 @@ namespace Video.Subtitles.ViewModels
                 OnPropertyChanged(nameof(Player));
             }
         }
+
+
         public ICommand PlayerActivate
         {
             get => new PlayerActivate((obj) =>
@@ -101,6 +102,28 @@ namespace Video.Subtitles.ViewModels
             }
         }
 
+        private void InitPlayer(MediaElement player)
+        {
+            if (player == null)
+                throw new NullReferenceException("WPF Media Player Element not initialized! Register property to manipulate from player manager");
+            Player = player;
+        }
+
+        private List<Subtitles> CreateTestSubtitles()
+        {
+            return new List<Subtitles>
+            {
+                new Subtitles{ Text = "Добрый день дамусы и настрадамусы" , Position = new TimeSpan(0, 0, 1) },
+                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 3) },
+                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 5) },
+                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 8) },
+                new Subtitles{ Text = "s5" , Position = new TimeSpan(0, 0, 10) },
+                new Subtitles{ Text = "Вообще то есть еще субтитры, получайте!" , Position = new TimeSpan(0, 0, 12) },
+                new Subtitles{ Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis diam, commodo at varius at, efficitur eget erat." , Position = new TimeSpan(0, 0, 14) },
+                new Subtitles{ Text = "Cras vehicula suscipit erat, non mollis ante semper vitae." , Position = new TimeSpan(0, 0, 16) },
+            };
+        }
+
         private DispatcherTimer CreateTimer()
         {
             var timer = new DispatcherTimer();
@@ -127,5 +150,7 @@ namespace Video.Subtitles.ViewModels
             var animation = new DoubleAnimation(0, new Duration(new TimeSpan(0, 0, 0, 0, 250)));
             //PlayerHandlePanel.BeginAnimation(FrameworkElement.MaxHeightProperty, animation);
         }
+
+        
     }
 }

@@ -71,7 +71,7 @@
                 </Grid.RowDefinitions>
                 <Grid Margin="20,0" Style="{StaticResource AdaptivePlayerPanel}">
                     <StackPanel>
-                        <local:VideoPlayer x:Name="MediaPlayer" MinHeight="250" />
+                        <local:AdaptiveVideoPlayer x:Name="MediaPlayer" MinHeight="250" />
                         <TextBlock
                             FontSize="28"
                             FontWeight="Bold"
