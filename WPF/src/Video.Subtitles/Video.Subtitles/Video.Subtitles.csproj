@@ -79,6 +79,8 @@
     <Compile Include="Commands\CommandBase.cs" />
     <Compile Include="Commands\PlayerActivate.cs" />
     <Compile Include="Converters\SizeConverter.cs" />
+    <Compile Include="Services\Intefaces\ISubtitlesService.cs" />
+    <Compile Include="Services\SubtitlesService.cs" />
     <Compile Include="Subtitles.cs" />
     <Compile Include="ViewModels\PlayerViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />

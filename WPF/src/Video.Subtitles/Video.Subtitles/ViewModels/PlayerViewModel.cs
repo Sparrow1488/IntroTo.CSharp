@@ -5,9 +5,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
-using System.Windows.Threading;
 using Video.Subtitles.Commands;
-using Video.Subtitles.Views.CustomComponents;
+using Video.Subtitles.Services;
+using Video.Subtitles.Services.Intefaces;
 
 namespace Video.Subtitles.ViewModels
 {
@@ -17,13 +17,15 @@ namespace Video.Subtitles.ViewModels
         {
             Messenger.Default.Register<MediaElement>(this, InitPlayer);
 
-            _subtitlesCollection = CreateTestSubtitles();
+            _subtitlesService = new SubtitlesService();
+            _subtitlesService.Open(CreateTestSubtitles());
+            _subtitlesService.OnChanged((subs) => SubtitlesText = subs);
         }
 
-        private DispatcherTimer _timer;
-        private List<Subtitles> _subtitlesCollection;
+        
         private Subtitles _subtitles;
         private MediaElement _player;
+        private ISubtitlesService _subtitlesService;
         private string _subtitlesText;
         private bool isPlay = false;
         
@@ -70,37 +72,17 @@ namespace Video.Subtitles.ViewModels
                 {
                     isPlay = true;
                     PlayVideo();
-                    _timer.Start();
-                    //MainPlayButton.Visibility = Visibility.Hidden;
                 }
                 else
                 {
                     isPlay = false;
-                    //MainPlayButton.Visibility = Visibility.Visible;
-                    _timer.Stop();
-                    Player.Pause();
+                    PauseVideo();
                 }
             });
         }
 
         private int _subCounter = 0;
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            var time = Player.Position;
-            if (_subCounter < _subtitlesCollection.Count)
-            {
-                if (time > _subtitlesCollection[_subCounter].Position)
-                {
-                    SubtitlesText = _subtitlesCollection[_subCounter].Text;
-                    _subCounter++;
-                }
-            }
-            else
-            {
-                _subCounter = 0;
-                _timer.Stop();
-            }
-        }
+        
 
         private void InitPlayer(MediaElement player)
         {
@@ -124,19 +106,18 @@ namespace Video.Subtitles.ViewModels
             };
         }
 
-        private DispatcherTimer CreateTimer()
-        {
-            var timer = new DispatcherTimer();
-            timer.Tick += Timer_Tick;
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 500);
-            return timer;
-        }
+        
 
         private void PlayVideo()
         {
             Player.Play();
-            _timer = CreateTimer();
-            _timer.Start();
+            _subtitlesService.Start();
+        }
+
+        private void PauseVideo()
+        {
+            Player.Pause();
+            _subtitlesService.Pause();
         }
 
         private void DisplayPlayerHandler()
