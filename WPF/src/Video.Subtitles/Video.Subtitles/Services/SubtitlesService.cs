@@ -12,12 +12,14 @@ namespace Video.Subtitles.Services
         public SubtitlesService()
         {
             _timer = CreateTimer();
+
         }
 
         private DispatcherTimer _timer;
-        private IEnumerable<Subtitles> _subtitles;
+        private DispatcherTimer _displayTimer;
         private IList<Subtitles> _easySubtitles;
-        private TimeSpan _timerInterval = new TimeSpan(0, 0, 0, 0, 500);
+        private TimeSpan _timerInterval = new TimeSpan(0, 0, 0, 0, 50);
+        private TimeSpan _maxDisplayTime = new TimeSpan(0, 0, 3);
         private TimeSpan _currentTime = new TimeSpan();
         private delegate void OnSubtitlesChanged(string subs);
         private event OnSubtitlesChanged OnSubtitlesChangedEvent;
@@ -36,6 +38,7 @@ namespace Video.Subtitles.Services
             if (subtitles is IList<Subtitles> current)
                 _easySubtitles = current;
             else _easySubtitles = new List<Subtitles>(_easySubtitles);
+            _easySubtitles.Add(new Subtitles() { Position = _easySubtitles[_easySubtitles.Count - 1].Position + new TimeSpan(0, 0, 3) });
         }
 
         public void Start()
@@ -75,14 +78,21 @@ namespace Video.Subtitles.Services
         private DispatcherTimer CreateTimer()
         {
             var timer = new DispatcherTimer();
-            timer.Tick += Timer_Tick;
+            timer.Tick += TimerChanger_Tick;
             timer.Interval = _timerInterval;
             return timer;
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private DispatcherTimer InitDisplayTimer(DispatcherTimer timer)
         {
-            _currentTime += _timerInterval;
+            timer.Interval = _maxDisplayTime;
+            timer.Tick += DisplayTimer_Tick;
+            return timer;
+        }
+
+        private void TimerChanger_Tick(object sender, EventArgs e)
+        {
+            _currentTime = new TimeSpan(_currentTime.Ticks + _timerInterval.Ticks);
             if (_currentIndex >= _easySubtitles.Count) 
                 return;
 
@@ -91,13 +101,18 @@ namespace Video.Subtitles.Services
             var nextIndex = _currentIndex + 1;
             if (nextIndex < _easySubtitles.Count)
                 nextSubtitle = _easySubtitles[nextIndex];
-            if (currentSubtitle.Position > _currentTime && currentSubtitle.Position < nextSubtitle?.Position)
+            else InitDisplayTimer(CreateTimer()).Start();
+
+            if (currentSubtitle.Position <= _currentTime && _currentTime <= nextSubtitle?.Position)
             {
-                OnSubtitlesChangedEvent?.Invoke(_easySubtitles[_currentIndex].Text);
+                OnSubtitlesChangedEvent?.Invoke(currentSubtitle.Text);
                 _currentIndex++;
             }
         }
 
-        
+        private void DisplayTimer_Tick(object sender, EventArgs e)
+        {
+            OnSubtitlesChangedEvent?.Invoke(string.Empty);
+        }
     }
 }

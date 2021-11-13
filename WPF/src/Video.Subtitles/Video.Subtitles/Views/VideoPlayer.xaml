@@ -40,7 +40,7 @@
                 Name="Player"
                 LoadedBehavior="Manual"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="C:\Users\Dom\Downloads\League-of-Legends.mp4"
+                Source="C:\Users\aleks\Downloads\test.mp4"
                 Stretch="Uniform">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseUp">

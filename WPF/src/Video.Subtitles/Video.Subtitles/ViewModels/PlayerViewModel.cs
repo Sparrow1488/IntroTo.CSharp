@@ -34,8 +34,10 @@ namespace Video.Subtitles.ViewModels
         {
             get
             {
-                if (_subtitlesText == null)
-                    return "No Subtitles";
+                if (string.IsNullOrWhiteSpace(_subtitlesText))
+                {
+                    _subtitlesText = "";
+                }
                 return _subtitlesText;
             }
             set
@@ -81,9 +83,6 @@ namespace Video.Subtitles.ViewModels
             });
         }
 
-        private int _subCounter = 0;
-        
-
         private void InitPlayer(MediaElement player)
         {
             if (player == null)
@@ -95,18 +94,14 @@ namespace Video.Subtitles.ViewModels
         {
             return new List<Subtitles>
             {
-                new Subtitles{ Text = "Добрый день дамусы и настрадамусы" , Position = new TimeSpan(0, 0, 1) },
-                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 3) },
-                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 5) },
-                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 8) },
-                new Subtitles{ Text = "s5" , Position = new TimeSpan(0, 0, 10) },
-                new Subtitles{ Text = "Вообще то есть еще субтитры, получайте!" , Position = new TimeSpan(0, 0, 12) },
-                new Subtitles{ Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis diam, commodo at varius at, efficitur eget erat." , Position = new TimeSpan(0, 0, 14) },
-                new Subtitles{ Text = "Cras vehicula suscipit erat, non mollis ante semper vitae." , Position = new TimeSpan(0, 0, 16) },
+                new Subtitles{ Text = "Добрый день дамусы и настрадамусы" , Position = new TimeSpan(0, 0, 0) },
+                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 2) },
+                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 4) },
+                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 6) },
+                new Subtitles{ Text = "s5" , Position = new TimeSpan(0, 0, 8) },
+                new Subtitles{ Text = "s6" , Position = new TimeSpan(0, 0, 12) },
             };
         }
-
-        
 
         private void PlayVideo()
         {
