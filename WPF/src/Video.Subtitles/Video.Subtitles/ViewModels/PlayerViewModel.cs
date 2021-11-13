@@ -8,6 +8,7 @@ using System.Windows.Media.Animation;
 using Video.Subtitles.Commands;
 using Video.Subtitles.Services;
 using Video.Subtitles.Services.Intefaces;
+using Video.Subtitles.Views.CustomComponents;
 
 namespace Video.Subtitles.ViewModels
 {
@@ -16,13 +17,15 @@ namespace Video.Subtitles.ViewModels
         public PlayerViewModel()
         {
             Messenger.Default.Register<MediaElement>(this, InitPlayer);
+            Messenger.Default.Register<SubtitlesTextBlock>(this, InitSubtitlesBlock);
 
             _subtitlesService = new SubtitlesService();
             _subtitlesService.Open(CreateTestSubtitles());
             _subtitlesService.OnChanged((subs) => SubtitlesText = subs);
         }
 
-        
+
+        private SubtitlesTextBlock _subtitlesBlock = new SubtitlesTextBlock();
         private Subtitles _subtitles;
         private MediaElement _player;
         private ISubtitlesService _subtitlesService;
@@ -37,7 +40,9 @@ namespace Video.Subtitles.ViewModels
                 if (string.IsNullOrWhiteSpace(_subtitlesText))
                 {
                     _subtitlesText = "";
+                    _subtitlesBlock.Visibility = Visibility.Hidden;
                 }
+                else _subtitlesBlock.Visibility = Visibility.Visible;
                 return _subtitlesText;
             }
             set
@@ -65,7 +70,6 @@ namespace Video.Subtitles.ViewModels
             }
         }
 
-
         public ICommand PlayerActivate
         {
             get => new PlayerActivate((obj) =>
@@ -90,6 +94,13 @@ namespace Video.Subtitles.ViewModels
             Player = player;
         }
 
+        private void InitSubtitlesBlock(SubtitlesTextBlock block)
+        {
+            if (block == null)
+                throw new NullReferenceException("WPF Subtitles TextBlock Element not initialized! Register property to manipulate from player manager");
+            _subtitlesBlock = block;
+        }
+
         private List<Subtitles> CreateTestSubtitles()
         {
             return new List<Subtitles>
@@ -111,6 +122,11 @@ namespace Video.Subtitles.ViewModels
         private void PlayVideo()
         {
             Player.Play();
+            Player.MediaOpened += SynchronizeDisplaySubtitles;
+        }
+
+        private void SynchronizeDisplaySubtitles(object sender, RoutedEventArgs e)
+        {
             _subtitlesService.Start();
         }
 

@@ -10,14 +10,7 @@ namespace Video.Subtitles.Views
         {
             InitializeComponent();
             Messenger.Default.Send(Player);
+            Messenger.Default.Send(SubtitlesBlock);
         }
-
-        //private void Player_MediaEnded(object sender, RoutedEventArgs e)
-        //{
-        //    Player.Position = new TimeSpan(0);
-        //    Player.Stop();
-        //    MainPlayButton.Visibility = Visibility.Visible;
-        //}
-
     }
 }

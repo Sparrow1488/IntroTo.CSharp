@@ -93,7 +93,8 @@ namespace Video.Subtitles.Services
 
         private async void TimerChanger_Tick(object sender, EventArgs e)
         {
-            if (_currentIndex + 1 == _easySubtitles.Count) // !!!!
+            var nextIndex = _currentIndex + 1;
+            if (nextIndex == _easySubtitles.Count)
             {
                 await Task.Delay(1800);
                 OnSubtitlesChangedEvent?.Invoke(_easySubtitles[_easySubtitles.Count - 1].Text);
@@ -114,23 +115,6 @@ namespace Video.Subtitles.Services
                 OnSubtitlesChangedEvent?.Invoke(string.Empty);
             }
             _currentIndex++;
-
-
-            //_currentTime = new TimeSpan(_currentTime.Ticks + _timerInterval.Ticks);
-            //if (_currentIndex >= _easySubtitles.Count) 
-            //    return;
-
-            //var currentSubtitle = _easySubtitles[_currentIndex];
-            //Subtitles nextSubtitle = null;
-            //var nextIndex = _currentIndex + 1;
-            //if (nextIndex < _easySubtitles.Count)
-            //    nextSubtitle = _easySubtitles[nextIndex];
-
-            //if (currentSubtitle.Position <= _currentTime && _currentTime <= nextSubtitle?.Position)
-            //{
-            //    OnSubtitlesChangedEvent?.Invoke(currentSubtitle.Text);
-            //    _currentIndex++;
-            //}
         }
 
         private void DisplayTimer_Tick(object sender, EventArgs e)
