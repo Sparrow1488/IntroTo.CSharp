@@ -8,9 +8,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="Window"
     Title="MainWindow"
-    Width="844"
-    Height="637"
-    MinWidth="400"
+    Width="774"
+    Height="482"
+    Background="#222222"
+    Foreground="#E9E9E9"
+    MinWidth="500"
     FontSize="22"
     mc:Ignorable="d">
     <Window.Resources>
@@ -34,6 +36,7 @@
 
         <Style x:Key="MediaList" TargetType="StackPanel">
             <Setter Property="Grid.ColumnSpan" Value="2" />
+            <Setter Property="Margin" Value="5 0" />
             <Setter Property="Grid.Row" Value="1" />
             <Setter Property="Grid.RowSpan" Value="2" />
             <Style.Triggers>
@@ -45,22 +48,19 @@
             </Style.Triggers>
         </Style>
 
-        <Style x:Key="MediaListItem" TargetType="StackPanel">
-            <Setter Property="Height" Value="30" />
-            <Setter Property="Background" Value="DarkSlateGray" />
+        <Style x:Key="MediaListItem" TargetType="Border">
+            <Setter Property="MinHeight" Value="30" />
+            <Setter Property="Background" Value="#303030" />
             <Setter Property="Margin" Value="2" />
+            <Setter Property="Padding" Value="5 2" />
         </Style>
 
     </Window.Resources>
 
 
-    <ScrollViewer>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
         <StackPanel>
-            <StackPanel x:Name="Footer" Orientation="Horizontal">
-                <Button Content="Home" Style="{StaticResource NavigationBtn}" />
-                <Button Content="Account" Style="{StaticResource NavigationBtn}" />
-            </StackPanel>
-            <Grid Height="1200" Margin="5">
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*" />
                     <ColumnDefinition />
@@ -69,30 +69,49 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Grid Margin="20,0" Style="{StaticResource AdaptivePlayerPanel}">
+                <Grid Style="{StaticResource AdaptivePlayerPanel}">
                     <StackPanel>
                         <local:AdaptiveVideoPlayer x:Name="MediaPlayer" MinHeight="250" />
-                        <TextBlock
+                        <StackPanel Name="DescriptionPanel" Margin="5 2">
+                            <TextBlock
                             FontSize="28"
                             FontWeight="Bold"
                             Text="Video #1" />
-                        <TextBlock
+                            <TextBlock
                             FontSize="18"
                             Text="Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться."
                             TextWrapping="Wrap" />
+                        </StackPanel>
                     </StackPanel>
                 </Grid>
 
                 <StackPanel Style="{StaticResource MediaList}">
-                    <StackPanel Style="{StaticResource MediaListItem}">
-                        <TextBlock Foreground="White" Text="Video #1" />
-                    </StackPanel>
-                    <StackPanel Style="{StaticResource MediaListItem}">
-                        <TextBlock Text="Video #2" />
-                    </StackPanel>
-                    <StackPanel Style="{StaticResource MediaListItem}">
-                        <TextBlock Text="Video #3" />
-                    </StackPanel>
+                    <Border BorderThickness="1 0 0 0" BorderBrush="White" Style="{StaticResource MediaListItem}">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" Margin="5 2 10 2" Source="../Source/Icons/Film.png" MaxHeight="30"/>
+                                <TextBlock Foreground="#B6C5FF"  Text="Tracer" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock VerticalAlignment="Center" Text="23 MB" FontSize="12"/>
+                                <TextBlock TextDecorations="Underline" Margin="5 0" VerticalAlignment="Center" Text="Preview" FontSize="12"/>
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" Margin="5 2" Source="../Source/Icons/like.png" MaxHeight="15"/>
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" Margin="5 2" Source="../Source/Icons/download.png" MaxHeight="15"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource MediaListItem}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Margin="5 2 10 2" Source="../Source/Icons/Film.png" MaxHeight="30"/>
+                            <TextBlock Foreground="White" Text="D.va" />
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource MediaListItem}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Margin="5 2 10 2" Source="../Source/Icons/Film.png" MaxHeight="30"/>
+                            <TextBlock Foreground="White" Text="Mercy" />
+                        </StackPanel>
+                    </Border>
                 </StackPanel>
             </Grid>
         </StackPanel>

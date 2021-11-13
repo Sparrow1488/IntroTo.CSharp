@@ -35,13 +35,12 @@
             Padding="10"
             Background="#101010"
             Cursor="Hand">
-
             <MediaElement
                 Name="Player"
                 LoadedBehavior="Manual"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="C:\Users\Александр\Downloads\Test-Media\tumblr nsfw - D.Va and Pharah snap by Yeero.mp4"
-                Stretch="Uniform">
+                Source="C:\Users\Александр\Downloads\Test-Media\testtest.mp4"
+                Stretch="Uniform" VerticalAlignment="Top">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseUp">
                         <i:InvokeCommandAction Command="{Binding PlayerActivate}" />
@@ -49,10 +48,10 @@
                 </i:Interaction.Triggers>
             </MediaElement>
         </Border>
-
-        <Border
+        
+        <cstcomp:PlayButton
             x:Name="MainPlayButton"
-            Width="80"
+            Width="80" 
             Height="80"
             Cursor="Hand">
             <i:Interaction.Triggers>
@@ -60,7 +59,7 @@
                     <i:InvokeCommandAction Command="{Binding PlayerActivate}" />
                 </i:EventTrigger>
             </i:Interaction.Triggers>
-            <Border.Style>
+            <cstcomp:PlayButton.Style>
                 <Style TargetType="Border">
                     <Setter Property="Background">
                         <Setter.Value>
@@ -68,17 +67,22 @@
                         </Setter.Value>
                     </Setter>
                     <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Opacity" Value="0"/>
+                        </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background">
                                 <Setter.Value>
                                     <ImageBrush ImageSource="../Source/Icons/play-icon_active.png" />
                                 </Setter.Value>
                             </Setter>
+                            <Setter Property="Opacity" Value="1"/>
                         </Trigger>
+                        
                     </Style.Triggers>
                 </Style>
-            </Border.Style>
-        </Border>
+            </cstcomp:PlayButton.Style>
+        </cstcomp:PlayButton>
 
         <Border HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <cstcomp:SubtitlesTextBlock
@@ -93,10 +97,10 @@
                 x:Name="PlayerHandlePanel"
                 Grid.Row="1"
                 HorizontalAlignment="Center">
-                <Button
+                <!--<Button
                     Command="{Binding PlayerActivate}"
                     Content="Play"
-                    Style="{StaticResource MediaPlayerBtn}" />
+                    Style="{StaticResource MediaPlayerBtn}" />-->
             </DockPanel>
         </Border>
 

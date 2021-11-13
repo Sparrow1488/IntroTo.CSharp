@@ -5,7 +5,6 @@ namespace Video.Subtitles.Views
 {
     public partial class AdaptiveVideoPlayer : UserControl
     {
-
         public AdaptiveVideoPlayer()
         {
             InitializeComponent();

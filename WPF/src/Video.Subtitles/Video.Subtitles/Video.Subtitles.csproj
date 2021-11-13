@@ -77,13 +77,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\CommandBase.cs" />
-    <Compile Include="Commands\PlayerActivate.cs" />
+    <Compile Include="Commands\EmptyCommand.cs" />
     <Compile Include="Converters\SizeConverter.cs" />
     <Compile Include="Services\Intefaces\ISubtitlesService.cs" />
     <Compile Include="Services\SubtitlesService.cs" />
     <Compile Include="Subtitles.cs" />
     <Compile Include="ViewModels\PlayerViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\CustomComponents\PlayButton.cs" />
     <Compile Include="Views\CustomComponents\SubtitlesTextBlock.cs" />
     <Compile Include="Views\VideoPlayer.xaml.cs">
       <DependentUpon>VideoPlayer.xaml</DependentUpon>
@@ -132,12 +133,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Source\Icons\film.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Source\Icons\play-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Source\Icons\play-icon_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icons\like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icons\download.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

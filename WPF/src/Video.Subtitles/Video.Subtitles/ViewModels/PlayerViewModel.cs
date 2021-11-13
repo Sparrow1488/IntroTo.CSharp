@@ -24,14 +24,12 @@ namespace Video.Subtitles.ViewModels
             _subtitlesService.OnChanged((subs) => SubtitlesText = subs);
         }
 
-
         private SubtitlesTextBlock _subtitlesBlock = new SubtitlesTextBlock();
         private Subtitles _subtitles;
         private MediaElement _player;
         private ISubtitlesService _subtitlesService;
         private string _subtitlesText;
         private bool isPlay = false;
-        
 
         public string SubtitlesText
         {
@@ -40,9 +38,9 @@ namespace Video.Subtitles.ViewModels
                 if (string.IsNullOrWhiteSpace(_subtitlesText))
                 {
                     _subtitlesText = "";
-                    _subtitlesBlock.Visibility = Visibility.Hidden;
+                    HideSubtitles();
                 }
-                else _subtitlesBlock.Visibility = Visibility.Visible;
+                else ShowSubtitles();
                 return _subtitlesText;
             }
             set
@@ -72,7 +70,7 @@ namespace Video.Subtitles.ViewModels
 
         public ICommand PlayerActivate
         {
-            get => new PlayerActivate((obj) =>
+            get => new EmptyCommand((obj) =>
             {
                 if (!isPlay)
                 {
@@ -92,6 +90,13 @@ namespace Video.Subtitles.ViewModels
             if (player == null)
                 throw new NullReferenceException("WPF Media Player Element not initialized! Register property to manipulate from player manager");
             Player = player;
+            Player.MediaEnded += Player_MediaEnded;
+        }
+
+        private void Player_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            Player.Position = new TimeSpan();
+            Player.Play();
         }
 
         private void InitSubtitlesBlock(SubtitlesTextBlock block)
@@ -105,17 +110,15 @@ namespace Video.Subtitles.ViewModels
         {
             return new List<Subtitles>
             {
-                new Subtitles{ Text = "Добрый день дамусы и настрадамусы" , Position = new TimeSpan(0, 0, 0) },
-                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 5) },
-                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 6) },
-                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 7) },
-                new Subtitles{ Text = "s5" , Position = new TimeSpan(0, 0, 8) },
-                new Subtitles{ Text = "s6" , Position = new TimeSpan(0, 0, 10) },
-                new Subtitles{ Text = "s7" , Position = new TimeSpan(0, 0, 11) },
-                new Subtitles{ Text = "s8" , Position = new TimeSpan(0, 0, 12) },
-                new Subtitles{ Text = "s9" , Position = new TimeSpan(0, 0, 13) },
-                new Subtitles{ Text = "s10" , Position = new TimeSpan(0, 0, 14) },
-                new Subtitles{ Text = "end" , Position = new TimeSpan(0, 0, 20) },
+                new Subtitles{ Text = "Ну привет" , Position = new TimeSpan(0, 0, 0) },
+                new Subtitles{ Text = "Это тестовые субтитры, которые используются в эксперементальной библиотеке Video.Subtitles" , Position = new TimeSpan(0, 0, 5) },
+                new Subtitles{ Text = "Абсолютно не важно какое ты решил воспроизвести видео, так как они лягут поверх видеодорожки" , Position = new TimeSpan(0, 0, 9) },
+                new Subtitles{ Text = "Вы спросите: \"А на кой вообще нам нужен еще один плеер? Их итак безкрайнее множество\"" , Position = new TimeSpan(0, 0, 14) },
+                new Subtitles{ Text = "Однако учтите, что для использования в рамках фреймворка WPF существует не так много подобных решений" , Position = new TimeSpan(0, 0, 18) },
+                new Subtitles{ Text = "Поэтому примите это как данность :)" , Position = new TimeSpan(0, 0, 22) },
+                new Subtitles{ Text = "Так вот, я это к тому, что можете просто использовать этот жирный пользовательский контрол в своих проектах" , Position = new TimeSpan(0, 0, 25) },
+                new Subtitles{ Text = "Бесплатно" , Position = new TimeSpan(0, 0, 29) },
+                
             };
         }
 
@@ -134,6 +137,16 @@ namespace Video.Subtitles.ViewModels
         {
             Player.Pause();
             _subtitlesService.Pause();
+        }
+
+        private void HideSubtitles()
+        {
+            _subtitlesBlock.Visibility = Visibility.Hidden;
+        }
+
+        private void ShowSubtitles()
+        {
+            _subtitlesBlock.Visibility = Visibility.Visible;
         }
 
         private void DisplayPlayerHandler()
