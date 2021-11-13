@@ -95,11 +95,16 @@ namespace Video.Subtitles.ViewModels
             return new List<Subtitles>
             {
                 new Subtitles{ Text = "Добрый день дамусы и настрадамусы" , Position = new TimeSpan(0, 0, 0) },
-                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 2) },
-                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 4) },
-                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 6) },
+                new Subtitles{ Text = "Поговорим сегодня про способы решения уравнений с диференциалами" , Position = new TimeSpan(0, 0, 5) },
+                new Subtitles{ Text = "А также затронем тему теорией вероятности" , Position = new TimeSpan(0, 0, 6) },
+                new Subtitles{ Text = "s4" , Position = new TimeSpan(0, 0, 7) },
                 new Subtitles{ Text = "s5" , Position = new TimeSpan(0, 0, 8) },
-                new Subtitles{ Text = "s6" , Position = new TimeSpan(0, 0, 12) },
+                new Subtitles{ Text = "s6" , Position = new TimeSpan(0, 0, 10) },
+                new Subtitles{ Text = "s7" , Position = new TimeSpan(0, 0, 11) },
+                new Subtitles{ Text = "s8" , Position = new TimeSpan(0, 0, 12) },
+                new Subtitles{ Text = "s9" , Position = new TimeSpan(0, 0, 13) },
+                new Subtitles{ Text = "s10" , Position = new TimeSpan(0, 0, 14) },
+                new Subtitles{ Text = "end" , Position = new TimeSpan(0, 0, 20) },
             };
         }
 
