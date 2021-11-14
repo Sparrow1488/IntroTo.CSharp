@@ -9,7 +9,8 @@ namespace Video.Subtitles.States
 
         public override void Switch()
         {
-
+            Context.SubtitlesItem.Display();
+            Context.SubtitlesState = new SubtitlesHidden(Context);
         }
     }
 }

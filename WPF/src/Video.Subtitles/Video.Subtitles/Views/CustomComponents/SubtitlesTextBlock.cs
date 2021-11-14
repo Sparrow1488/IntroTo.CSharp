@@ -16,5 +16,15 @@ namespace Video.Subtitles.Views.CustomComponents
             FontSize = 20;
             Text = "No Subtitles";
         }
+
+        public void Hide()
+        {
+            Opacity = 0;
+        }
+
+        public void Display()
+        {
+            Opacity = 0.7;
+        }
     }
 }

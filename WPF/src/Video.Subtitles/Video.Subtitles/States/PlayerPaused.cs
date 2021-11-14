@@ -10,6 +10,7 @@ namespace Video.Subtitles.States
         public override void Switch()
         {
             Context.PlayerItem.Pause();
+            Context.SubtitlesService.Pause();
             Context.PlayerState = new PlayerPlayed(Context);
         }
     }

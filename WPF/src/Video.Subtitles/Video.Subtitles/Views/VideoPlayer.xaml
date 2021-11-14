@@ -39,7 +39,7 @@
                 Name="Player"
                 LoadedBehavior="Manual"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="F:\Йога\Source-Films-Makers\$отдельно sfm\53\tumblr nsfw - D.Va.mp4"
+                Source="C:\Users\aleks\Downloads\test.mp4"
                 Stretch="Uniform" VerticalAlignment="Top">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseUp">
