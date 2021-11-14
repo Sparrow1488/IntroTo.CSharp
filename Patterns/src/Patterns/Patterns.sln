@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{1F427AB5-4AE3-417F-937D-C82F0569F6AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{DA67CAA8-2714-493D-B6CB-CA5ED4C02348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{DA67CAA8-2714-493D-B6CB-CA5ED4C02348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{EAC00890-4269-4AC3-83E0-F56D5EE86A73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DA67CAA8-2714-493D-B6CB-CA5ED4C02348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA67CAA8-2714-493D-B6CB-CA5ED4C02348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA67CAA8-2714-493D-B6CB-CA5ED4C02348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC00890-4269-4AC3-83E0-F56D5EE86A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC00890-4269-4AC3-83E0-F56D5EE86A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC00890-4269-4AC3-83E0-F56D5EE86A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC00890-4269-4AC3-83E0-F56D5EE86A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
