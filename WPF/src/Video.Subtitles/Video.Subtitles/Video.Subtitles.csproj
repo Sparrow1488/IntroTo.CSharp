@@ -81,6 +81,11 @@
     <Compile Include="Converters\SizeConverter.cs" />
     <Compile Include="Services\Intefaces\ISubtitlesService.cs" />
     <Compile Include="Services\SubtitlesService.cs" />
+    <Compile Include="States\Interfaces\PlayerState.cs" />
+    <Compile Include="States\Interfaces\SubtitlesState.cs" />
+    <Compile Include="States\PlayerPaused.cs" />
+    <Compile Include="States\PlayerPlayed.cs" />
+    <Compile Include="States\SubtitlesVisiable.cs" />
     <Compile Include="Subtitles.cs" />
     <Compile Include="ViewModels\PlayerViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />

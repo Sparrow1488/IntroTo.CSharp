@@ -39,11 +39,11 @@
                 Name="Player"
                 LoadedBehavior="Manual"
                 RenderOptions.BitmapScalingMode="HighQuality"
-                Source="C:\Users\Александр\Downloads\Test-Media\testtest.mp4"
+                Source="F:\Йога\Source-Films-Makers\$отдельно sfm\53\tumblr nsfw - D.Va.mp4"
                 Stretch="Uniform" VerticalAlignment="Top">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseUp">
-                        <i:InvokeCommandAction Command="{Binding PlayerActivate}" />
+                        <i:InvokeCommandAction Command="{Binding PlayerSwitchState}" />
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </MediaElement>
@@ -56,7 +56,7 @@
             Cursor="Hand">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseUp">
-                    <i:InvokeCommandAction Command="{Binding PlayerActivate}" />
+                    <i:InvokeCommandAction Command="{Binding PlayerSwitchState}" />
                 </i:EventTrigger>
             </i:Interaction.Triggers>
             <cstcomp:PlayButton.Style>
@@ -97,10 +97,14 @@
                 x:Name="PlayerHandlePanel"
                 Grid.Row="1"
                 HorizontalAlignment="Center">
-                <!--<Button
-                    Command="{Binding PlayerActivate}"
-                    Content="Play"
-                    Style="{StaticResource MediaPlayerBtn}" />-->
+                <Button
+                    Command="{Binding PlayerSwitchState}"
+                    Content="Play Switch"
+                    Style="{StaticResource MediaPlayerBtn}" />
+                <Button
+                    Command="{Binding SubtitlesSwitchState}"
+                    Content="Subtitles Switch"
+                    Style="{StaticResource MediaPlayerBtn}" />
             </DockPanel>
         </Border>
 

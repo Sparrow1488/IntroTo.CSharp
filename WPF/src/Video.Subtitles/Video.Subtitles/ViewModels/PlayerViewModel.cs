@@ -8,6 +8,8 @@ using System.Windows.Media.Animation;
 using Video.Subtitles.Commands;
 using Video.Subtitles.Services;
 using Video.Subtitles.Services.Intefaces;
+using Video.Subtitles.States;
+using Video.Subtitles.States.Interfaces;
 using Video.Subtitles.Views.CustomComponents;
 
 namespace Video.Subtitles.ViewModels
@@ -22,15 +24,18 @@ namespace Video.Subtitles.ViewModels
             _subtitlesService = new SubtitlesService();
             _subtitlesService.Open(CreateTestSubtitles());
             _subtitlesService.OnChanged((subs) => SubtitlesText = subs);
+
+            PlayerState = new PlayerPaused(this);
+            SubtitlesState = new SubtitlesVisiable(this);
         }
 
         private SubtitlesTextBlock _subtitlesBlock = new SubtitlesTextBlock();
-        private Subtitles _subtitles;
         private MediaElement _player;
         private ISubtitlesService _subtitlesService;
         private string _subtitlesText;
-        private bool isPlay = false;
 
+        public PlayerState PlayerState { get; set; }
+        public SubtitlesState SubtitlesState { get; set; }
         public string SubtitlesText
         {
             get
@@ -49,54 +54,41 @@ namespace Video.Subtitles.ViewModels
                 _subtitlesText = value;
             }
         }
-        public Subtitles Subtitles
-        {
-            get => _subtitles;
-            set
-            {
-                OnPropertyChanged(nameof(Subtitles));
-                _subtitles = value;
-            }
-        }
-        public MediaElement Player
+        public MediaElement PlayerItem
         {
             get => _player;
             set
             {
                 _player = value;
-                OnPropertyChanged(nameof(Player));
+                OnPropertyChanged(nameof(PlayerItem));
+            }
+        }
+        public SubtitlesTextBlock SubtitlesItem
+        {
+            get => _subtitlesBlock;
+            set
+            {
+                _subtitlesBlock = value;
+                OnPropertyChanged(nameof(SubtitlesItem));
             }
         }
 
-        public ICommand PlayerActivate
+        public ICommand PlayerSwitchState
         {
-            get => new EmptyCommand((obj) =>
-            {
-                if (!isPlay)
-                {
-                    isPlay = true;
-                    PlayVideo();
-                }
-                else
-                {
-                    isPlay = false;
-                    PauseVideo();
-                }
-            });
+            get => new EmptyCommand((obj) => PlayerState.Switch());
+        }
+
+        public ICommand SubtitlesSwitchState
+        {
+            get => new EmptyCommand((obj) => SubtitlesState.Switch());
         }
 
         private void InitPlayer(MediaElement player)
         {
             if (player == null)
                 throw new NullReferenceException("WPF Media Player Element not initialized! Register property to manipulate from player manager");
-            Player = player;
-            Player.MediaEnded += Player_MediaEnded;
-        }
-
-        private void Player_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            Player.Position = new TimeSpan();
-            Player.Play();
+            PlayerItem = player;
+            PlayerItem.MediaEnded += Player_MediaEnded;
         }
 
         private void InitSubtitlesBlock(SubtitlesTextBlock block)
@@ -105,6 +97,14 @@ namespace Video.Subtitles.ViewModels
                 throw new NullReferenceException("WPF Subtitles TextBlock Element not initialized! Register property to manipulate from player manager");
             _subtitlesBlock = block;
         }
+
+        private void Player_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            PlayerItem.Position = new TimeSpan();
+            PlayerItem.Play();
+        }
+
+        
 
         private List<Subtitles> CreateTestSubtitles()
         {
@@ -124,8 +124,8 @@ namespace Video.Subtitles.ViewModels
 
         private void PlayVideo()
         {
-            Player.Play();
-            Player.MediaOpened += SynchronizeDisplaySubtitles;
+            PlayerItem.Play();
+            PlayerItem.MediaOpened += SynchronizeDisplaySubtitles;
         }
 
         private void SynchronizeDisplaySubtitles(object sender, RoutedEventArgs e)
@@ -135,7 +135,7 @@ namespace Video.Subtitles.ViewModels
 
         private void PauseVideo()
         {
-            Player.Pause();
+            PlayerItem.Pause();
             _subtitlesService.Pause();
         }
 
