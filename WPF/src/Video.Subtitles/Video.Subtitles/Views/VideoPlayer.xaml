@@ -17,9 +17,11 @@
 
     <UserControl.Resources>
         <Style x:Key="MediaPlayerBtn" TargetType="Button">
-            <Setter Property="Padding" Value="20,5" />
             <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Margin" Value="5,2" />
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="MinWidth" Value="30" />
+            <Setter Property="MinHeight" Value="30" />
+            <Setter Property="Background" Value="Transparent" />
             <Setter Property="FontSize" Value="20" />
             <Setter Property="Cursor" Value="Hand" />
         </Style>
@@ -66,6 +68,7 @@
                             <ImageBrush ImageSource="../Source/Icons/play-icon.png" />
                         </Setter.Value>
                     </Setter>
+                    
                     <Style.Triggers>
                         <Trigger Property="IsMouseOver" Value="False">
                             <Setter Property="Opacity" Value="0"/>
@@ -92,22 +95,70 @@
                 Text="{Binding SubtitlesText}" />
         </Border>
 
-        <Border HorizontalAlignment="Center" VerticalAlignment="Bottom">
+        <Border VerticalAlignment="Bottom" Padding="5 2" Background="#334E5151">
             <DockPanel
+                Height="30"
                 x:Name="PlayerHandlePanel"
                 Grid.Row="1"
-                HorizontalAlignment="Center">
-                <Button
-                    Command="{Binding PlayerSwitchState}"
-                    Content="Play Switch"
-                    Style="{StaticResource MediaPlayerBtn}" />
-                <Button
-                    Command="{Binding SubtitlesSwitchState}"
-                    Content="Subtitles Switch"
-                    Style="{StaticResource MediaPlayerBtn}" />
+                HorizontalAlignment="Left">
+                <Border>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseUp">
+                            <i:InvokeCommandAction Command="{Binding PlayerSwitchState}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Width" Value="25" />
+                            <Setter Property="Height" Value="25" />
+                            <Setter Property="Cursor" Value="Hand" />
+                            <Setter Property="Opacity" Value="0.3" />
+                            <Setter Property="ToolTip" Value="Play / Pause" />
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="../Source/Icons/play-btn-icon.png"/>
+                                </Setter.Value>
+                            </Setter>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Opacity" Value="1"/>
+                                </Trigger>
+                            </Style.Triggers>
+
+                        </Style>
+                    </Border.Style>
+                </Border>
+
+                <Border>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseUp">
+                            <i:InvokeCommandAction Command="{Binding SubtitlesSwitchState}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Width" Value="30" />
+                            <Setter Property="Cursor" Value="Hand" />
+                            <Setter Property="Opacity" Value="0.3" />
+                            <Setter Property="ToolTip" Value="On / Off Subtitles" />
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="../Source/Icons/subtitles-btn-2.png"/>
+                                </Setter.Value>
+                            </Setter>
+                            
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Opacity" Value="1"/>
+                                </Trigger>
+                            </Style.Triggers>
+
+                        </Style>
+                    </Border.Style>
+                </Border>
             </DockPanel>
         </Border>
-
     </Grid>
 
 

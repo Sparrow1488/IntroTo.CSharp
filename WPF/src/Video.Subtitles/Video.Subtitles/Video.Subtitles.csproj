@@ -155,5 +155,13 @@
   <ItemGroup>
     <Resource Include="Source\Icons\download.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icons\play-btn-icon.png" />
+    <Resource Include="Source\Icons\play-btn-icon_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icons\subtitle-icon.png" />
+    <Resource Include="Source\Icons\subtitle-icon_active.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
