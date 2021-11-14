@@ -163,5 +163,8 @@
     <Resource Include="Source\Icons\subtitle-icon.png" />
     <Resource Include="Source\Icons\subtitle-icon_active.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icons\subtitles-btn-2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
