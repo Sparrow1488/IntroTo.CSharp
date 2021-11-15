@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.Threads", "1.Threads\1.Th
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.Threads.Lock", "2.Threads.Lock\2.Threads.Lock.csproj", "{68EDBB99-2A79-4563-83C1-B83295EEDA69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads.Monitor", "Threads.Monitor\Threads.Monitor.csproj", "{E5A0D672-65F3-413F-A965-ADC63AF803A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Threads.Monitor", "Threads.Monitor\3.Threads.Monitor.csproj", "{E5A0D672-65F3-413F-A965-ADC63AF803A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Mutex", "4.Mutex\4.Mutex.csproj", "{30D5F116-41B2-4B2C-8A59-0D8DACE33F6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E5A0D672-65F3-413F-A965-ADC63AF803A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5A0D672-65F3-413F-A965-ADC63AF803A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5A0D672-65F3-413F-A965-ADC63AF803A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D5F116-41B2-4B2C-8A59-0D8DACE33F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D5F116-41B2-4B2C-8A59-0D8DACE33F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D5F116-41B2-4B2C-8A59-0D8DACE33F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D5F116-41B2-4B2C-8A59-0D8DACE33F6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
