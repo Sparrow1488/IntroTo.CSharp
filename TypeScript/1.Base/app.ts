@@ -8,6 +8,16 @@ class User {
     friends : User[];
 }
 
+class Config {
+    constructor(connection : string){
+        this.connectionString = connection;
+    }
+    connectionString : string;
+    isConfigured : boolean;
+    value : string;
+    id : number;
+}
+
 console.log("Hello, TS!");
 let valek : User = new User("Валек");
 document.querySelector(".hello").innerHTML = valek.name + ", ну как там с деньгами?";
@@ -31,6 +41,16 @@ valek.friends.forEach(friend => {
 });
 console.log(valek.friends);
 
+configure(config => {
+    console.log("Настроим конфигурацию", config);
+    if(!config){
+        config = new Config("EmptyConnectionString");
+    }
+    config.value = "SomeValue";
+    config.id = 14;
+    return config;
+});
+
 function sum(a : number, b : number) : number {
     return a + b;
 }
@@ -44,4 +64,9 @@ function addRndFriends(user : User) : User {
                     new User("Гохлиус"),
                     new User("Игорямбус")];
     return user;
+}
+
+function configure(meth : (config : Config) => Config) : void {
+    let config = new Config("connectionStringValue");
+    meth(config).isConfigured = true;
 }

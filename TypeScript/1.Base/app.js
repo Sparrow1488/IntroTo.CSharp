@@ -4,6 +4,12 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
+var Config = /** @class */ (function () {
+    function Config(connection) {
+        this.connectionString = connection;
+    }
+    return Config;
+}());
 console.log("Hello, TS!");
 var valek = new User("Валек");
 document.querySelector(".hello").innerHTML = valek.name + ", ну как там с деньгами?";
@@ -24,6 +30,15 @@ valek.friends.forEach(function (friend) {
     console.log(friend);
 });
 console.log(valek.friends);
+configure(function (config) {
+    console.log("Настроим конфигурацию", config);
+    if (!config) {
+        config = new Config("EmptyConnectionString");
+    }
+    config.value = "SomeValue";
+    config.id = 14;
+    return config;
+});
 function sum(a, b) {
     return a + b;
 }
@@ -35,4 +50,9 @@ function addRndFriends(user) {
         new User("Гохлиус"),
         new User("Игорямбус")];
     return user;
+}
+function configure(meth) {
+    var config = new Config("connectionStringValue");
+    meth(config).isConfigured = true;
+    console.log(config);
 }
