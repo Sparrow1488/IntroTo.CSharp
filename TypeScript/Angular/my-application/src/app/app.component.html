@@ -1,6 +1,13 @@
-<div class="hello">
+<div>
   <h1 class="hello">Hello, Angular!</h1>
   <p>Ну здарова, <span class="clientName">{{client.name}}</span></p>
-  <input type="text" value="{{client.name}}">
-  <button (click)="onClick()">Click</button>
+  <p>{{text}}</p>
+  <input type="text" [(ngModel)]="text" />
+  <button on-click="onClick()">Click</button>
+  
+  <br>
+
+  <div [class.isColored]="isColored" [style.background-color]="isColored? 'red' : 'blue'" class="selectable"></div>
+  <div [class.isColored]="!isColored" [style.background-color]="!isColored? 'red' : 'blue'" class="selectable"></div>
+  <input type="checkbox" [(ngModel)]="isColored" class="checkbox">
 </div>

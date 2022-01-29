@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public title = "My-Application";
   public client = new User("Вебер", 14);
+  public text : string = "Какой-то текст";
+  public name : string = "Чье-то имя";
+  public isColored : boolean = false;
   public onClick() : void {
     console.log("Click");
   }

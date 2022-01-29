@@ -11,3 +11,14 @@
 p {
     font-size: 26px;
 }
+
+.selectable {
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    border: 1px solid gray;
+}
+
+.isColored {
+    background-color: #ccc;
+}
