@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  name:string = "Tom";
+  public name:string = "Sparrow";
+  public isAccepted:boolean = false;
 }

@@ -16,25 +16,3 @@ p {
 span {
     font-size: 15px;
 }
-.selectable {
-    height: 40px;
-    width: 40px;
-    margin: 2px;
-    border: 1px solid gray;
-}
-.isColored {
-    background-color: #ccc;
-}
-.bindName {
-    color: brown;
-}
-.bindAge {
-    color: cadetblue;
-}
-.bindText {
-    color: crimson;
-}
-
-.bed {
-    color: red;
-}
