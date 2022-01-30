@@ -1,13 +1,1 @@
-<h1 class="hello">Child works!</h1>
-<p>{{text}}</p>
-<!-- добавим тег, чтобы получать вертку от родительского элемента -->
-<ng-content></ng-content>
-
-<p>
-    Ввод из главного компонента: <span class="bindName">{{name}}</span> - 
-    <span class="bindAge">{{age}}</span> <br>
-</p> <br>
-<span>Счетчик кликов</span>
-<button (click)="click(true)">+</button>
-<button (click)="click(false)">-</button> <br>
-<span>Какой то текст <span class="bindText">{{someText}}</span></span>
+<input [ngModel]="huyna1" (ngModelChange)="onNameChange($event)" />

@@ -6,15 +6,8 @@
     color: aquamarine;
     font-size: 42px;
 }
-h3 {
-    line-height: 15px;
-}
 p {
-    font-size: 18px;
-    line-height: 10px;
-}
-span {
-    font-size: 15px;
+    font-size: 26px;
 }
 .selectable {
     height: 40px;
