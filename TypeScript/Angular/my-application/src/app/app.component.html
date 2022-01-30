@@ -1,10 +1,18 @@
 <div>
   <h1 class="hello">Hello, Angular!</h1>
-  <p>Ну здарова, <span class="clientName">{{client.name}}</span></p>
-  <p>{{text}}</p>
-  <input type="text" [(ngModel)]="text" />
+  <p>Ну здарова, <span class="clientName bindName">{{client.name}}</span></p>
+  <p class="bindText">{{text}}</p>
+  <input class="bindText" type="text" [(ngModel)]="text" />
   <button on-click="onClick()">Click</button>
   
+  <br>
+
+  <span>Имя: </span>
+  <input type="text" [(ngModel)]="client.name">
+  <span>Возраст: </span>
+  <input type="text" [(ngModel)]="client.age">
+  <span class="bed">{{client.error}}</span>
+
   <br>
 
   <div [class.isColored]="isColored" [style.background-color]="isColored? 'red' : 'blue'" class="selectable"></div>
@@ -12,5 +20,7 @@
   <input type="checkbox" [(ngModel)]="isColored" class="checkbox">
 
   <!-- передаем дочернему элементу верстку из родительского -->
-  <app-child><span style="color: rgb(68, 107, 10);">Это я, кстати, написал из компонента AppComponent (родителя)</span></app-child>
+  <app-child [name]="client.name" [age]="client.age" [someText]="text">
+    <span style="color: rgb(68, 107, 10);">Это я, кстати, написал из компонента AppComponent (родителя)</span>
+  </app-child>
 </div>

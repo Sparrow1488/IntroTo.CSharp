@@ -2,3 +2,9 @@
 <p>{{text}}</p>
 <!-- добавим тег, чтобы получать вертку от родительского элемента -->
 <ng-content></ng-content>
+
+<p>
+    Ввод из главного компонента: <span class="bindName">{{name}}</span> - 
+    <span class="bindAge">{{age}}</span>
+</p>
+<span>Какой то текст <span class="bindText">{{someText}}</span></span>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Input, Component, OnInit } from '@angular/core';
 
 // декоратор
 @Component({
@@ -9,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
   text : string = "Просто текст";
-  ngOnInit(): void {
-  }
+  // и это декораторы
+  @Input() name = "";
+  @Input() age = 0;
+  @Input() someText = "";
+  ngOnInit(): void { }
 }
