@@ -12,8 +12,14 @@ export class AppComponent {
   public text : string = "Какой-то текст";
   public name : string = "Чье-то имя";
   public isColored : boolean = false;
+  public clicks = 0;
+
   public onClick() : void {
     console.log("Click");
+  }
+  public onChangeCounter(event:any):void {
+    console.log(event);
+    event === true ? this.clicks++ : this.clicks--;
   }
 }
 
