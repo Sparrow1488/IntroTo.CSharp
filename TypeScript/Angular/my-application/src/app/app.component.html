@@ -10,4 +10,7 @@
   <div [class.isColored]="isColored" [style.background-color]="isColored? 'red' : 'blue'" class="selectable"></div>
   <div [class.isColored]="!isColored" [style.background-color]="!isColored? 'red' : 'blue'" class="selectable"></div>
   <input type="checkbox" [(ngModel)]="isColored" class="checkbox">
+
+  <!-- передаем дочернему элементу верстку из родительского -->
+  <app-child><span style="color: rgb(68, 107, 10);">Это я, кстати, написал из компонента AppComponent (родителя)</span></app-child>
 </div>
