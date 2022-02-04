@@ -40,7 +40,6 @@ namespace _1.Threads
         }
         private static void PrintThreadInfo()
         {
-            
             Console.WriteLine($"\n[{_first.Name}]{_first.ThreadState}");
             Console.WriteLine($"[{_second.Name}]{_second.ThreadState}");
         }
