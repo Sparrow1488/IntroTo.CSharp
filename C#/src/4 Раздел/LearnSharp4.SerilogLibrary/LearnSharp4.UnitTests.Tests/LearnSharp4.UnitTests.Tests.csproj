@@ -67,6 +67,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="ContextTests.cs" />
+    <Compile Include="HtmlBuilderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
