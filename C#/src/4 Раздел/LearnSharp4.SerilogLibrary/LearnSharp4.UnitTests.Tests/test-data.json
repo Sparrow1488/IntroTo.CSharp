@@ -1,0 +1,16 @@
+{
+  "Users": [
+    {
+      "Name": "Valentin",
+      "Mail": "name@gmail.com"
+    },
+    {
+      "Name": "Yuri",
+      "Mail": "name$gmail.com"
+    },
+    {
+      "Name": "",
+      "Mail": "name@gmail.com"
+    }
+  ]
+}
