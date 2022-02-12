@@ -23,7 +23,7 @@ namespace LearnSharp4.TestableLibrary
             if (bookTitle is null || wallet is null)
                 throw new ArgumentNullException();
 
-            return BuyProcess(bookTitle, wallet);
+            return ExecuteBuyProcess(bookTitle, wallet);
         }
 
         public void SetBooks(Dictionary<string, int> books)
@@ -40,7 +40,7 @@ namespace LearnSharp4.TestableLibrary
             Debug.WriteLine("Shop was disposed");
         }
 
-        private bool BuyProcess(string bookTitle, Wallet wallet)
+        private bool ExecuteBuyProcess(string bookTitle, Wallet wallet)
         {
             var processedSuccess = false;
             if (_books.TryGetValue(bookTitle, out var price))
