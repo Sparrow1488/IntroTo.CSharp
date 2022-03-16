@@ -1,0 +1,96 @@
+USE DATABASE_NAME 
+SELECT * FROM Students
+-------------------------
+DROP DATABASE database_name  //удаление базы данных
+-------------------------
+CREATE TABLE Customers
+(
+	Id INT,
+	Age INT,
+	FirstName NVARCHAR(20),
+	LastName NVARCHAR(20),
+	Email VARCHAR(30),
+	Phone VARCHAR(20)
+)
+-------------------------
+DROP TABLE Customers
+-------------------------
+USE usersdb;
+EXEC sp_rename 'Users', 'UserAccounts';
+-------------------------
+CREATE TABLE Emails
+(
+	Id INT,
+	Email NVARCHAR(30),
+	UserId INT
+)
+-------------------------
+CREATE TABLE Customers
+(
+	Id INT PRIMARY KEY, // первичный ключ
+	Age INT,
+	FirstName NVARCHAR(20),
+	Email VARCHAR(20),
+	Phone VARCHAR(12)
+)
+-------------------------
+CREATE TABLE OrderLines
+(
+	OrderId INT,
+	ProductId INT,
+	Price MONEY,
+	PRIMARY KEY(OrderId, ProductId) // первичный ключ (сдвоенный)
+)
+-------------------------
+CREATE TABLE Customers 
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Age INT,
+	Email NVARCHAR,
+	FirstName NVARCHAR,
+	LastName NVARCHAR,
+	MiddleName NVARCHAR,
+	Phone NVARCHAR(20)
+)
+-------------------------
+CREATE TABLE UserDatas
+(
+	Id INT PRIMARY KEY IDENTITY, // делает столбец идентификатором
+	Age INT,
+	PassNumber NVARCHAR,
+	PassSeria NVARCHAR,
+	UNIQUE(PassNuber, PassSeria) // можно добавлять только уникальные значения
+)
+-------------------------
+CREATE TABLE Logins
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Login NVARCHAR UNIQUE,
+	Password NVARCHAR UNIQUE
+)
+-------------------------
+CREATE TABLE Users
+(
+	Id INT PRIMARY KEY IDENTITY,
+	FirstName NVARCHAR(20) NOT NULL,
+	LastName NVARCHAR(20) NOT NULL,
+)
+-------------------------
+CREATE TABLE Users
+(
+	Id INT PRIMARY KEY IDENTITY,
+	FirstName NVARCHAR(25) NOT NULL CHECK(FirtsName != ''),
+	LastName NVARCHAR(25) NOT NULL CHECK(FirtsName != ''),
+	Code NVARCHAR(4) DEFAULT '0000',
+	Age INT DEFAULT 18 CHECK (Age > 18 AND Age < 100)
+)
+-------------------------
+CREATE TABLE Users
+(
+	Id INT PRIMARY KEY IDENTITY,
+	FirstName NVARCHAR(25) NOT NULL,
+	LastName NVARCHAR(25) NOT NULL,
+	Code NVARCHAR(4) DEFAULT '0000',
+	Age INT DEFAULT 18,
+	CHECK((Age > 18 AND Age < 100) AND (FirstName != '') AND (LastName != ''))
+)
