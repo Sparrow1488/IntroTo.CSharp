@@ -10,13 +10,9 @@ namespace LearnSharp4.DapperSql
         private static async Task Main()
         {
             var db = new DbService();
-            await db.CreateGoodAsync(new Good
-            {
-                Name = "Snickers",
-                Price = 68.40
-            });
+            await db.CreateGoodAsync(new Good("Snickers", 100.20));
             var good = await db.GetGoodAsync("Snickers");
-            Console.WriteLine("Founded: {0}; Price: {1}", good.Name, good.Price);
+            var ticket = await db.GetTicketAsync(1);
         }
     }
 }

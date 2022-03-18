@@ -2,8 +2,15 @@
 {
     public class Good
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public double Price { get; set; }
+        public Good() { }
+        public Good(string name, double price)
+        {
+            Name = name;
+            Price = price;
+        }
+
+        public int Id { get; private set; } = -1;
+        public string Name { get; private set; } = string.Empty;
+        public double Price { get; private set; }
     }
 }
