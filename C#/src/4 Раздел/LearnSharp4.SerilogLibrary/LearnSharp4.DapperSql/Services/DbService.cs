@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using LearnSharp4.DapperSql.Exceptions;
 using LearnSharp4.DapperSql.Models;
 using System;
 using System.Data;
@@ -21,9 +22,24 @@ namespace LearnSharp4.DapperSql.Services
             return result;
         }
 
-        public async Task<bool> CreateProductAsync(Good product)
+        /// <exception cref="InsertSqlException"></exception>
+        public async Task CreateGoodAsync(Good good)
         {
-            throw new NotImplementedException();
+            var successInsert = false;
+            try
+            {
+                using (IDbConnection connection = new SqlConnection(ConfigHelper.GetShopConnectionString()))
+                {
+                    var queryValue = new { Name = good.Name, Price = good.Price };
+                    await connection.QueryAsync($"INSERT INTO Goods VALUES (@Name, @Price)", queryValue);
+                    successInsert = true;
+                }
+            }
+            catch
+            {
+                successInsert = false;
+            }
+            if(!successInsert) throw new InsertSqlException("Не удалось добавить запись в таблицу");
         }
     }
 }
