@@ -39,9 +39,16 @@ namespace LearnSharp4.DapperSql.Services
 
         public async Task<Ticket> GetTicketAsync(int id)
         {
-            var results = await OpenConnection(async connection => 
-                                               await connection.QueryAsync<Ticket>($"SELECT * FROM Tickets WHERE Id={id}"));
-            return results.FirstOrDefault() ?? new Ticket();
+            Ticket ticket = new Ticket();
+            Good good = new Good();
+            var result = await OpenConnection(async connection =>
+            {
+                ticket = (await connection.QueryAsync<Ticket>($"SELECT * FROM Tickets WHERE Id={id}")).FirstOrDefault() ?? ticket;
+                good = (await connection.QueryAsync<Good>($"SELECT * FROM Goods WHERE Id={ticket.ProductId}")).FirstOrDefault() ?? good;
+                ticket.Good = good;
+                return ticket;
+            });
+            return result ?? new Ticket();
         }
 
         private async Task<T> OpenConnection<T>(Func<IDbConnection, Task<T>> action)
