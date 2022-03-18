@@ -7,7 +7,8 @@ namespace LearnSharp4.DapperSql.Models
         public int Id { get; private set; }
         public double TotalPrice { get; private set; }
         public DateTime DateAtCreated { get; private set; }
-        public int ProductId;
         public Good Good { get; set; }
+
+        public int ProductId;
     }
 }

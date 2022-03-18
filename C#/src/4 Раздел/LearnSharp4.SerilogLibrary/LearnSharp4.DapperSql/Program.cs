@@ -1,6 +1,5 @@
 ﻿using LearnSharp4.DapperSql.Models;
 using LearnSharp4.DapperSql.Services;
-using System;
 using System.Threading.Tasks;
 
 namespace LearnSharp4.DapperSql

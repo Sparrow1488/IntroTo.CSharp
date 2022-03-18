@@ -94,3 +94,27 @@ CREATE TABLE Users
 	Age INT DEFAULT 18,
 	CHECK((Age > 18 AND Age < 100) AND (FirstName != '') AND (LastName != ''))
 )
+-------------------------
+ALTER TABLE Customers WITH NOCHECK
+ADD CHECK (Age > 21);
+-------------------------
+CREATE DATABASE Sample
+GO
+
+USE Sample
+CREATE TABLE Customers
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Name NVARCHAR(150) NOT NULL,
+	Login NVARCHAR(50) NOT NULL,
+	Email NVARCHAR(75) CHECK (Email LIKE '@'),
+	Money MONEY
+);
+
+CREATE TABLE Foreigner
+(
+	Id INT PRIMARY KEY IDENTITY,
+	CustomerId INT CHECK(CustomerId > 0),
+	FOREIGN KEY (CustomerId) REFERENCES Customers(Id)
+);
+-------------------------

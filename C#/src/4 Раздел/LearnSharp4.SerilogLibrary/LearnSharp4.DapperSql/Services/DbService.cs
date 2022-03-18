@@ -2,7 +2,6 @@
 using LearnSharp4.DapperSql.Exceptions;
 using LearnSharp4.DapperSql.Models;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
