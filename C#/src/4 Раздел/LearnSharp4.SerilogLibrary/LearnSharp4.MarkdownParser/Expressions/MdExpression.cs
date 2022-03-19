@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearnSharp4.MarkdownParser.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -9,23 +10,23 @@ namespace LearnSharp4.MarkdownParser.Expressions
     {
         public abstract string Name { get; protected set; }
         public abstract Regex Regex { get; protected set; }
-        public abstract string Starts { get; protected set; }
-        public abstract string Ends { get; protected set; }
         public string Value { get; protected set; }
         public static List<MdExpression> Expressions { get; } = new List<MdExpression>()
         {
-            new BoldExpression()
+            new BoldExpression(),
+            new UnderlineExpression()
         };
 
-        public static MdExpression[] Parse(string row)
+        public static MdText[] Parse(string row)
         {
-            var expressions = new List<MdExpression>();
+            var results = new List<MdText>();
             foreach (var express in Expressions)
             {
                 var parsed = express.TryParse(row).Where(expr => !string.IsNullOrWhiteSpace(expr.Value));
-                expressions.AddRange(parsed);
+                foreach (var parsedExpr in parsed)
+                    results.Add(new MdText(parsedExpr.Value, new string[] { parsedExpr.Name }));
             }
-            return expressions.ToArray();
+            return results.ToArray();
         }
 
         public virtual MdExpression[] TryParse(string row)
