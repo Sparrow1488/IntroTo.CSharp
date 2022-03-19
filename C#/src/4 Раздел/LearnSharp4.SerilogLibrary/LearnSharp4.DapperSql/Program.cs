@@ -1,5 +1,6 @@
 ﻿using LearnSharp4.DapperSql.Models;
 using LearnSharp4.DapperSql.Services;
+using System;
 using System.Threading.Tasks;
 
 namespace LearnSharp4.DapperSql
@@ -9,9 +10,12 @@ namespace LearnSharp4.DapperSql
         private static async Task Main()
         {
             var db = new DbService();
-            await db.CreateGoodAsync(new Good("Snickers", 100.20));
-            var good = await db.GetGoodAsync("Snickers");
-            var ticket = await db.GetTicketAsync(1);
+            var rnd = new Random();
+            var user = new User($"User_{rnd.Next(9999, 999999)}", "1234");
+            var profile = new Profile("Sample desc", "no-image");
+            user.Profile = profile;
+            await db.CreateUserAsync(user);
+            var asd = await db.GetUserAsync("pizda");
         }
     }
 }
