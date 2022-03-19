@@ -1,0 +1,7 @@
+﻿~~~Markdown Parser~~~
+
+1. Read markdown text
+2. Read Line
+3. Search md pattern using prepared templates and regex
+4. Repeat 2 and 3 while next lines exists
+5. Create MdDocument and pretty format
