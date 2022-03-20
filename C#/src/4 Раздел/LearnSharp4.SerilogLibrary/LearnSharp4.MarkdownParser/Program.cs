@@ -8,7 +8,7 @@ namespace LearnSharp4.MarkdownParser
         private static void Main()
         {
             // string markdownText = "# Header 1\n**Hello MdParser!**\nVisit my [page](google.com)";
-            string markdownText = "**bold** **second bold text** ** and    second ahahahah ** <u>underline text</u>";
+            string markdownText = "[Link](google.com) **bold** **second bold text** **and second ahahahah** <u>underline text</u> <u>underline and **bold**</u>";
             var results = MdExpression.Parse(markdownText);
         }
     }

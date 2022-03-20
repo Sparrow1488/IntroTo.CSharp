@@ -9,6 +9,7 @@ namespace LearnSharp4.MarkdownParser.Expressions
     internal abstract class MdExpression
     {
         public abstract string Name { get; protected set; }
+        public abstract char Trigger { get; protected set; }
         public abstract Regex Regex { get; protected set; }
         public string Value { get; protected set; }
         public static List<MdExpression> Expressions { get; } = new List<MdExpression>()
@@ -16,6 +17,19 @@ namespace LearnSharp4.MarkdownParser.Expressions
             new BoldExpression(),
             new UnderlineExpression()
         };
+
+        public static MdText[] ParseUsingTriggers(string text)
+        {
+            for (int i = 0; i < text.Length; i++)
+            {
+                var symbol = text[i];
+                var expresses = Expressions.Where(expr => expr.Trigger == symbol);
+                if (expresses.Any())
+                {
+                }
+            }
+            throw new NotImplementedException();
+        }
 
         public static MdText[] Parse(string row)
         {

@@ -6,5 +6,6 @@ namespace LearnSharp4.MarkdownParser.Expressions
     {
         public override string Name { get; protected set; } = "Underline";
         public override Regex Regex { get; protected set; } = new Regex(@"<u>(.*?)</u>");
+        public override char Trigger { get; protected set; } = '<';
     }
 }
