@@ -1,4 +1,5 @@
-﻿using Microsoft.Toolkit.Parsers.Markdown;
+﻿using LearnSharp4.MarkdownParser.DataProviders;
+using Microsoft.Toolkit.Parsers.Markdown;
 using Microsoft.Toolkit.Parsers.Markdown.Blocks;
 using System;
 
@@ -6,6 +7,8 @@ namespace LearnSharp4.MarkdownParser.Models
 {
     public static class MdWriter
     {
+        public static DynamicDataProvider DynamicProvider { get; set; }
+
         public static void PrintMdText(MarkdownBlock block)
         {
             if (block.Type == MarkdownBlockType.Paragraph)
@@ -27,8 +30,11 @@ namespace LearnSharp4.MarkdownParser.Models
 
         public static void Print(object text, ConsoleColor color = ConsoleColor.White)
         {
+            string printable = text.ToString();
+            if (DynamicProvider != null)
+                printable = DynamicProvider.Update(printable);
             Console.ForegroundColor = color;
-            Console.Write(text);
+            Console.Write(printable);
             Console.ResetColor();
         }
 

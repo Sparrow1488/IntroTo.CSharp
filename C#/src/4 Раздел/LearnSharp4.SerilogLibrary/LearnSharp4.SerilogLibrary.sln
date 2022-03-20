@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSharp4.SerilogLibrary", "LearnSharp4.SerilogLibrary\LearnSharp4.SerilogLibrary.csproj", "{6AEA3AE7-D42D-4373-901C-AD790CA9F1B1}"
 EndProject
@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSharp4.TestableLibrary
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSharp4.DapperSql", "LearnSharp4.DapperSql\LearnSharp4.DapperSql.csproj", "{0CA46313-E965-4941-9B58-30311DBA5633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSharp4.MarkdownParser", "LearnSharp4.MarkdownParser\LearnSharp4.MarkdownParser.csproj", "{6D05CF90-890F-434A-A54F-CBABD881B88F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSharp4.MarkdownParser", "LearnSharp4.MarkdownParser\LearnSharp4.MarkdownParser.csproj", "{6D05CF90-890F-434A-A54F-CBABD881B88F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSharp4.MarkdownParser.V2", "LearnSharp4.MarkdownParser.V2\LearnSharp4.MarkdownParser.V2.csproj", "{27DECEAB-C081-4505-9BF5-879C3E23F19A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{6D05CF90-890F-434A-A54F-CBABD881B88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D05CF90-890F-434A-A54F-CBABD881B88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D05CF90-890F-434A-A54F-CBABD881B88F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DECEAB-C081-4505-9BF5-879C3E23F19A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DECEAB-C081-4505-9BF5-879C3E23F19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DECEAB-C081-4505-9BF5-879C3E23F19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DECEAB-C081-4505-9BF5-879C3E23F19A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
