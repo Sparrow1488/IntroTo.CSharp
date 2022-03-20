@@ -7,16 +7,16 @@ namespace LearnSharp4.MarkdownParser
 {
     internal static class MdParser
     {
-        public static MdText[] Parse(string row)
+        public static MdExpression[] Parse(string row)
         {
-            var results = new List<MdText>();
+            var results = new List<MdExpression>();
             foreach (var express in MdExpression.Expressions)
             {
                 var parsed = express.TryParse(row).Where(expr => !string.IsNullOrWhiteSpace(expr.Value));
                 foreach (var parsedExpr in parsed)
                 {
                     row = row.Replace(parsedExpr.FullValue, "");
-                    results.Add(new MdText(parsedExpr.Value, new string[] { parsedExpr.Name }));
+                    results.Add(express);
                 }
             }
             return results.ToArray();
