@@ -1,0 +1,41 @@
+﻿using Microsoft.Toolkit.Parsers.Markdown;
+using Microsoft.Toolkit.Parsers.Markdown.Blocks;
+using System;
+
+namespace LearnSharp4.MarkdownParser.Models
+{
+    public static class MdWriter
+    {
+        public static void PrintMdText(MarkdownBlock block)
+        {
+            if (block.Type == MarkdownBlockType.Paragraph)
+            {
+                var paragraph = (ParagraphBlock)block;
+                foreach (var item in paragraph.Inlines)
+                {
+                    if (item.Type == MarkdownInlineType.Bold)
+                        Print(item, ConsoleColor.Cyan);
+                    else if (item.Type == MarkdownInlineType.MarkdownLink)
+                        Print(item, ConsoleColor.DarkBlue);
+                    else Print(item);
+                }
+            }
+            else if (block.Type == MarkdownBlockType.Header)
+                PrintLine(block, ConsoleColor.Red);
+            else PrintLine(block);
+        }
+
+        public static void Print(object text, ConsoleColor color = ConsoleColor.White)
+        {
+            Console.ForegroundColor = color;
+            Console.Write(text);
+            Console.ResetColor();
+        }
+
+        public static void PrintLine(object text, ConsoleColor color = ConsoleColor.White)
+        {
+            Print(text, color);
+            Console.WriteLine();
+        }
+    }
+}
