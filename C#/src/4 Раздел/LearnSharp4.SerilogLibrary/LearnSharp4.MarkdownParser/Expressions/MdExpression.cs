@@ -18,7 +18,8 @@ namespace LearnSharp4.MarkdownParser.Expressions
         {
             new BoldExpression(),
             new UnderlineExpression(),
-            new LinkExpression()
+            new LinkExpression(),
+            new HeaderExpression()
         };
 
         public static MdText[] ParseUsingTriggers(string text)
@@ -43,8 +44,9 @@ namespace LearnSharp4.MarkdownParser.Expressions
                 var match = matches[i];
                 if (match.Success)
                 {
-                    if (Name == "Link") HandleAsLink(match);
-                    else HandleAsOther(match);
+                    if (Name == "Link") InitMatchAsLink(match);
+                    if (Name == "Header") InitMatchAsHeader(match);
+                    else InitMatch(match);
                     founds.Add(Clone());
                 }
             }
@@ -60,13 +62,24 @@ namespace LearnSharp4.MarkdownParser.Expressions
             return clone;
         }
 
-        private void HandleAsLink(Match match)
+        private void InitMatchAsLink(Match match)
         {
             FullValue = match.Groups[0].Value;
             Value = match.Groups[0].Value;
         }
 
-        private void HandleAsOther(Match match)
+        private void InitMatchAsHeader(Match match)
+        {
+            var normalizedGroup = match.Groups.Values.Skip(1).Reverse().ToArray();
+            var notEmptyGroup = normalizedGroup.Where(group => !string.IsNullOrWhiteSpace(group.Value)).FirstOrDefault();
+            var headerLvl = Array.IndexOf(normalizedGroup, notEmptyGroup) + 1;
+            var headerExpression = (HeaderExpression)this;
+            FullValue = match.Groups[0].Value;
+            Value = notEmptyGroup.Value;
+            headerExpression.Level = headerLvl;
+        }
+
+        private void InitMatch(Match match)
         {
             FullValue = match.Groups[0].Value;
             Value = match.Groups[1].Value;
