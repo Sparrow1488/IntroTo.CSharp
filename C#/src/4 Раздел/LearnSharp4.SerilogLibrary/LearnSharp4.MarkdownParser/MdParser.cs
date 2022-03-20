@@ -1,5 +1,5 @@
 ﻿using LearnSharp4.MarkdownParser.Expressions;
-using LearnSharp4.MarkdownParser.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,6 +20,33 @@ namespace LearnSharp4.MarkdownParser
                 }
             }
             return results.ToArray();
+        }
+
+        internal static MdExpression[] ParseDocument(string sampleText)
+        {
+            var results = new List<MdExpression>();
+            var lines = sampleText.Split('\n');
+
+            var exprBlocks = MdExpression.Expressions.Where(ex => ex.Type == Enums.MdExpressionType.Block);
+            foreach (var line in lines)
+            {
+                var similarBlockExpression = exprBlocks.FirstOrDefault(expr => line.StartsWith(expr.StartsWith));
+                if (similarBlockExpression != null)
+                    results.AddRange(HandleBlock(line, similarBlockExpression));
+                else results.AddRange(HandleInline(line));
+            }
+            return results.ToArray();
+        }
+
+        private static IEnumerable<MdExpression> HandleInline(string line)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static MdExpression[] HandleBlock(string block, MdExpression similarBlock)
+        {
+            throw new NotImplementedException();
+            var blockEndIndex = block.IndexOf(similarBlock.EndsWith, similarBlock.StartsWith.Length);
         }
     }
 }

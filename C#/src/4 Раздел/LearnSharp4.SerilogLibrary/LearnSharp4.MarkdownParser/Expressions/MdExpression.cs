@@ -1,4 +1,5 @@
-﻿using LearnSharp4.MarkdownParser.Models;
+﻿using LearnSharp4.MarkdownParser.Enums;
+using LearnSharp4.MarkdownParser.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,9 @@ namespace LearnSharp4.MarkdownParser.Expressions
     internal abstract class MdExpression
     {
         public abstract string Name { get; protected set; }
-        public abstract char StartsWith { get; protected set; }
+        public abstract string StartsWith { get; protected set; }
+        public abstract string EndsWith { get; protected set; }
+        public abstract MdExpressionType Type { get; protected set; }
         public abstract Regex Regex { get; protected set; }
         public string Value { get; protected set; }
         public string FullValue { get; protected set; }
@@ -21,19 +24,6 @@ namespace LearnSharp4.MarkdownParser.Expressions
             new LinkExpression(),
             new HeaderExpression()
         };
-
-        public static MdText[] ParseUsingTriggers(string text)
-        {
-            throw new NotImplementedException();
-            for (int i = 0; i < text.Length; i++)
-            {
-                var symbol = text[i];
-                var expresses = Expressions.Where(expr => expr.StartsWith == symbol);
-                if (expresses.Any())
-                {
-                }
-            }
-        }
 
         public virtual MdExpression[] TryParse(string row)
         {

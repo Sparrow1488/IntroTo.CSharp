@@ -17,6 +17,7 @@ namespace LearnSharp4.MarkdownParser
             string sampleText = File.ReadAllText("./MdText/Paragraph-1.md");
             MarkdownDocument document = new MarkdownDocument();
             document.Parse(sampleText);
+            MdParser.ParseDocument(sampleText);
 
             var @dynamic = new DynamicExpression("date-now");
             var dynamicDataProvider = new DynamicDataProvider(@dynamic).FromFile("./MdText/DynamicExample-1.txt");
