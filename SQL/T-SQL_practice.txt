@@ -118,3 +118,37 @@ CREATE TABLE Foreigner
 	FOREIGN KEY (CustomerId) REFERENCES Customers(Id)
 );
 -------------------------
+SELECT Description 
+FROM Sex
+ORDER BY Id
+	OFFSET 1 ROWS
+	FETCH FIRST 1 ROWS ONLY
+-------------------------
+SELECT TOP 3 Description 
+FROM Sex
+ORDER BY Popular DESC
+-------------------------
+SELECT * 
+FROM Sex
+WHERE SexSex <> 'Male'
+-------------------------
+SELECT *
+FROM Sex
+WHERE SexSex IS NOT NULL
+-------------------------
+SELECT * FROM Products
+WHERE Title LIKE ('Samsung%')
+ORDER BY Price DESC
+-------------------------
+SELECT * FROM Products
+WHERE Title IN ('Honor Redmi', 'Samsung ZERO 2')
+ORDER BY Price DESC
+-------------------------
+SELECT * FROM Products
+WHERE Price * ProductCount BETWEEN 100000 AND 200000
+-------------------------
+UPDATE Products
+SET Manufacturer = 'Apple Inc.'
+FROM
+(SELECT TOP 2 FROM Products WHERE Manufacturer='Apple') AS Selected
+WHERE Products.Id = Selected.Id
