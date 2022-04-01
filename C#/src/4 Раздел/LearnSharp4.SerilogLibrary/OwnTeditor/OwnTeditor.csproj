@@ -5,4 +5,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.28.0" />
+    <PackageReference Include="Microsoft.Toolkit.Parsers" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SampleData\DynamicExample-1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SampleData\Paragraph-1.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
