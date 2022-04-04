@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSharp4.DapperSql", "Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSharp4.MarkdownParser", "LearnSharp4.MarkdownParser\LearnSharp4.MarkdownParser.csproj", "{6D05CF90-890F-434A-A54F-CBABD881B88F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwnTeditor", "OwnTeditor\OwnTeditor.csproj", "{35E4BA7B-E651-410F-B75F-F8938EADA2A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OwnTeditor", "OwnTeditor\OwnTeditor.csproj", "{35E4BA7B-E651-410F-B75F-F8938EADA2A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSharp4.Retry", "LearnSharp4.Retry\LearnSharp4.Retry.csproj", "{E18844C2-1B52-4E89-8843-8EF0CE4A7678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{35E4BA7B-E651-410F-B75F-F8938EADA2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E4BA7B-E651-410F-B75F-F8938EADA2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35E4BA7B-E651-410F-B75F-F8938EADA2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E18844C2-1B52-4E89-8843-8EF0CE4A7678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18844C2-1B52-4E89-8843-8EF0CE4A7678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18844C2-1B52-4E89-8843-8EF0CE4A7678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18844C2-1B52-4E89-8843-8EF0CE4A7678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

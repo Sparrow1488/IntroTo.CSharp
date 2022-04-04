@@ -20,7 +20,6 @@ namespace OwnTeditor
             ITextDocumentMapper mapper = new MarkdownDocumentMapper();
             ITextParserAdapter parser = new MarkdownParser(mapper);
             TextDocument textDocument = parser.ParseDocument(GetText("./SampleData/Paragraph-1.md"));
-            textDocument.
             //MarkdownDocument document = textDocument.As<MarkdownDocument>();
         }
 
