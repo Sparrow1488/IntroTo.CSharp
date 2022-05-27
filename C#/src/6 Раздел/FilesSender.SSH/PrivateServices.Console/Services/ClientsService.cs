@@ -28,7 +28,7 @@ namespace PrivateServices.Console.Services
             {
                 Client = foundClient
             };
-            return foundClient ?? throw new AuthorizeFailedException();
+            return foundClient?.Clone() ?? throw new AuthorizeFailedException();
         }
 
         public override Client Edit(Client client)

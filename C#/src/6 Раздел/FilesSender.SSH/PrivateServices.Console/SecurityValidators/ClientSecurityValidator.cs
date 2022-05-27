@@ -22,7 +22,22 @@ namespace PrivateServices.Console.SecurityValidators
                 var user = _storage.Clients.First(x => x.Id == entityToSecure.Id);
                 foreach (var prop in props)
                 {
-                    var attrs = prop.GetCustomAttributes(typeof(EditSecurityAttribute), false);
+                    var editSecureAttr = prop.GetCustomAttributes(typeof(EditSecurityAttribute), false).FirstOrDefault() as EditSecurityAttribute;
+                    if (editSecureAttr is null)
+                        continue;
+
+                    var userProp = user.GetType().GetProperties().First(x => x.Name == prop.Name);
+                    var a = prop.GetValue(entityToSecure);
+                    var b = userProp.GetValue(user);
+                    var isPropChanged = a != b;
+                    if (isPropChanged)
+                    {
+                        var minRoleToChange = editSecureAttr.MinimumRole;
+                        if (user.Role != minRoleToChange)
+                        {
+                            return false;
+                        }
+                    }
                     result = true;
                 }
             }

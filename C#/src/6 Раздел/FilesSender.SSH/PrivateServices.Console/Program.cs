@@ -18,16 +18,14 @@ var host = Host.CreateDefaultBuilder()
     }).Build();
 
 var clientsService = ActivatorUtilities.CreateInstance<ClientsService>(host.Services);
-var authorizedClient = clientsService.AuthorizeByName("Sparrow");
+var authorizedClient = clientsService.AuthorizeByName("Valentin");
 
-authorizedClient.Name = "Sparrow-edit";
-var edited = clientsService.Edit(authorizedClient);
-Console.WriteLine("Edit user name: " + edited.Name);
-
-Console.WriteLine("End");
+//authorizedClient.Name = "Valentin-edit";
+//var edited = clientsService.Edit(authorizedClient);
+//Console.WriteLine("Edit user name: " + edited.Name);
 
 authorizedClient.Role = SystemRole.Admin;
-edited = clientsService.Edit(authorizedClient); // ошибка доступа: минимальный уровень для изменения - Admin
+var edited = clientsService.Edit(authorizedClient); // ошибка доступа: минимальный уровень для изменения - Admin
 
 Console.WriteLine("End");
 
