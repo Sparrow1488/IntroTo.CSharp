@@ -1,12 +1,13 @@
 ﻿namespace SecuredServices.Core.Attributes
 {
-    public class ChangeProtectionAttribute : ProtectionAttribute
+    public class ChangeProtectionAttribute : PolicyProtectionAttribute
     {
-        public ChangeProtectionAttribute() { }
+        public ChangeProtectionAttribute()
+        {
+        }
 
-        public ChangeProtectionAttribute(string policy) =>
-            Policy = policy;
-
-        public string Policy { get; }
+        public ChangeProtectionAttribute(string policy) : base(policy)
+        {
+        }
     }
 }

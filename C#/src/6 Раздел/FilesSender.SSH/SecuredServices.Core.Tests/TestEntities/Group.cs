@@ -7,15 +7,13 @@ namespace SecuredServices.Core.Tests.TestEntities
     {
         [ChangeProtection(TestRole.Editor)]
         public string Title { get; set; }
+
         [ChangeProtection(TestRole.Editor)]
+        [ReadProtection(TestRole.User)]
         public string Description { get; set; }
+
         [ChangeProtection(TestRole.Editor)]
+        [ReadProtection(TestRole.User)]
         public bool IsPrivate { get; set; } = false;
-
-        [ChangeProtection(TestRole.User)]
-        public string UserProp { get; set; }
-
-        [ChangeProtection]
-        public string NotConfigmedProp { get; set; }
     }
 }

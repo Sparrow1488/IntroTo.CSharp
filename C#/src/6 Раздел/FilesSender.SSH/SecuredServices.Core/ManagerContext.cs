@@ -6,12 +6,12 @@ namespace SecuredServices.Core
     /// <summary>
     ///     Контекст с клиентом, который использует SecuredServices
     /// </summary>
-    public class ManagerContext : IManagerContext<int>
+    public class ManagerContext : IManagerSession<int>
     {
         public bool IsAuthorized { get; set; }
         public string Role { get; set; }
 
-        void IManagerContext<int>.AuthorizeById(int id)
+        void IManagerSession<int>.AuthorizeById(int id)
         {
             throw new NotImplementedException();
         }

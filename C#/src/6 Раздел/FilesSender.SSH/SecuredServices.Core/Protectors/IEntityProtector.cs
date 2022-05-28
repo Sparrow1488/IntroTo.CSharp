@@ -2,6 +2,7 @@
 {
     public interface IEntityProtector<TEntity>
     {
-        bool IsProtected(TEntity toProtect, TEntity baseTemplate);
+        bool IsProtected(TEntity toCheck, TEntity initial);
+        bool IsProtected(TEntity toCheck);
     }
 }

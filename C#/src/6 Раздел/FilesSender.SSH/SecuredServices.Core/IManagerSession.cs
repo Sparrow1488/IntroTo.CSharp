@@ -1,6 +1,6 @@
 ﻿namespace SecuredServices.Core
 {
-    public interface IManagerContext<TId>
+    public interface IManagerSession<TId>
     {
         void AuthorizeById(TId id);
         public bool IsAuthorized { get; }

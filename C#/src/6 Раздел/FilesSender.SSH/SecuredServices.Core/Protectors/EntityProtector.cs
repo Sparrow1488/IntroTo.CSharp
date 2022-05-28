@@ -1,5 +1,8 @@
-﻿using SecuredServices.Core.Attributes;
+﻿using Microsoft.Extensions.DependencyInjection;
+using SecuredServices.Core.Attributes;
+using SecuredServices.Core.Protectors.Processors;
 using SecuredServices.Core.Providers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -10,15 +13,18 @@ namespace SecuredServices.Core.Protectors
     {
         public EntityProtector(
             ManagerContext context,
-            IPolicyProvider policies)
+            IPolicyProvider policies,
+            IServiceProvider services)
         {
             Context = context;
             _policies = policies;
+            _services = services;
         }
 
         private TEntity _currentEntityCheck;
         private TEntity _initialEntityCheck;
         private readonly IPolicyProvider _policies;
+        private readonly IServiceProvider _services;
 
         public ManagerContext Context { get; }
 
@@ -31,6 +37,12 @@ namespace SecuredServices.Core.Protectors
             foreach (var prop in protectedProps)
             {
                 var initProperty = initial.GetType().GetProperty(prop.Name);
+                //var processors = SelectProcessors(prop);
+                //foreach (var processor in processors)
+                //{
+                //    processor.HandleEntity();
+                //}
+                //var isVerify = 
                 var isChangeVerify = IsChangeVerified(prop, initProperty);
 
                 isProtected = isChangeVerify;
@@ -72,6 +84,23 @@ namespace SecuredServices.Core.Protectors
             if (managerPolicyRank >= currentPolicyRank)
                 isGreaterOrEqual = true;
             return isGreaterOrEqual;
+        }
+
+        private IEnumerable<ProtectProcessor<TEntity>> SelectProcessors(PropertyInfo property)
+        {
+            var assemblyProcessors =
+                Assembly.GetExecutingAssembly().GetTypes()
+                    .Where(x => x.IsAssignableFrom(typeof(ProtectProcessor<TEntity>)) && !x.IsAbstract)
+                        .ToList();
+            var createdProcessors = new List<ProtectProcessor<TEntity>>();
+            assemblyProcessors.ForEach(x => createdProcessors.Add((ProtectProcessor<TEntity>)ActivatorUtilities.CreateInstance(_services, x)));
+            var propAttributes = property.GetCustomAttributes<ProtectionAttribute>().Select(x => x.GetType());
+            return createdProcessors.Where(x => propAttributes.Contains(x.HandleAttributeType));
+        }
+
+        public bool IsProtected(TEntity toCheck)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
