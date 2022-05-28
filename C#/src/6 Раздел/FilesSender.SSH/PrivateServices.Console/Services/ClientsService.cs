@@ -2,11 +2,12 @@
 using PrivateServices.Console.Exceptions;
 using PrivateServices.Console.Models;
 using PrivateServices.Console.SecurityValidators;
+using PrivateServices.Console.Services.Arguments;
 using PrivateServices.Console.Sessions;
 
 namespace PrivateServices.Console.Services
 {
-    internal class ClientsService : ClientsServiceBase
+    internal class ClientsService : ClientsServiceBase, IClientsService, IClientsModeratorService
     {
         public ClientsService(
             ClientsStorage storage,
@@ -44,6 +45,30 @@ namespace PrivateServices.Console.Services
             {
                 throw new AccessDeniedException();
             }
+            return clientDb;
+        }
+
+        public Client Edit(EditClientArgument argument)
+        {
+            var clientDb = GetClientByIdOrThrow(argument.Id);
+            clientDb.Name = argument.EditedName;
+            // save in db
+            return clientDb;
+        }
+
+        public Client Edit(EditClientModeratorArgument argument)
+        {
+            var clientDb = GetClientByIdOrThrow(argument.Id);
+            clientDb.Name = argument.EditedName;
+            clientDb.Role = argument.EditedRole;
+            // save in db
+            return clientDb;
+        }
+
+        private Client GetClientByIdOrThrow(int clientId)
+        {
+            var clientDb = Storage.Clients.SingleOrDefault(x => x.Id == clientId);
+            clientDb = clientDb ?? throw new ClientNotFoundException();
             return clientDb;
         }
     }

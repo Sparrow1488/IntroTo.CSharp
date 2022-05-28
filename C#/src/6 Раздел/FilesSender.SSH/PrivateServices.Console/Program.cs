@@ -5,6 +5,7 @@ using PrivateServices.Console.Models;
 using PrivateServices.Console.Roles;
 using PrivateServices.Console.SecurityValidators;
 using PrivateServices.Console.Services;
+using PrivateServices.Console.Services.Arguments;
 
 Console.WriteLine("Stated");
 
@@ -12,20 +13,18 @@ var host = Host.CreateDefaultBuilder()
     .ConfigureServices(x =>
     {
         x.AddTransient<SecurityValidator<Client>, ClientSecurityValidator>();
-        x.AddTransient<ClientsServiceBase, ClientsService>();
+        x.AddTransient<IClientsService, ClientsService>();
+        x.AddTransient<IClientsModeratorService, ClientsService>();
         x.AddSingleton<ClientsStorage>();
-        x.AddSingleton<BlogsStorage>();
     }).Build();
 
-var clientsService = ActivatorUtilities.CreateInstance<ClientsService>(host.Services);
-var authorizedClient = clientsService.AuthorizeByName("Valentin");
-
-//authorizedClient.Name = "Valentin-edit";
-//var edited = clientsService.Edit(authorizedClient);
-//Console.WriteLine("Edit user name: " + edited.Name);
-
-authorizedClient.Role = SystemRole.Admin;
-var edited = clientsService.Edit(authorizedClient); // ошибка доступа: минимальный уровень для изменения - Admin
+var scope = host.Services.CreateScope();
+var clientsService = scope.ServiceProvider.GetService<IClientsService>();
+var editArgument = new EditClientArgument()
+{
+    EditedName = "edited-name"
+};
+clientsService.Edit(editArgument);
 
 Console.WriteLine("End");
 
