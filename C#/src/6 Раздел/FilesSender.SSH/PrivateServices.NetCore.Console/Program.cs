@@ -1,15 +1,15 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PrivateServices.NetCore.Console.Data;
-using PrivateServices.NetCore.Console.Models;
-using PrivateServices.NetCore.Console.Roles;
-using PrivateServices.NetCore.Console.SecurityValidators;
-using PrivateServices.NetCore.Console.Services;
-using PrivateServices.NetCore.Console.Services.Arguments;
+using SecuredServices.Core.Console.Data;
+using SecuredServices.Core.Console.Models;
+using SecuredServices.Core.Console.Roles;
+using SecuredServices.Core.Console.SecurityValidators;
+using SecuredServices.Core.Console.Services;
+using SecuredServices.Core.Console.Services.Arguments;
 using System;
 using System.Linq;
 
-namespace PrivateServices.NetCore.Console
+namespace SecuredServices.Core.Console
 {
     class Program
     {
@@ -29,25 +29,8 @@ namespace PrivateServices.NetCore.Console
 
             var scope = host.Services.CreateScope();
             var storage = scope.ServiceProvider.GetService<ClientsStorage>();
-
-            // Чиста для клиентов
             var clientsService = scope.ServiceProvider.GetService<IClientsService>();
-            //var editArgument = new EditClientArgument()
-            //{
-            //    EditedName = "edited-name"
-            //};
-            //clientsService.Edit(editArgument);
-
-            //// Чиста для модеров
-            //EditClientModeratorArgument editModeratorArgument = new EditClientModeratorArgument()
-            //{
-            //    EditedName = "edited-name",
-            //    EditedRole = SystemRole.Admin
-            //};
-            //var clientsModeratorService = scope.ServiceProvider.GetService<IClientsModeratorService>();
-            //clientsModeratorService.Edit(editModeratorArgument);
-            //clientsModeratorService.DeleteById(editModeratorArgument.Id);
-
+            
             // Чиста для всех, но есть EntityProtector - все четко
             var currentClient = storage.Clients.Last().Clone();
             currentClient.Name = "edit-by-universal";

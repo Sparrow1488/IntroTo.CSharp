@@ -1,6 +1,6 @@
-﻿using PrivateServices.NetCore.Console.Models;
+﻿using SecuredServices.Core.Console.Models;
 
-namespace PrivateServices.NetCore.Console.Sessions
+namespace SecuredServices.Core.Console.Sessions
 {
     internal class Session
     {

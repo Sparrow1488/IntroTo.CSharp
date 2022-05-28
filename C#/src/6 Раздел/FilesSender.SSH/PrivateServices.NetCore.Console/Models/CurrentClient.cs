@@ -1,6 +1,6 @@
-﻿using PrivateServices.NetCore.Console.Roles;
+﻿using SecuredServices.Core.Console.Roles;
 
-namespace PrivateServices.NetCore.Console.Models
+namespace SecuredServices.Core.Console.Models
 {
     internal class CurrentClient : Client
     {

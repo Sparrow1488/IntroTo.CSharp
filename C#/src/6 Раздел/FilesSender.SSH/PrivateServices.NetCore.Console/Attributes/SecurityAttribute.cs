@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PrivateServices.NetCore.Console.Attributes
+namespace SecuredServices.Core.Console.Attributes
 {
     internal abstract class SecurityAttribute : Attribute
     {

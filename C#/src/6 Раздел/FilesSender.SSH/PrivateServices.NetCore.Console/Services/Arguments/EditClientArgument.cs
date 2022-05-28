@@ -1,6 +1,6 @@
-﻿using PrivateServices.NetCore.Console.Roles;
+﻿using SecuredServices.Core.Console.Roles;
 
-namespace PrivateServices.NetCore.Console.Services.Arguments
+namespace SecuredServices.Core.Console.Services.Arguments
 {
     internal class EditClientArgument
     {

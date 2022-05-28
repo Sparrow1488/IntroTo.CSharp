@@ -1,8 +1,8 @@
-﻿using PrivateServices.NetCore.Console.Models;
-using PrivateServices.NetCore.Console.Roles;
+﻿using SecuredServices.Core.Console.Models;
+using SecuredServices.Core.Console.Roles;
 using System.Collections.Generic;
 
-namespace PrivateServices.NetCore.Console.Data
+namespace SecuredServices.Core.Console.Data
 {
     internal class ClientsStorage
     {

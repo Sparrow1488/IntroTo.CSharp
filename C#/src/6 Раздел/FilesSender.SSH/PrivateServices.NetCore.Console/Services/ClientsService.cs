@@ -1,12 +1,12 @@
-﻿using PrivateServices.NetCore.Console.Data;
-using PrivateServices.NetCore.Console.Exceptions;
-using PrivateServices.NetCore.Console.Models;
-using PrivateServices.NetCore.Console.SecurityValidators;
-using PrivateServices.NetCore.Console.Services.Arguments;
-using PrivateServices.NetCore.Console.Sessions;
+﻿using SecuredServices.Core.Console.Data;
+using SecuredServices.Core.Console.Exceptions;
+using SecuredServices.Core.Console.Models;
+using SecuredServices.Core.Console.SecurityValidators;
+using SecuredServices.Core.Console.Services.Arguments;
+using SecuredServices.Core.Console.Sessions;
 using System.Linq;
 
-namespace PrivateServices.NetCore.Console.Services
+namespace SecuredServices.Core.Console.Services
 {
     internal class ClientsService : ClientsServiceBase, IClientsService, IClientsModeratorService
     {

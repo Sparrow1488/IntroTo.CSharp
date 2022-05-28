@@ -1,7 +1,7 @@
-﻿using PrivateServices.NetCore.Console.Attributes;
-using PrivateServices.NetCore.Console.Roles;
+﻿using SecuredServices.Core.Console.Attributes;
+using SecuredServices.Core.Console.Roles;
 
-namespace PrivateServices.NetCore.Console.Models
+namespace SecuredServices.Core.Console.Models
 {
     internal class Client : Identity
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PrivateServices.NetCore.Console.Attributes
+namespace SecuredServices.Core.Console.Attributes
 {
     /// <summary>
     ///     Аттрибут указывающий, какое свойство может изменять пользователь с определенной ролью

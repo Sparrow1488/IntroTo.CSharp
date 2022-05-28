@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SecuredServices.Core.Console.Exceptions
+namespace SecuredServices.Core.Tests.TestEntities
 {
-    internal class ClientNotFoundException : Exception
+    public class Identity
     {
+        public int Id { get; set; }
     }
 }

@@ -1,10 +1,10 @@
-﻿using PrivateServices.NetCore.Console.Data;
-using PrivateServices.NetCore.Console.Exceptions;
-using PrivateServices.NetCore.Console.Models;
-using PrivateServices.NetCore.Console.SecurityValidators;
+﻿using SecuredServices.Core.Console.Data;
+using SecuredServices.Core.Console.Exceptions;
+using SecuredServices.Core.Console.Models;
+using SecuredServices.Core.Console.SecurityValidators;
 using System.Linq;
 
-namespace PrivateServices.NetCore.Console.Services
+namespace SecuredServices.Core.Console.Services
 {
     internal class UniversalClientsService
     {
@@ -26,8 +26,9 @@ namespace PrivateServices.NetCore.Console.Services
 
         public virtual Client Edit(Client edited)
         {
-            var clientDb = _storage.Clients.First(x => x.Id == edited.Id);
-            if (_protector.IsSecured(edited, clientDb))
+            var clientDb = _storage.Clients.SingleOrDefault(x => x.Id == edited.Id)
+                            ?? throw new ClientNotFoundException();
+            if (_protector.IsProtected(edited, clientDb))
             {
                 clientDb.Name = edited.Name;
                 clientDb.Role = edited.Role;

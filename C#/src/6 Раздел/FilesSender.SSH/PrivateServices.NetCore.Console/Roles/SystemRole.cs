@@ -1,4 +1,4 @@
-﻿namespace PrivateServices.NetCore.Console.Roles
+﻿namespace SecuredServices.Core.Console.Roles
 {
     internal class SystemRole
     {

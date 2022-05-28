@@ -1,12 +1,12 @@
-﻿using PrivateServices.NetCore.Console.Attributes;
-using PrivateServices.NetCore.Console.Data;
-using PrivateServices.NetCore.Console.Models;
-using PrivateServices.NetCore.Console.Roles;
+﻿using SecuredServices.Core.Console.Attributes;
+using SecuredServices.Core.Console.Data;
+using SecuredServices.Core.Console.Models;
+using SecuredServices.Core.Console.Roles;
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace PrivateServices.NetCore.Console.SecurityValidators
+namespace SecuredServices.Core.Console.SecurityValidators
 {
     internal class ClientSecurityValidator : EntityProtector<Client>
     {
@@ -53,7 +53,7 @@ namespace PrivateServices.NetCore.Console.SecurityValidators
             return result;
         }
 
-        public override bool IsSecured(Client entityToSecure, Client baseEntity)
+        public override bool IsProtected(Client entityToSecure, Client baseEntity)
         {
             var allPropsSecured = false;
             var securedProps = GetSecuredProperties(entityToSecure);

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PrivateServices.NetCore.Console.Exceptions
+namespace SecuredServices.Core.Console.Exceptions
 {
     internal class AuthorizeFailedException : Exception
     {

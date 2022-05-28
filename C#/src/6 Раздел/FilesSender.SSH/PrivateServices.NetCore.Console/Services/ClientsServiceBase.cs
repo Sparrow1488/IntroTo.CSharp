@@ -1,7 +1,7 @@
-﻿using PrivateServices.NetCore.Console.Data;
-using PrivateServices.NetCore.Console.Models;
+﻿using SecuredServices.Core.Console.Data;
+using SecuredServices.Core.Console.Models;
 
-namespace PrivateServices.NetCore.Console.Services
+namespace SecuredServices.Core.Console.Services
 {
     internal abstract class ClientsServiceBase
     {

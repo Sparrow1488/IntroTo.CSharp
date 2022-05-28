@@ -1,4 +1,4 @@
-﻿namespace PrivateServices.NetCore.Console.Attributes
+﻿namespace SecuredServices.Core.Console.Attributes
 {
     internal class ReadOnlyAttribute : SecurityAttribute
     {
